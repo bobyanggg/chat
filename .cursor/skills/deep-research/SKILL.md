@@ -26,7 +26,7 @@ Source: adapted from [samber/cc-skills deep-research](https://github.com/samber/
 | --- | --- | --- |
 | **Interview** | Step 1 — scope | Sequential; ask questions, confirm before proceeding |
 | **Parallel research** | Steps 2–4 — evidence gathering | Fan out 3–20 sub-agents per step; each owns one axis |
-| **Synthesis** | Step 5 — conclusions | Sequential + ultrathink; reconcile conflicts before recommending |
+| **Synthesis** | Step 5 — conclusions | Sequential + deep reasoning; reconcile conflicts before recommending |
 
 **Research depth** — select automatically based on the request:
 
@@ -136,7 +136,7 @@ Skip in quick and standard modes.
 
 ## Step 5 — Synthesis
 
-**Use `ultrathink` here** (standard and deep modes).
+**Use deep reasoning here** (standard and deep modes).
 
 Read the full output file. Write the synthesis section:
 
