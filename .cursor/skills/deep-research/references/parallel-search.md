@@ -65,10 +65,10 @@ Output format:
 Sub-agents complete at different times. As each one finishes:
 
 1. Read its output immediately.
-2. Append its findings section to the output file.
-3. Do not wait for all agents before writing — write as you receive.
+2. Fold its findings into the working draft (for the chat deliverable), or append to the output file if the user requested a saved report.
+3. Do not wait for all agents before integrating — update as you receive.
 
-If a sub-agent returns insufficient findings (e.g., a gap note with no data), do not fill the gap with guesses. Write the gap explicitly in the output file and note it for the Synthesis step.
+If a sub-agent returns insufficient findings (e.g., a gap note with no data), do not fill the gap with guesses. Record the gap explicitly in the working draft (or file) and note it for the Synthesis step.
 
 ## Splitting axes by type
 
