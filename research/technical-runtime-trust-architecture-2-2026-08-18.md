@@ -76,17 +76,7 @@ The **document family** as stated in the paper:
 
 A primitive is defined by **the question it answers**, not by serialization format. The same primitive may be a signed manifest, VC, public key, directory entry, smart-contract state, ZK proof, or trusted API response.
 
-The primitive conversations listed in §3.1:
-
-- **Identity** — who are you?
-- **Principal** — who do you represent?
-- **Delegated Authority** — what may you do?
-- **Mission** — why are you operating?
-- **Intent** — what are you doing now?
-- **Limitations** — what boundaries apply?
-- **Evidence** — what supports your claims?
-- **History** — what verifiable events should I consider?
-- **Freshness** — is this still true, and has this request already been used?
+The DOCX §3.1 presents primitives as short machine-speed conversations (Identity, Principal, Delegated Authority, Mission, Intent, Limitations, Evidence, History, Freshness). The live site and Edition 1.x material enumerate a fuller **fourteen-primitive** set (P01–P14) that also includes Root of Trust, Policy/Compliance, Environment/Integrity, Transaction Artifacts, and Trust Session ([5thnode SPA](https://5thnode.com/), accessed 2026-08-18, confidence: Medium). Treat the 14-item list as the fuller vocabulary and the DOCX §3.1 list as the condensed narrative; Control Authority is called out separately as a first-class addition from 1.2.
 
 Lifetime split matters: stable claims live in the **Agent Passport (APS)**; request-specific material lives in a per-interaction **Runtime Trust Package**; derived outcomes (reputation, admission, price, priority) are **never primitives** — they are receiver-policy outputs.
 
@@ -146,70 +136,119 @@ The site footer and paper also reference a [Runtime Trust Working Group kickoff]
 
 ---
 
-<!-- Steps 2–4 landscape findings appended below as sub-agents complete. -->
-
 ## Technology Landscape
 
 ### Overview of Approaches
 
-_Pending research._
+The agent stack is splitting into complementary layers, and Runtime Trust 2.0 explicitly wants to sit in the *admission / operational assurance* gap rather than replace communication or payment rails. According to the [A2A Protocol site](https://a2a-protocol.org/latest/) (accessed 2026-08-18, confidence: High — Primary/Established), Agent2Agent is an open standard for communication and interoperability between opaque agent applications, originally from Google and now under the Linux Foundation, complementary to MCP (agent-to-tool) rather than competing with it. The [A2A specification](https://a2a-protocol.org/latest/specification/) (accessed 2026-08-18, confidence: High) centers on Agent Cards, task lifecycle, messaging, and artifacts — discovery and collaboration, not continuous operational-contract monitoring.
+
+MCP (Anthropic’s Model Context Protocol) standardizes how an agent reaches tools and data. Runtime Trust’s paper treats MCP as a handoff surface after a certificate is issued, not as a trust verdict mechanism ([Runtime Trust Architecture 2.0 DOCX](https://5thnode.com/api/research/runtime-trust-2/download), accessed 2026-08-18, confidence: Medium).
+
+On the payment axis, [x402](https://x402.org/wp-content/uploads/sites/10/2026/06/x402-whitepaper.pdf) (accessed 2026-08-18, confidence: Medium — Primary whitepaper attributed to Coinbase/x402 ecosystem) revives HTTP 402 so agents can pay for APIs with stablecoins without API-key accounts. That solves *how payment happens*, not *whether this agent should be allowed to initiate a consequential payment under its declared contract*. The paper’s mention of AP2 alongside x402 is thinner in public primary sources located during this pass; treat AP2 as named by 5thnode without a fully corroborated peer-spec citation here (**Gap**).
+
+Identity and workload attestation layers (enterprise IAM, SPIFFE/SPIRE-style workload identity, verifiable credentials) supply *who/what is speaking* evidence. Runtime Trust argues those facts feed receiver policy but do not themselves answer fleet consistency or continuous baseline-vs-observed drift. This suggests a layered picture: identity → Runtime Trust package/certificate → action protocol (A2A/MCP/x402/domain API) → evidence preservation.
+
+Greenlight, operated by 5thnode, markets itself as a multi-chain crypto security scanner and AIS-aligned pre-action check API returning Ed25519-signed findings (not proceed/stop verdicts), and as a reference “Agentic Runtime Trust Engine” with an ARTP console ([Greenlight AI](https://greenlightagent.com/), accessed 2026-08-18, confidence: Medium — Primary vendor site). That positions Greenlight as an *evidence provider / engine instance* inside the architecture, not as the architecture itself — consistent with 2.0’s architecture-vs-product split, though brand overlap remains high.
 
 ### Performance and Benchmarks
 
-_Pending research._
+No independent latency, throughput, or scale benchmarks for Coherence Operational Trust Monitoring, Fleet Integrity reconciliation, or ARTP handshakes were found in public third-party sources during this research pass. The architecture text asserts handshakes should complete “within the latency envelope of the downstream protocol” ([5thnode SPA / Edition 1.x material](https://5thnode.com/research/runtime-trust), accessed 2026-08-18, confidence: Low for performance — marketing/architecture prose only). **Gap:** no published p50/p99 measurements, fleet sizes, or drift false-positive rates.
 
 ### Community Health and Maturity
 
-_Pending research._
+Public maturity signals are early and largely first-party. Research Edition 1.x was announced publicly by Tom Lindeman around July 2026 ([LinkedIn post](https://www.linkedin.com/posts/thomaslindeman_autonomousai-autonomousagents-agenticai-activity-7485674703529889792-SB1Y), accessed 2026-08-18, confidence: Medium). Edition 2.0 DOCX last-modified 2026-08-15 per download headers. APS Draft v0.1 and AIS v0.1 are downloadable from 5thnode. A Runtime Trust Working Group is advertised with global kickoff **August 28, 2026**, with a repository promised to launch at kickoff ([5thnode working-group copy in SPA](https://5thnode.com/research/working-group), accessed 2026-08-18, confidence: Medium — first-party). As of this report date (2026-08-18), that kickoff is still future; independent WG membership lists, IETF working-group adoption of 5thnode APS, or multi-vendor implementations were **not found**.
+
+Lindeman’s motivational figure — “more than 1 billion AI agents by 2028” — tracks a widely circulated IDC-linked forecast, more often cited as **1.3 billion by 2028** from an IDC Info Snapshot sponsored by Microsoft (#US53361825, May 2025) as discussed in secondary coverage such as [Perspectives.plus](https://www.perspectives.plus/p/getting-to-one-billion-agents) and [Forbes](https://www.forbes.com/sites/terdawn-deboe/2026/03/23/13-billion-ai-agents-are-coming-most-have-no-kill-switch/) (accessed 2026-08-18, confidence: Medium for the citation chain; the underlying IDC snapshot itself was not retrieved here). IDC’s own AI hub also surfaces a related but differently dated claim that by 2029 enterprises will run more than 1 billion AI agents ([IDC AI Hub](https://www.idc.com/ai-hub/), accessed 2026-08-18, confidence: Medium). Sources disagree on exact billion-scale figure and year; treat as directional industry rhetoric, not a precise planning input.
 
 ### Integration and Compatibility
 
-_Pending research._
+**Companion document mapping (5thnode family):**
+
+| Layer | Artifact | Role |
+| --- | --- | --- |
+| Architecture | Runtime Trust 2.0 | Primitives, flows, axes, outcomes |
+| Passport format | APS v0.1 | Declaration + signed claim + discovery + lifecycle |
+| Security requirements | AIS v0.1 | 23 requirements for Web3/crypto agents |
+| Ops platform | Coherence | Reference monitoring / fleet / certificates |
+| Pre-action evidence | Greenlight | Signed findings / ARTP engine demo |
+
+APS defines a deliberately small passport (`identity`, `operator`, `authority`, `scope`, `refusals`) discoverable at `/.well-known/aps-passport.json`, with Ed25519 signed claims that attest *observation*, honest expiry, and UNKNOWN for undeclared fields ([APS Standard v0.1](https://5thnode.com/api/research/aps/download), accessed 2026-08-18, confidence: Medium — Primary). AIS is broader and more Web3-specific: 23 requirements across Principal & Authorization, Credential Integrity, Instruction Integrity, Capability Governance, Behavioral & Reputation, Environmental Security, and Governance & Control, published February 27, 2026 ([AIS Standard v0.1](https://5thnode.com/api/research/ais/download), accessed 2026-08-18, confidence: Medium — Primary). Several AIS items map cleanly onto Runtime Trust concerns (explicit capability declaration AIS-011, policy/drift AIS-013, behavioral history AIS-014, audit trail AIS-019, pre-execution verification AIS-023), while others (prompt injection AIS-008, sanctions screening AIS-003) sit in adjacent security domains the architecture says it does not replace.
+
+Handshake step 6 explicitly hands certificates into A2A, MCP, x402, wallet, or chain transactions — a peer-handoff model rather than a protocol fork.
 
 ## Comparative Analysis
 
 ### Top Options Head-to-Head
 
-_Pending research._
+**5thnode APS vs other “Agent Passport” efforts (naming collision).** Independently of 5thnode, an IETF Internet-Draft series titled Agent Passport System (e.g. [draft-pidlisnyi-aps-03](https://datatracker.ietf.org/doc/draft-pidlisnyi-aps/03/), accessed 2026-08-18, confidence: High — Primary) and the site [agent-passport.org](https://agent-passport.org/) define Ed25519 passports, monotonic authority attenuation across multiple dimensions, a three-record policy chain (intent / decision / receipt), and MCP bindings. That stack is a *cryptographic governance / enforcement-evidence* protocol. 5thnode APS is a *small operational-contract declaration + observation claim* meant to feed monitoring. They share branding (“APS”, “Agent Passport”) and Ed25519 aesthetics but do not appear to be the same project. **Developer confusion risk is real** until namespaces diverge (well-known path `aps-passport.json` vs IETF `aps.agent-passport` record types).
+
+**Runtime Trust vs continuous Zero Trust / continuous authorization.** Industry Zero Trust and continuous verification (session risk, device posture, CAEP-style signals) share the intuition that trust decays. Runtime Trust specializes that intuition for *declared agent operational contracts* and *fleet structural consistency*, with human-gated baseline advancement and explicit refusal to auto-approve drift. Complementary rather than identical.
+
+**SAFE-Matter™ and similar “present-state admissibility” architectures.** Public Zenodo material for SAFE-Matter frames operational reliance as continuously recomputed from present-state evidence rather than inherited from historical certification ([Zenodo SAFE-Matter abstract](https://doi.org/10.5281/zenodo.20116375), accessed 2026-08-18, confidence: Medium — Primary abstract only). The thesis rhyme with Runtime Trust 2.0’s “trust is continuously re-established” is strong; domain packaging, fleet axis, and Agent Passport vocabulary appear distinct. No evidence found that the projects share authorship or normative specs.
 
 ### Decision Matrix
 
-| Option | Performance | DX  | Community | Cost | Lock-in | Notes |
-| ------ | ----------- | --- | --------- | ---- | ------- | ----- |
-| _TBD_  |             |     |           |      |         |       |
+| Option | What it decides | Continuity model | Openness signal | Lock-in risk | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Runtime Trust 2.0 + APS/AIS | Admission facts + ops assurance vocabulary | Handshake + monitoring + drift review | Research editions + drafts on 5thnode | Medium if Coherence is only engine | Vendor-neutral claim; reference impl is 5thnode |
+| A2A | Agent collaboration / tasks | Session/task lifecycle | Linux Foundation, multi-vendor | Lower for messaging | Does not certify operational contract drift |
+| MCP | Tool/data access | Connection/session | Broad ecosystem | Tool-server coupling | Peer handoff target |
+| x402 | Pay-per-request settlement | Per-request 402 challenge | Open protocol / Coinbase origin | Rail/facilitator choices | Peer handoff target |
+| IETF/agent-passport.org APS | Identity, attenuated authority, receipts | Per-action policy chain | IETF drafts + OSS | Protocol choice | **Different APS** than 5thnode |
+| Greenlight | Crypto pre-action findings | Per-scan signed evidence | Public API docs | Vendor evidence provider | Reference Runtime Trust Engine (first-party) |
 
 ### Migration and Lock-in Risks
 
-_Pending research._
+If you adopt only the *vocabulary* (primitives, UNKNOWN, Approval Required, two unblended axes), migration cost is mostly conceptual. If you enroll fleets into Coherence-specific certificates, well-known paths, and claim `kind: coherence_passport` (as in APS v0.1 example), switching engines later requires claim/format translation. APS text asserts “no product owns” the standard, but the draft is extracted from the shipped Coherence implementation ([APS v0.1](https://5thnode.com/api/research/aps/download), accessed 2026-08-18, confidence: Medium) — an honesty tension worth tracking as the working group forms.
 
 ## Implementation Considerations
 
 ### Recommended Architecture Patterns
 
-_Pending research._
+From the paper’s own contracts, a minimal honest deployment looks like: publish receiver requirements → enroll agents via read-only discovery + human-completed UNKNOWN gaps → snapshot baseline → issue short-lived per-action certificates → monitor baseline vs observed → human approve or investigate drift → preserve append-only evidence → optionally run Fleet Integrity as a separate signed phase. Keep reputation and admission scores in receiver policy, not in the passport.
 
 ### Common Pitfalls and Gotchas
 
-_Pending research._
+Treating a successful handshake as durable authorization contradicts Edition 2.0’s core claim. Inferring undeclared fields instead of UNKNOWN pads passports and breaks the honesty model. Merging Runtime Trust and Fleet Integrity into one score hides structural failure. Auto-approving drift removes the human accountability the architecture depends on. Confusing 5thnode APS with IETF Agent Passport System will send implementers to the wrong schemas. Expecting Greenlight’s signed findings to be a policy verdict violates Greenlight’s own “findings, not proceed/stop” stance ([greenlightagent.com](https://greenlightagent.com/), accessed 2026-08-18, confidence: Medium).
 
 ### Security and Compliance
 
-_Pending research._
+AIS provides a Web3-oriented requirements checklist with Critical items spanning principal KYC/sanctions, credential integrity, prompt-injection defense, capability declaration, audit trail, emergency halt, and pre-execution verification proof ([AIS v0.1](https://5thnode.com/api/research/ais/download), accessed 2026-08-18, confidence: Medium). No SOC 2 / ISO / third-party audit artifacts for Coherence or Greenlight were located in this pass (**Gap**). Greenlight’s privacy copy claims it does not store personal information or transaction history ([Greenlight](https://greenlightagent.com/), accessed 2026-08-18, confidence: Low for compliance — self-asserted).
 
 ---
 
 ## Key Findings
 
-_Populated at Step 5._
+According to [Runtime Trust Architecture Research Edition 2.0](https://5thnode.com/api/research/runtime-trust-2/download) (accessed 2026-08-18, confidence: Medium), the paper’s core move is philosophical as much as technical: a pre-action handshake is necessary but insufficient, because agents keep changing after admission. Edition 2.0 therefore re-centers the architecture on continuous operational assurance — baseline versus observed contract comparison, human-gated drift approval, and independently signed Runtime Trust / Fleet Integrity certificate phases that must never be mashed into one score.
+
+The document family split is load-bearing. APS Draft v0.1 defines a small portable operational contract and observation claim ([APS download](https://5thnode.com/api/research/aps/download), accessed 2026-08-18, confidence: Medium); AIS v0.1 supplies a 23-requirement Web3 agent security checklist ([AIS download](https://5thnode.com/api/research/ais/download), accessed 2026-08-18, confidence: Medium); Coherence and Greenlight are positioned as reference implementation and reference engine. This suggests readers should evaluate the architecture’s contracts separately from 5thnode product readiness.
+
+Adjacent industry protocols mostly solve different jobs. [A2A](https://a2a-protocol.org/latest/) and MCP move messages and tool calls; [x402](https://x402.org/wp-content/uploads/sites/10/2026/06/x402-whitepaper.pdf) moves money. Runtime Trust claims the missing admission/assurance peer layer. That layering story is coherent on paper; independent multi-vendor adoption of 5thnode’s specific primitives, well-known paths, and certificates was not evidenced in this pass.
+
+A practical hazard is branding collision: 5thnode’s APS is not the IETF / [agent-passport.org](https://agent-passport.org/) Agent Passport System ([draft-pidlisnyi-aps-03](https://datatracker.ietf.org/doc/draft-pidlisnyi-aps/03/), accessed 2026-08-18, confidence: High). Both use “APS” and Ed25519 passports for agentic systems; schemas and problem statements diverge. Anyone implementing from a web search alone can easily wire the wrong stack.
+
+Evidence for shipping scale remains first-party. Greenlight’s public Agent API and well-known manifest are live vendor signals ([greenlightagent.com](https://greenlightagent.com/), accessed 2026-08-18, confidence: Medium). Coherence “shipping” is asserted by the paper and site without independent customer case studies located here. The Runtime Trust Working Group kickoff is scheduled for 2026-08-28 — after this report’s date — so governance maturity is prospective rather than demonstrated.
 
 ## Strategic Recommendations
 
-_Populated at Step 5._
+1. **Read 2.0 as an operational-trust checklist, not a product buy.** Adopt the honesty rules first: UNKNOWN over inference, expiring certificates, unblended axes, human-gated baseline advancement. Evidence: [Runtime Trust 2.0 DOCX](https://5thnode.com/api/research/runtime-trust-2/download).
+2. **Map peer protocols explicitly in your architecture diagram.** Put A2A/MCP/x402/IAM beside Runtime Trust with labeled handoffs at certificate consume time, so teams do not try to stretch one protocol into another’s job. Evidence: paper §11; [A2A](https://a2a-protocol.org/latest/); [x402 whitepaper](https://x402.org/wp-content/uploads/sites/10/2026/06/x402-whitepaper.pdf).
+3. **Namespace-check any “APS” dependency.** If you need attenuated delegation receipts and MCP policy chains, evaluate IETF/agent-passport.org APS separately from 5thnode’s operational-contract passport. Evidence: [draft-pidlisnyi-aps-03](https://datatracker.ietf.org/doc/draft-pidlisnyi-aps/03/); [5thnode APS](https://5thnode.com/api/research/aps/download).
+4. **If evaluating Coherence/Greenlight commercially, demand measurable ops metrics.** Ask for handshake latency envelopes, drift false-positive rates, fleet sizes in production, and third-party assurance. Current public material does not provide them (confidence: Low on performance claims).
+5. **Track the Aug 28, 2026 working group** for multi-party governance of vocabulary and registry rules — the open questions in §12 (lineage, registry emergency revocation, drift-review economics) are where standards work either becomes real or stays essay. Evidence: [working group page](https://5thnode.com/research/working-group).
 
 ## Risks and Uncertainties
 
-_Populated at Step 5._
+- **Data gaps:** No independent Coherence benchmarks, customer references, or compliance attestations found; AP2 payment protocol citation in the paper not fully corroborated here; SAFE-Matter comparison based on abstract-level overlap only.
+- **Low-confidence claims:** Billion-agent IDC figures vary (1.0B vs 1.3B; 2028 vs 2029) across secondary citations; treat as motivational context.
+- **Unresolved conflicts:** Site/1.x materials emphasize fourteen primitives and ARTP naming; the 2.0 DOCX compresses primitives and elevates monitoring — not contradictory, but implementers need a single normative checklist.
+- **Domain risks:** Human-gated drift review may not scale without batching economics (paper’s own open question); first-party reference implementations can quietly become de facto standards despite vendor-neutral language; APS naming collision increases integration error risk.
 
 ## Next Steps
 
-_Populated at Step 5._
+- Attend or monitor the Runtime Trust Working Group kickoff (2026-08-28) and inspect the promised public repository.
+- Diff Edition 1.2 vs 2.0 DOCX side-by-side for ARTP / primitive enumeration deltas if building a conformance suite.
+- Prototype a minimal APS well-known passport + UNKNOWN coverage scan against one internal agent before buying platform software.
+- Separately spike IETF Agent Passport System if you need cryptographic delegation receipts rather than operational-contract monitoring.
+- Re-run this research within 30 days if acting on competitive or governance assumptions — the standards surface is moving quickly.
+
