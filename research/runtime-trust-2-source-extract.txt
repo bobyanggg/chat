@@ -1,0 +1,323 @@
+Runtime Trust Architecture
+
+Research Edition 2.0 — An Architecture for Operational Trust in Autonomous AI Systems
+
+Tom Lindeman · 5thnode Ltd
+
+August 2026
+
+Version Note
+
+Research Edition 2.0 is a major architectural revision, not an incremental edit of 1.2. Three shifts define it.
+
+First, Runtime Trust is no longer presented as a product. It is the architectural foundation on which operational trust systems are built. Coherence, by 5thnode, is the reference implementation used for operational examples throughout this paper; the architecture itself remains vendor-neutral, and any engine that honors its contracts is an equally legitimate implementation.
+
+Second, trust is no longer something established once. Edition 1.x centered on the handshake — the exchange that precedes a consequential action. Operating experience since publication has made the deeper principle unavoidable: trust decays the moment it is established, because the agent, its operator, its model, and its environment all keep changing. This edition promotes continuous trust — trust continuously re-established through operational assurance — from an implementation detail to a core architectural principle, and introduces Operational Trust Monitoring as the discipline that delivers it.
+
+Third, the document family has separated. The Agent Passport is now defined by its own standard, APS (Agent Passport Standard); this paper references APS wherever Passport structure is discussed and no longer defines the Passport itself. AIS defines runtime interoperability. Runtime Trust Architecture defines the architecture. Coherence implements it. Each document does one job.
+
+This edition carries forward, intact, the additions made in 1.2: Control Authority as a first-class primitive, Approval Required as a first-class protocol outcome, and the two-phase Fleet Trust Certificate with explicit per-phase evaluation states. The axis names of 1.2 are retained: Runtime Trust is the vertical, per-agent axis; Fleet Integrity is the horizontal, fleet-wide axis.
+
+Abstract
+
+Autonomous AI systems are beginning to take consequential actions: they pay, trade, contract, access records, and modify infrastructure. Before any such action, something must be exchanged, verified, and preserved — and, this edition argues, that verification must then be kept alive across every action that follows. Runtime Trust Architecture defines what that something is: a small set of primitives answering the questions a receiving party needs answered; a discovery and enrollment flow that turns an agent’s declarations into a living operational contract; a handshake that produces bounded, expiring certificates; and a continuous verification loop — Operational Trust Monitoring — that treats divergence between declared and observed behavior as evidence for human judgment rather than as an automatic verdict. The architecture measures trust on two independent axes, Runtime Trust (per agent) and Fleet Integrity (per fleet), and never blends them into a single score. It standardizes what can be presented and verified; policy, preference, priority, and admission remain with the receiving party.
+
+The Runtime Trust thesis: open standards make autonomous agency practical; runtime trust is the layer that decides whether a consequential interaction should proceed.
+
+1. From Handshake to Operations
+
+1.1 The original problem
+
+The first editions of this paper asked a bilateral question: what must an initiating agent present, and a receiving party verify, before one consequential action? That question remains foundational. Identity is not enough, because the same identity can carry different authority in different contexts. Reputation is not enough, because reputation is an interpretation, not a fact. Trust is contextual, temporary, and receiver-defined — nothing in this architecture produces a universal trust score, and nothing should.
+
+1.2 What operating experience added
+
+Building and running an implementation of this architecture surfaced a limitation in the handshake-centered frame. The handshake establishes trust at a moment; the agent then keeps operating. Its prompts are revised, its model is upgraded, its tool grants change, its operator reorganizes, its data sources go stale. None of these events re-runs the handshake on its own, yet each one erodes the ground the original verification stood on.
+
+The architectural conclusion is the central claim of this edition:
+
+Trust is not established once. Trust is continuously re-established through operational assurance.
+
+A trust architecture that cannot say whether its own past verifications still hold is an audit of history, not an assurance of operation. Everything introduced in this edition — the enrollment flow, the operational contract, drift as evidence, the monitoring loop, the two-axis certificate — exists to keep verification true over time.
+
+1.3 Two verification axes
+
+Operational experience also clarified that “is this system trustworthy?” is two questions, not one:
+
+Runtime Trust (vertical, per agent): may this agent act? Is it still what it declared itself to be, with the authority it claimed, within the bounds it accepted?
+
+Fleet Integrity (horizontal, fleet-wide): have global inconsistencies emerged across agents that are each individually trusted? Do the agents’ declared views still glue into one consistent picture?
+
+These are complementary verification axes built on the same architecture. Neither is subordinate to the other, and their results are never merged: an agent can hold a clean passport inside a structurally obstructed fleet, and a coherent fleet can contain an agent whose authority has lapsed. A blended score would erase exactly the signal each axis exists to produce. Section 8 gives the certificate object that carries both results honestly.
+
+2. Definition, Scope, and Document Family
+
+2.1 Definition
+
+Runtime Trust is the architecture governing what autonomous systems exchange, verify, and preserve before consequential action — and across the actions that follow. It defines vocabulary (primitives), composite objects (passport, package, certificates, evidence records), flows (discovery, enrollment, handshake, monitoring), and outcomes. It does not define policy: the receiving party always decides.
+
+2.2 What it is not
+
+Runtime Trust is not an identity system, a reputation network, a security scanner, or an enforcement gateway. It does not compete with the runtime security stack — prompt-injection detection, model scanning, tool-call gateways, policy engines. Those systems answer was this action permitted? Their outputs are welcome evidence inside this architecture, which answers a different question: is the system still operating as it declared it would, and does the fleet still add up?
+
+Facts, policy, and outcomes must remain separate: verifiable inputs feed receiver policy, which produces derived outcomes. History is factual; reputation is an interpretation; preference belongs to the receiving party.
+
+2.3 The document family
+
+Four documents now share the work, and this paper deliberately avoids duplicating the other three:
+
+Document
+
+Defines
+
+Status
+
+Runtime Trust Architecture (this paper)
+
+The architecture: primitives, flows, axes, outcomes
+
+Research Edition 2.0
+
+APS — Agent Passport Standard
+
+The Agent Passport: declaration, signed claim, discovery, lifecycle
+
+Draft v0.1
+
+AIS — Agent Identity & Security
+
+Runtime interoperability rules
+
+v0.1, published Feb 2026
+
+Coherence
+
+The operational reference implementation
+
+Shipping
+
+Wherever this paper discusses Passport structure, the normative definition lives in APS. Wherever it discusses what a shipping system actually does, the example is Coherence — as one implementation, not as the architecture.
+
+3. Runtime Trust Primitives
+
+A Runtime Trust Primitive is defined by the question it answers, not by the file format used to represent it. The same primitive may be expressed through a signed manifest, verifiable credential, public key, enterprise directory, smart contract, zero-knowledge proof, or trusted API response.
+
+3.1 The primitive conversations
+
+Each primitive is a short machine-speed conversation. Identity asks who are you? Principal asks who do you represent? Delegated Authority asks what may you do? Mission asks why are you operating? Intent asks what are you doing now? Limitations ask what boundaries apply? Evidence asks what supports your claims? History asks what verifiable events should I consider? Freshness asks is this still true, and has this request already been used?
+
+Information separates naturally by lifetime. Stable claims — identity, principal, issuer relationships, capability profile — belong in the Agent Passport (APS). Request-specific material — intent, amount, target, nonce, evidence — belongs in the Runtime Trust Package assembled per interaction. Derived outcomes — reputation, trust level, admission, priority, price — are never primitives at all: they are what receiver policy produces from primitives.
+
+3.2 Control Authority
+
+Control Authority, promoted to first-class standing in 1.2 and retained here, answers the question the original set left implicit: who is authorized to change the actor itself — its model, prompts, tools, configuration, or keys? Delegated Authority bounds what an agent may do; Control Authority names the party, or quorum, that may modify what the agent is.
+
+A procurement agent illustrates four parties frequently conflated: the Owner (the enterprise carrying legal responsibility), the Principal (the purchasing department the agent represents), the Operator (the platform team running the runtime), and the Control Authority (the release-engineering group that alone may ship a new model or prompt). All four can differ, and a receiver may require attestation of any subset.
+
+UNKNOWN is a valid, first-class resolution. A receiver that cannot resolve Control Authority neither fails the handshake nor fabricates a pass: it maps the answer to the Approval Required outcome (§7.3), routing the consequential action to a human or policy gate. This matters operationally because a change of controller is precisely the event that invalidates every other cached assumption — an agent whose model can be silently replaced by an unverified party is a different actor from the one that was admitted, whatever its passport still claims.
+
+3.3 The Agent Passport, by reference
+
+The Passport is defined by APS and is not redefined here. For this paper’s purposes, three of its properties are architecturally load-bearing:
+
+It is an operational contract, not an identity card: identity, operator, authority, declared scope (reads and writes), and declared refusals.
+
+A signed Passport claim attests observation, not virtue — this verifier observed this declaration at this time — with honest expiry and renewal semantics.
+
+Undeclared material is recorded as UNKNOWN, never inferred. A 50%-coverage Passport is honest and useful; a padded one is neither.
+
+4. Discovery and Enrollment
+
+4.1 Requirements should be discoverable
+
+Receiving organizations publish their trust requirements — interaction types, required primitives, accepted formats, freshness and escalation rules — at discoverable, versioned locations, comparable in spirit to robots.txt or an OpenAPI description, but for the trust conditions of consequential interaction. Initiating agents read requirements before contact and arrive prepared.
+
+The registry pattern: receiving systems publish requirements; initiating agents discover and prepare before contact.
+
+4.2 The enrollment flow
+
+Discovery has evolved from a document-fetch into an operator-guided flow that ends with a living contract. The recommended enrollment flow, as implemented and operated today, is:
+
+Operator supplies Agent URL  → Discover Agent Card        (well-known APS passport, then agent card, read-only)  → Discover Fleet             (topology and overlap edges, where declared)  → Construct Passport         (declaration assembled from discovered material)  → Coverage Scan              (every primitive scored: declared / not disclosed / unknown)  → Operator completes missing declarations   (human review; nothing fabricated)  → Passport Established       (enrollment and activation; credential issued)  → Operational Assurance Enabled             (monitoring begins against the baseline)
+
+Three design rules keep this flow honest. Discovery is read-only and bounded: it operates under its own explicit, scoped, expiring authorization, collects structural evidence before semantic content, and produces its own evidence record. Coverage never manufactures certainty: each primitive is scored as declared, not disclosed, or unknown, and the gaps are presented to the operator as exactly that — gaps, with the failure classes they leave uncheckable. The operator completes the contract: missing declarations are supplied by a human who is accountable for them, not synthesized by the system.
+
+On establishment, the declaration is snapshotted as the baseline — the reference against which all future observation is compared. From this moment, the Passport stops being a document and becomes a contract under supervision.
+
+The enrollment flow: operator supplies an Agent URL; the system discovers, scans, and scores every primitive; the operator completes missing declarations; the Passport is established and operational assurance begins.
+
+5. The Runtime Trust Handshake
+
+The handshake remains the mechanism for the moment of first contact, and its shape is unchanged from prior editions: discover the requirements, prepare the request-specific package, present it, verify and challenge, certify, then hand off to the action protocol and preserve the evidence.
+
+The Runtime Trust handshake: discovery, package assembly, presentation, challenge, bounded certification, handoff, preservation.
+
+What this edition changes is the handshake’s standing: it is the entry point into operational trust, not the whole of it. A successful handshake yields a bounded, scoped, expiring certificate — never a durable status. The certificate’s expiry is not an inconvenience; it is the architecture telling the truth about how long a verification can be presumed to hold.
+
+6. Operational Trust Monitoring
+
+6.1 Definition
+
+Operational Trust Monitoring — continuous verification that autonomous agents and multi-agent systems continue to operate within their declared operational contract.
+
+Monitoring is the activity. Operational Trust is the outcome.
+
+The handshake asks may this begin? Monitoring asks, on a cadence the operator sets, should this still be believed? Between the two, trust becomes something a system maintains rather than something it once obtained.
+
+6.2 What monitoring compares
+
+Monitoring compares two objects that the enrollment flow deliberately created: the baseline (the declared operational contract, snapshotted at establishment and only ever advanced by explicit operator approval) and the observed state (what discovery, re-observation, and verified runs actually show). Observed behavior comes from evidence — the agent’s own trace, verified run records, re-read declarations — never from a model’s opinion about the agent.
+
+The Operational Trust Monitoring loop: baseline and observed states are continuously compared; drift raises a deduplicated finding for human review; approval advances the baseline; investigation holds it — no automatic approval path.
+
+6.3 Re-verification triggers
+
+Re-verification is event-driven as well as scheduled. Events that invalidate cached trust include: credential revocation, authority change, mission drift, new delegation depth, model or prompt update (a Control Authority event), stale state, conflicting interpretation, behavior inconsistency, and certificate expiry. Fleet-side triggers are structural: an agent added or removed, boundary or rule declarations changed, new overlap edges introduced.
+
+What should persist after the handshake: enough to explain, verify, and update trust across the actions that follow — not an unrestricted transcript.
+
+7. Operational Drift
+
+7.1 Drift is evidence, not verdict
+
+Operational drift is any divergence between an agent’s declared operational contract and its observed state or behavior. The single most important rule of this section: drift is not automatically malicious. Agents legitimately evolve — prompts are improved, scopes widen with new duties, operators reorganize. The failure mode to avoid is not change; it is unaccounted-for change.
+
+Operational drift therefore creates evidence for human review. The architecture’s job is to detect divergence deterministically, classify it, preserve it, and present it; the human’s job is judgment:
+
+Approve an expected change — an explicit operator action that advances the baseline to the observed state and records the approval as a signed lifecycle event. There is no automatic approval path.
+
+Investigate an unexpected one — the baseline stays put, the finding stays open, and the evidence trail (what diverged, when observed, against which baseline) is the starting material.
+
+7.2 Deterministic drift classes
+
+Divergence classifies into deterministic classes: identity or operator change; scope or refusal change; behavior observed outside declared scope; and stale observation (the declaration has not been re-observed within its freshness window — absence of evidence, surfaced as such). Findings are deduplicated: a persisting divergence is one finding with a history, not a new alarm on every pass.
+
+7.3 Approval Required, carried forward
+
+Approval Required — introduced in 1.2 — is the protocol outcome that makes this honesty scale to the handshake itself. When a required claim resolves to UNKNOWN (Control Authority is the motivating case), the receiver neither proceeds on a fabricated verification nor issues a denial the evidence does not support: it routes the action to a human approver or policy gate. Encoding this as a distinct outcome, rather than overloading rejection, preserves the difference between the claim failed and the claim could not be evaluated — the same distinction drift review preserves between the agent broke its contract and the contract needs a human’s eyes.
+
+7.4 Drift has fleet-level consequences
+
+Because the enrollment flow records topology, a drift finding is never just an agent-level event. The agents sharing declared overlap edges with a drifted agent form its exposure neighborhood, and a drift incident can queue a Fleet Integrity re-check for exactly that neighborhood. One honesty rule governs the exposure computation: a missing topology means no topology on file — it is never presented as “contained.”
+
+8. Two Axes, One Honest Certificate
+
+8.1 The two-phase Fleet Trust Certificate
+
+The two axes meet in the Fleet Trust Certificate: a wrapper with two distinct result areas, one per axis. Phase 1 — Runtime Trust — records the per-agent results: may each agent act? Phase 2 — Fleet Integrity — records the structural check across the admitted fleet: do the agents’ declared views still glue into one consistent picture? Each phase is independently produced, independently signed or hashed, and independently expiring; the wrapper is valid only while both children are. The results are never merged into a single score.
+
+The two-phase Fleet Trust Certificate: Phase 1 (Runtime Trust, per-agent) and Phase 2 (Fleet Integrity, fleet-wide) are independently produced, independently signed, and independently expiring; results are never merged into a single score.
+
+8.2 Evaluation states make partial adoption honest
+
+Each phase carries an explicit evaluation state: evaluated or not_evaluated. A phase that was never run carries no outcome, no hash, and no expiry — it is never synthesized, defaulted, or presented as a pass. A deployment that enters at the fleet level without per-agent handshakes receives a certificate truthfully stating phase 1 not_evaluated, phase 2 evaluated; a handshake-only deployment states the reverse. A wrapper with a not_evaluated phase is scoped to its evaluated phase; the receiver decides whether that scope suffices. Re-verification triggers differ per phase — phase 1 re-runs on the drift events of §6.3, phase 2 on fleet topology changes — and either phase expiring alone invalidates the wrapper, not the other phase’s result.
+
+8.3 Multi-agent contention stays with the receiver
+
+Nothing in the two-axis model changes the oldest boundary in this architecture: when many verified agents contend for the same resource, the receiver chooses the ordering policy. Runtime Trust supplies verifiable facts, policy hooks, bounded certificates, and evidence; the counterparty selects its own admission, priority, fairness, and economic rules.
+
+Multi-agent contention: runtime trust does not select the winner; the receiver’s own policy does.
+
+9. Evidence, History, and Preservation
+
+What persists after verification is as architecturally significant as the verification itself. The rules, refined by implementation:
+
+Evidence is append-only. Verification runs append to a hash-chained record; deletion or edit of any historical entry breaks the chain visibly. A broken chain is reported with the exact location of the break — never silently repaired, and never silently exported around.
+
+Per-agent history is a signed lifecycle chain. Registration, vouches, renewals, drift incidents, and revision approvals accumulate as hash-linked, signed events, so an agent carries a verifiable record across its lifetime. Recording is non-blocking: a recording failure never suppresses the finding it was recording.
+
+History is factual; reputation is derived. The chain states what happened. What it means — trust level, priority, admission — is the receiver’s derivation, made under the receiver’s policy.
+
+What should not persist: an unrestricted behavioral transcript. Persist enough to explain, verify, and update trust — no more.
+
+10. Coherence as Reference Implementation
+
+The architecture above is vendor-neutral; this section grounds it in the one implementation the authors operate. Coherence implements the architecture as an operational trust platform providing, in its own vocabulary:
+
+Operational Trust Monitoring — scheduled and event-driven passes comparing every enrolled agent’s declared contract against observation, with deterministic drift classes and deduplicated findings (§§6–7).
+
+Agent Assurance — the per-agent Runtime Trust axis in operation: APS-conformant passports, signed claims with honest expiry, tiered enrollment (including an unauthenticated sandbox tier whose limits ride inside the signed claim), and human-gated revision approval.
+
+Fleet Coherence — the Fleet Integrity axis in operation: a deterministic reconciliation kernel that decides whether a fleet’s shared state glues into one consistent view, classifies failures into a six-class structural taxonomy, extracts the minimal conflicting agent set, and renders a repairable-versus-irreconcilable verdict.
+
+Operational Evidence — the append-only audit chain, signed per-agent history, and compliance exports of §9, with the reported-never-repaired rule enforced in code.
+
+Certificates — sealed, independently re-verifiable certificates binding each verdict to the exact evidence snapshot, rolled up into the two-phase Fleet Trust Certificate of §8.
+
+A reference agentic runtime trust engine: discovery, packaging, verification, decision, handoff — fed by evidence providers and policy sources.
+
+An operational example makes the loop concrete. An invoicing agent enrolled with declared scope invoices.write, ledger.read and a declared refusal of payments.execute is observed, on a scheduled pass, writing to a ledger field outside its declaration. Monitoring raises a scope-drift finding — evidence, not verdict. The operator reviews: if the change accompanies a known duty expansion, approval advances the baseline and the approval joins the agent’s signed history; if not, the finding stands, the topology identifies the two downstream agents sharing the ledger overlap, and a Fleet Integrity re-check of that neighborhood confirms whether the fleet’s shared state still reconciles. Two certificates result — the agent’s updated trust status and the fleet’s integrity result — separate by design.
+
+Coherence is one implementation. The architecture requires none of its internals — only the contracts: honest UNKNOWN, baseline-versus-observed comparison, human-gated approval, append-only evidence, two unblended axes.
+
+11. Relationship to Existing Protocols
+
+Runtime Trust is a peer architecture with explicit handoffs, not a replacement for the protocols agents already use. A2A carries agent-to-agent communication; MCP carries tool and data access; AP2 and x402 carry payments; identity and IAM systems carry access evidence; domain APIs carry the consequential actions themselves. Runtime Trust hands verified context to these systems at the moment of action and consumes their outputs as evidence between actions. The boundary discipline of §2.2 applies throughout: security and observability products are evidence providers, not competitors, and this architecture does not rebuild their telemetry.
+
+Peer architecture with explicit handoffs.
+
+12. Open Questions
+
+Carried and updated for the working group:
+
+Universal versus domain-specific primitives — where does the common core end?
+
+History without a behavioral dossier — selective disclosure and zero-knowledge predicates over the signed lifecycle chain.
+
+Persistence — what exactly survives the first certificate across the next fifty actions, now that monitoring supplies a continuously refreshed answer?
+
+Multi-agent ordering under adversarial conditions — receiver-defined fairness when contention is hostile.
+
+Agent lineage — inheritance of authority, mission, limitations, and Control Authority by spawned agents.
+
+Registry governance — who publishes requirements, how they version, and how emergency revocation propagates.
+
+Drift-review economics — as fleets scale, which classes of drift can be safely batched for review, and which must always interrupt?
+
+Vocabulary
+
+Term
+
+Definition
+
+Runtime Trust
+
+The architecture (this paper); also the vertical, per-agent verification axis.
+
+Fleet Integrity
+
+The horizontal, fleet-wide verification axis: whether global inconsistencies have emerged across individually trusted agents.
+
+Operational Trust Monitoring
+
+Continuous verification that agents and multi-agent systems continue to operate within their declared operational contract. Monitoring is the activity; Operational Trust is the outcome.
+
+Agent Passport
+
+The declared operational contract of an agent, defined normatively by APS.
+
+Baseline / Observed
+
+The approved declaration snapshot versus the currently evidenced state; only explicit operator approval advances the baseline.
+
+Operational Drift
+
+Divergence between declared contract and observed state or behavior; deterministic, deduplicated, and reviewed by humans — not automatically malicious.
+
+Control Authority
+
+The party or quorum authorized to change the acting system itself; UNKNOWN is a valid resolution.
+
+Approval Required
+
+The protocol outcome routing an unresolvable required claim to a human or policy gate.
+
+Fleet Trust Certificate
+
+Two-phase wrapper with independently signed, independently expiring results for Runtime Trust and Fleet Integrity, each carrying an explicit evaluation state; never merged into one score.
+
+Coherence
+
+The operational reference implementation of this architecture, by 5thnode.
+
+Runtime Trust Architecture · Research Edition 2.0 · 5thnode Ltd · August 2026. The architecture is vendor-neutral; Coherence is referenced as its primary implementation example. APS defines the Agent Passport; AIS defines runtime interoperability.
