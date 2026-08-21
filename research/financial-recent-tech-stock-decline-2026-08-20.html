@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Report — Recent US Tech-Stock Decline (through 2026-08-20)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --border: #d0d4d9;
+    --accent: #1f4e79;
+    --bg: #fff;
+    --quote: #f4f6f8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+                 "Noto Serif", "Liberation Serif", Georgia, serif;
+    font-size: 11.5pt;
+    line-height: 1.45;
+  }
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 28px 64px;
+  }
+  header.cover {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+  }
+  .kicker {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 22pt;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+  .meta {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    margin-top: 12px;
+  }
+  .meta th {
+    text-align: left;
+    color: var(--muted);
+    font-weight: 600;
+    width: 110px;
+    padding: 3px 10px 3px 0;
+    vertical-align: top;
+  }
+  .meta td { padding: 3px 0; }
+  h2 {
+    font-size: 15pt;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+    margin: 28px 0 12px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 12.5pt;
+    margin: 20px 0 8px;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 0.85em; }
+  a { color: #0b57d0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  blockquote {
+    margin: 12px 0 16px;
+    padding: 8px 14px;
+    background: var(--quote);
+    border-left: 4px solid var(--accent);
+    color: #222;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0 18px;
+    font-size: 8.5pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    page-break-inside: auto;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 4px 6px;
+    text-align: left;
+    vertical-align: top;
+  }
+  thead th {
+    background: #e8eef4;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  tbody td { white-space: nowrap; }
+  /* allow wrapping in last columns if needed */
+  td, th { white-space: normal; }
+  ul, ol { margin: 0 0 1em; padding-left: 1.3em; }
+  li { margin: 0.25em 0; }
+  strong { font-weight: 700; }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+  .footer-note {
+    margin-top: 36px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 9pt;
+    color: var(--muted);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media print {
+    body { font-size: 10.5pt; }
+    .wrap { max-width: none; padding: 0; }
+    a { color: var(--text); text-decoration: none; }
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 7.5pt;
+      color: #666;
+      word-break: break-all;
+    }
+    h2, h3 { page-break-after: avoid; }
+    table, blockquote { page-break-inside: avoid; }
+  }
+  @page {
+    size: Letter;
+    margin: 18mm 16mm 20mm 16mm;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="cover">
+  <p class="kicker">Deep research · financial event analysis</p>
+  <h1>Recent US Tech-Stock Decline<br>(through 2026-08-20)</h1>
+  <table class="meta"><tr><th>topic</th><td>Drivers of the recent US technology-stock decline (late July–20 August 2026)</td></tr><tr><th>type</th><td>financial</td></tr><tr><th>goals</th><td>Document how far and when US tech (Nasdaq Composite, Nasdaq-100, SOX/SOXX, megacap and semiconductor names) fell; rank the competing causes (long-end yields and duration, AI-capex/debt crowding, Iran/Hormuz/oil, Fed minutes, company-specific news, positioning); separate a multi-week drawdown from the 18–19 August tape.</td></tr><tr><th>date</th><td>2026-08-20</td></tr><tr><th>methodology</th><td>Parallel web research via sub-agents. Citations inline per references/citations.md. Confidence levels: High / Medium / Low. Custom event-analysis axes, not startup-funding axes.</td></tr></table>
+</header>
+<h1>Research Report — Recent US Tech-Stock Decline (through 2026-08-20)</h1>
+<blockquote>
+<p><strong>Type:</strong> financial (market-event analysis) | <strong>Date:</strong> 2026-08-20 | <strong>Constraints:</strong> US-listed technology and semiconductor equities; horizon late July 2026 through 20 August 2026, with 18–19 August as the acute session</p>
+<p><strong>Assumptions:</strong> type=financial with custom event-analysis sections. &ldquo;Recent&rdquo; is treated as the drawdown into and including the week of 17 August 2026, not a multi-year bear market, unless price data show an earlier peak. Prior workspace report <code>research/financial-us-treasury-buyback-market-reaction-2026-08-20.md</code> covers the 19 August buyback tape and is not duplicated; this report asks why <em>tech</em> fell. Not investment advice.</p>
+<p><strong>Goals:</strong><br>
+- Measure the decline (indexes, SOX/SOXX, notable names)<br>
+- Date the peak-to-trough window<br>
+- Rank catalysts with sourced desk commentary<br>
+- Flag what is duration/macro versus idiosyncratic (earnings, OpenAI, capex)</p>
+<p><strong>Axis files (full citations):</strong> company news <code>research/financial-tech-company-specific-news-2026-08-20.md</code>; yields/duration/AI debt <code>research/financial-yields-duration-ai-debt-crowding-2026-08-20.md</code>; geopolitics/oil/Fed <code>research/financial-geopolitics-oil-fed-tech-decline-2026-08-20.md</code>; positioning/flows <code>research/financial-positioning-flows-technicals-2026-08-20.md</code>; wrap ranking <code>research/financial-ranking-competing-explanations-wraps-2026-08-20.md</code>. Prior buyback tape: <code>research/financial-us-treasury-buyback-market-reaction-2026-08-20.md</code>.</p>
+</blockquote>
+<hr>
+<h2>Price Facts: How Far Tech Fell</h2>
+<blockquote>
+<p><strong>Axis status (2026-08-20 ~12:10 p.m. ET):</strong> US cash session still open. August 18–19 figures below are official closes. August 20 figures are last prints, not a cash close. Primary index prints: Nasdaq COMP/NDX overview pages; FRED NASDAQCOM; Yahoo Finance daily bars; Reuters session wraps.</p>
+</blockquote>
+<p>The late-July-to-20-August tape in US technology is not a straight-line decline. According to Yahoo Finance daily bars for the Nasdaq Composite (<code>^IXIC</code>), the index closed at 24,442.94 on 29 July 2026 — the lowest close in the late-July-to-August window — then rallied to a local closing peak of 26,803.03 on 13 August (intraday high 26,875.52 that day) before fading. <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC">Yahoo Finance <code>^IXIC</code> chart API</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. The same 13 August close and the subsequent session closes through 19 August are independently printed by Nasdaq’s COMP overview, FRED, and Investing.com history. <a href="https://indexes.nasdaqomx.com/index/Overview/COMP">Nasdaq Indexes COMP</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://fred.stlouisfed.org/series/NASDAQCOM">FRED NASDAQCOM</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.investing.com/indices/nasdaq-composite-historical-data">Investing.com Nasdaq Composite historical</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>Fact, not analysis: from that 13 August local closing peak, the Composite did not make a new closing low on 19 August. It closed 26,289.71 on Tuesday 18 August (−1.33%, −355.20 points), then 26,331.09 on Wednesday 19 August (+0.16%, +41.38 points). Those two closes match across Nasdaq, FRED, Yahoo, Investing.com, and the Reuters wrap carried by <em>The Business Times</em> and MarketScreener. <a href="https://indexes.nasdaqomx.com/index/Overview/COMP">Nasdaq Indexes COMP</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://fred.stlouisfed.org/series/NASDAQCOM">FRED NASDAQCOM</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.marketscreener.com/news/tech-selloff-weighs-down-wall-street-as-bond-yields-climb-ce7859dddd8cff23">Reuters via MarketScreener</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Peak-to-trough on <em>closes</em> through Wednesday is therefore 13 August → 18 August, or −1.92% (26,803.03 to 26,289.71). Measured through Wednesday’s bounce, 13–19 August is −1.76%. Reuters stated that Tuesday’s 1.33% Composite drop (and the S&amp;P 500’s 0.69% drop to 7,691.76) was the largest daily percentage decline for both indexes since 29 July. <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>Thursday 20 August (research date) was still an open US cash session at about 12:09–12:10 p.m. Eastern. Nasdaq’s COMP page showed a last of 26,104.27, −226.82 points or −0.86% on the day, with session high 26,263.47 and low 26,059.01 and previous close 26,331.09. <a href="https://indexes.nasdaqomx.com/index/Overview/COMP">Nasdaq Indexes COMP</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Yahoo’s contemporaneous last was 26,104.64; Investing.com showed 26,104.64 at 12:09:42. Those last prints sit below Tuesday’s close, so a <em>last-print</em> trough on 20 August would be deeper than the 18 August closing trough: about −2.61% from the 13 August close and about −3.99% from the published 52-week/intraday high of 27,190.21. <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC">Yahoo Finance <code>^IXIC</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.investing.com/indices/nasdaq-composite-historical-data">Investing.com Nasdaq Composite</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. The 27,190.21 52-week high is printed by Nasdaq-linked quote pages and Investing.com as the range high; the calendar date of that print is not independently confirmed here from Nasdaq’s own history table (Wikipedia attributes an <em>intraday</em> high of 27,190.21 to 1 June 2026 and a <em>closing</em> high of 27,093.90 to 2 June 2026, but Wikipedia is not used as a source). <strong>Gap:</strong> official Nasdaq dated history for the June peak was not retrieved.</p>
+<p>The last five completed US cash sessions through Wednesday 19 August, using Yahoo/Investing.com/FRED Composite closes, were: 13 August 26,803.03 (+0.81%); 14 August 26,729.16 (−0.28%); 17 August 26,644.91 (−0.32%); 18 August 26,289.71 (−1.33%); 19 August 26,331.09 (+0.16%). From the 12 August close of 26,588.49, that five-session stretch is −0.97%. Including Thursday’s ~12:10 p.m. last of ~26,104, the move from 13 August is about −2.6% and from 12 August about −1.8%. <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC">Yahoo Finance <code>^IXIC</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://fred.stlouisfed.org/series/NASDAQCOM">FRED NASDAQCOM</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<p>The Nasdaq-100 (<code>NDX</code>) was weaker than the Composite on both Tuesday and Wednesday. Yahoo daily bars put the NDX close at 30,084.50 on 13 August (intraday high 30,168.05), 29,995.38 on 17 August, 29,490.96 on 18 August (−1.68%), and 29,426.02 on 19 August (−0.22%). <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX">Yahoo Finance <code>^NDX</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Nasdaq’s NDX overview independently lists previous close 29,426.02 as of 20 August, matching the 19 August close, and a last of 29,239.97 (−0.63%) at the same midday window, with day high 29,378.81 and day low 29,183.55. <a href="https://indexes.nasdaqomx.com/Index/Overview/ndx">Nasdaq Indexes NDX</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. MarketScreener’s Reuters sidebar also printed NDX 29,490.96, −1.68%, for 18 August. <a href="https://www.marketscreener.com/news/nasdaq-slides-yields-elevated-as-mideast-conflict-fears-grow-ce7859ddda8cf420">Reuters via MarketScreener</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Peak-to-trough on NDX <em>closes</em> through Wednesday is therefore 13 August → 19 August, −2.19% (the NDX did not bounce with the Composite on Wednesday). From 13 August to the ~12:10 p.m. 20 August last of ~29,240, the drawdown is about −2.81%. Barchart’s 19 August wrap stated that the Nasdaq-100 closed −0.22% and fell to a 1.5-week low, which matches the Yahoo/Nasdaq close math. <a href="https://www.barchart.com/story/news/3937543/stocks-finish-mixed-as-bond-yields-fall-and-chipmakers-slide">Barchart</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Invesco QQQ, the liquid NDX tracker, closed 732.07 on 13 August, 717.51 on 18 August, 716.08 on 19 August, with a 20 August last near 711.43. <a href="https://query1.finance.yahoo.com/v8/finance/chart/QQQ">Yahoo Finance QQQ</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<p>S&amp;P 500 Information Technology is available both as the GICS sector index and as the State Street XLK ETF. Reuters reported that among the S&amp;P 500’s 11 sectors on 18 August, information technology was the largest index-point drag and the largest percentage loser, falling 1.9%. <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Central Charts’ S&amp;P Indices end-of-day table for ticker SP500-45 / S&amp;P 500 Information Technology prints the matching session as 6,895.57 (−1.94%) and the next session as 6,845.42 (−0.73%), with the five-session path 7,072.58 → 7,042.54 → 7,031.61 → 6,895.57 → 6,845.42 (−3.21% over five days) and a year-to-date high of 7,274.99. Mapping those five bars onto the Yahoo XLK calendar (13–19 August) is consistent with XLK’s own sequence and with independent 19 August sector commentary that Information Technology was the weakest S&amp;P 500 sector at −0.73%. <a href="https://www.centralcharts.com/en/788739-s-p-500-information-technology/quotes">Central Charts SP500-45</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>; <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262119132-us-stock-close-bond-yields-fell-nasdaq-dow-memory-sandisk-moderna-tradingkey">TradingKey 19 August close</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. XLK itself closed 190.77 on 13 August, 190.32 on 17 August, 185.62 on 18 August (−2.47%), and 183.64 on 19 August (−1.07%), or −3.74% from the 13 August close; Barchart’s performance table independently lists last 183.64, a five-day decline of −2.76% since 12 August, and a 52-week high of 198.73 on 3 June 2026 (some Barchart rows also show 1 June). <a href="https://query1.finance.yahoo.com/v8/finance/chart/XLK">Yahoo Finance XLK</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.techi.com/quote/XLK/historical/">TECHi XLK history</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.barchart.com/etfs-funds/quotes/xlk/performance">Barchart XLK performance</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. XLK’s −2.47% on 18 August is larger than the Reuters GICS IT print of −1.9%; that is a methodology difference (Select Sector ETF vs GICS sector index), not a close conflict on the same instrument. No S&amp;P Dow Jones official factsheet PDF with these August levels was retrieved. <strong>Gap:</strong> S&amp;P DJI primary index file for S5INFT.</p>
+<p>The Philadelphia SE Semiconductor Index (<code>SOX</code>) was the sharpest of the major tech gauges on 18 August and, unlike the Composite, kept falling on 19 August. Yahoo daily bars close SOX at 12,621.00 on 17 August (the local closing peak of the August rebound; 13 August was 12,456.00), 11,992.46 on 18 August (−4.98%), and 11,738.23 on 19 August (−2.12%). <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX">Yahoo Finance <code>^SOX</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Reuters described a ~5% SOX drop on Tuesday; TradingKey printed −4.98% and “all 30 constituents declining.” <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262116031-us-stock-close-down-nasdaq-sox-semiconductor-memory-sandisk-micron-tradingkey">TradingKey 18 August close</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. TradingKey’s 19 August wrap then printed SOX −2.12% to 11,738.23, with 26 of 30 constituents down, matching Yahoo. <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262119132-us-stock-close-bond-yields-fell-nasdaq-dow-memory-sandisk-moderna-tradingkey">TradingKey 19 August close</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Peak-to-trough on SOX <em>closes</em> in this rebound is 17 August → 19 August, −6.99%. From 13 August to 19 August the drop is −5.76%. The 20 August midday last on Yahoo was 11,753.28, a small bounce from Wednesday’s close. The same Yahoo series shows a much deeper SOX close of 10,447.49 on 29 July, so 18–19 August is an acute pullback from a rebound, not the cycle low of late July. iShares SOXX closed 559.12 on 17 August, 531.39 on 18 August (−4.96%), and 519.67 on 19 August (−2.21%); VanEck SMH closed 594.07, 569.77 (−4.09%), and 560.92 (−1.55%) on those three days. <a href="https://query1.finance.yahoo.com/v8/finance/chart/SOXX">Yahoo Finance SOXX</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://query1.finance.yahoo.com/v8/finance/chart/SMH">Yahoo Finance SMH</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. EBC, citing BlackRock NAV, reported SOXX NAV −5.02% to $531.13 on 18 August versus an 85.92% year-to-date NAV gain through 17 August; the NAV print is 26 cents below Yahoo’s market close and is not a conflict on the day’s percentage. <a href="https://www.ebc.com/forex/soxx-fell-5-percent-despite-rising-ai-spending">EBC Financial Group</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Barchart said SOXX closed down more than 2% on 19 August. <a href="https://www.barchart.com/story/news/3937543/stocks-finish-mixed-as-bond-yields-fall-and-chipmakers-slide">Barchart</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>Intraday shape across the three sessions: on 18 August the Composite opened 26,346.88, high 26,422.50, low 26,266.68, close 26,289.71 — a gap lower from 17 August’s 26,644.91 close and a close near the session low. <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC">Yahoo Finance <code>^IXIC</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. On 19 August it opened 26,393.89, traded 26,185.13–26,456.78, and closed 26,331.09: an early dip below Tuesday’s close, a midday reclaim, then a fade. <a href="https://indexes.nasdaqomx.com/index/Overview/COMP">Nasdaq Indexes COMP</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. On 20 August, as of ~12:10 p.m. ET, Nasdaq showed the Composite already through Tuesday’s close, last ~26,104, session low 26,059.01. NDX’s 20 August low of 29,183.55 was also below Wednesday’s close. These 20 August figures will change at 4:00 p.m. ET.</p>
+<p>Notable names, US cash closes from Yahoo daily bars, with 18 August percentages corroborated by Reuters and/or TradingKey/EBC where listed. Prices are USD.</p>
+<p>On 18 August, memory and storage led. Micron closed 940.76 (−7.02%); Sandisk 1,625.78 (−9.01%); Western Digital 496.16 (−7.43%); Seagate 903.68 (−9.16%). Reuters cited Micron about −7% after a nearly 18% five-session rise, Sandisk −9%, and Western Digital −7.4%. <a href="https://query1.finance.yahoo.com/v8/finance/chart/MU">Yahoo Finance MU/SNDK/WDC/STX</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Other semiconductor and equipment names on 18 August: Marvell 216.00 (−7.82%); Arm 253.32 (−6.67%); Intel 96.69 (−6.57%); Lam Research 327.92 (−4.63%); TSMC ADR 413.41 (−4.07%); ASML 1,802.98 (−4.26%); AMD 484.39 (−4.27%); Broadcom 380.00 (−3.17%); Super Micro 37.41 (−2.27%); Nvidia 219.74 (−2.34%). EBC’s SOXX attribution table matches those Nvidia, Micron, AMD, Broadcom, Intel, and Marvell percentages to one decimal. <a href="https://www.ebc.com/forex/soxx-fell-5-percent-despite-rising-ai-spending">EBC Financial Group</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262116031-us-stock-close-down-nasdaq-sox-semiconductor-memory-sandisk-micron-tradingkey">TradingKey 18 August close</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Megacaps were mixed, not uniformly down: Apple 310.03 (+1.45%), Microsoft 481.63 (+0.27%), Alphabet Class A 344.20 (+0.06%), Amazon 259.45 (−0.71%), Tesla 336.87 (−0.72%), Palantir 171.54 (−0.59%), Meta 543.67 (−4.45% Yahoo; TradingKey −4.42%). <a href="https://query1.finance.yahoo.com/v8/finance/chart/AAPL">Yahoo Finance</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262116031-us-stock-close-down-nasdaq-sox-semiconductor-memory-sandisk-micron-tradingkey">TradingKey 18 August close</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>On 19 August, semiconductors extended the loss even as the Composite ticked up. Yahoo closes: Seagate 832.56 (−7.87%); Western Digital 462.09 (−6.87%); Lam 307.17 (−6.33%); Broadcom 362.48 (−4.61%); Intel 92.80 (−4.02%); AMD 466.42 (−3.71%); Sandisk 1,568.87 (−3.50%); ASML 1,751.73 (−2.84%); Super Micro 36.58 (−2.22%); Arm 249.34 (−1.57%); Nvidia 217.56 (−0.99%); Micron 937.11 (−0.39%); TSMC ADR 412.09 (−0.32%). Barchart independently described Seagate as leading S&amp;P 500 losers, down more than 7%, with Western Digital and Lam down more than 6%, Broadcom more than 4%, and AMD/Intel/Sandisk/ASML down more than 2–3%. <a href="https://www.barchart.com/story/news/3937543/stocks-finish-mixed-as-bond-yields-fall-and-chipmakers-slide">Barchart</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262119132-us-stock-close-bond-yields-fell-nasdaq-dow-memory-sandisk-moderna-tradingkey">TradingKey 19 August close</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Marvell was the clear exception, closing 237.27 (+9.85%) after a Google custom-chip partnership and warrant; Barchart said Marvell closed up more than 9%. Software and some megacaps bounced: Apple 316.83 (+2.19%), Amazon 265.84 (+2.46%), Tesla 351.12 (+4.23%), Palantir 175.19 (+2.13%), Microsoft 484.31 (+0.56%), Meta 546.03 (+0.43%), Alphabet Class A 344.72 (+0.15%). <a href="https://query1.finance.yahoo.com/v8/finance/chart/MRVL">Yahoo Finance</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<p>From the 13 August local peak through the 19 August close, the largest declines among the requested names on Yahoo closes were Broadcom −13.24% (417.82 to 362.48), Intel −11.25% (104.56 to 92.80), Arm −10.52% (278.65 to 249.34), Seagate −9.64% (921.37 to 832.56), Lam −8.85% (337.01 to 307.17), Meta −8.23% (594.97 to 546.03), and Super Micro −6.59% (39.16 to 36.58). Nvidia was a milder −3.44% (225.30 to 217.56). Apple (+3.79%) and Tesla (+3.28%) rose over that same window. Memory’s <em>acute</em> drawdown is larger if measured from 17 August spike highs rather than 13 August: Seagate 994.79 → 832.56 (−16.31%), Western Digital 536.01 → 462.09 (−13.79%), Sandisk 1,786.85 → 1,568.87 (−12.20%), Micron 1,011.75 → 937.11 (−7.38%). Thursday midday lasts were mixed versus Wednesday: Micron, Sandisk, Seagate, Western Digital, Marvell and Broadcom were green; Nvidia, AMD, Intel, Arm, Super Micro, Microsoft, Amazon, Meta, Alphabet, Tesla and Palantir were modestly red. Those 20 August prints are not closes.</p>
+<p>Contrast indexes did not fall in line with semiconductors. Reuters reported S&amp;P 500 energy as the largest sector gainer on 18 August, +1.8%, with healthcare +1.6% and staples +1.1%. <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. State Street XLE closed 62.58 on 17 August, 63.68 on 18 August (+1.76%), 63.58 on 19 August, and last 64.43 on 20 August — a new high in the sample. VanEck GDX (gold miners) closed 91.89 on 17 August, 88.95 on 18 August, then 97.33 on 19 August (+9.42% that day) and last 99.73 on 20 August. Invesco S&amp;P 500 Equal Weight (RSP) closed 222.73 on 13 August and 222.07 on 19 August (−0.30%), versus XLK −3.74% and NDX −2.19% over the same closes; RSP last 221.63 midday 20 August. Russell 2000 (<code>^RUT</code>) closed 3,052.85 on 13 August, peaked 3,068.42 on 14 August, then 3,017.89 on 18 August and 3,032.94 on 19 August (+0.50% Wednesday); from 13–19 August that is −0.65%, milder than NDX. IWM tracks the same path (305.09 on 14 August, 301.72 on 19 August). <a href="https://query1.finance.yahoo.com/v8/finance/chart/XLE">Yahoo Finance XLE/GDX/RSP/<code>^RUT</code>/IWM</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. ProShares SPXT (S&amp;P 500 ex-Technology) is thin: Yahoo shows 112.69 on 13 August and 112.676 on 19 August, essentially unchanged, with a missing 11 August bar, so it is only a Low-to-Medium-confidence proxy. <strong>Gap:</strong> no official S&amp;P 500 Ex-Information Technology index close series was found.</p>
+<p>S&amp;P 500 cash (<code>^GSPC</code>) closed 7,798.99 on 13 August, 7,691.76 on 18 August, and 7,707.98 on 19 August; 20 August last ~7,678. Reuters’ 7,691.76 / −0.69% / −53.30 points on Tuesday matches Yahoo. The 13–19 August S&amp;P 500 decline of −1.17% is smaller than NDX (−2.19%) and SOX (−5.76% from 13 August; −6.99% from 17 August). <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC">Yahoo Finance <code>^GSPC</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>Compact closes (USD except indexes in points). August 20 is a last print ~12:10 p.m. ET, not a close.</p>
+<table>
+<thead>
+<tr>
+<th>Gauge</th>
+<th style="text-align: right;">13 Aug close</th>
+<th style="text-align: right;">17 Aug</th>
+<th style="text-align: right;">18 Aug</th>
+<th style="text-align: right;">18 Aug %</th>
+<th style="text-align: right;">19 Aug</th>
+<th style="text-align: right;">19 Aug %</th>
+<th style="text-align: right;">20 Aug last</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nasdaq Composite</td>
+<td style="text-align: right;">26,803.03</td>
+<td style="text-align: right;">26,644.91</td>
+<td style="text-align: right;">26,289.71</td>
+<td style="text-align: right;">−1.33%</td>
+<td style="text-align: right;">26,331.09</td>
+<td style="text-align: right;">+0.16%</td>
+<td style="text-align: right;">~26,104</td>
+</tr>
+<tr>
+<td>Nasdaq-100</td>
+<td style="text-align: right;">30,084.50</td>
+<td style="text-align: right;">29,995.38</td>
+<td style="text-align: right;">29,490.96</td>
+<td style="text-align: right;">−1.68%</td>
+<td style="text-align: right;">29,426.02</td>
+<td style="text-align: right;">−0.22%</td>
+<td style="text-align: right;">~29,240</td>
+</tr>
+<tr>
+<td>S&amp;P 500</td>
+<td style="text-align: right;">7,798.99</td>
+<td style="text-align: right;">7,745.06</td>
+<td style="text-align: right;">7,691.76</td>
+<td style="text-align: right;">−0.69%</td>
+<td style="text-align: right;">7,707.98</td>
+<td style="text-align: right;">+0.21%</td>
+<td style="text-align: right;">~7,678</td>
+</tr>
+<tr>
+<td>S&amp;P 500 IT (SP500-45)</td>
+<td style="text-align: right;">7,072.58*</td>
+<td style="text-align: right;">7,031.61*</td>
+<td style="text-align: right;">6,895.57</td>
+<td style="text-align: right;">−1.94%</td>
+<td style="text-align: right;">6,845.42</td>
+<td style="text-align: right;">−0.73%</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>XLK</td>
+<td style="text-align: right;">190.77</td>
+<td style="text-align: right;">190.32</td>
+<td style="text-align: right;">185.62</td>
+<td style="text-align: right;">−2.47%</td>
+<td style="text-align: right;">183.64</td>
+<td style="text-align: right;">−1.07%</td>
+<td style="text-align: right;">~183.43</td>
+</tr>
+<tr>
+<td>SOX</td>
+<td style="text-align: right;">12,456.00</td>
+<td style="text-align: right;">12,621.00</td>
+<td style="text-align: right;">11,992.46</td>
+<td style="text-align: right;">−4.98%</td>
+<td style="text-align: right;">11,738.23</td>
+<td style="text-align: right;">−2.12%</td>
+<td style="text-align: right;">~11,753</td>
+</tr>
+<tr>
+<td>SOXX</td>
+<td style="text-align: right;">550.74</td>
+<td style="text-align: right;">559.12</td>
+<td style="text-align: right;">531.39</td>
+<td style="text-align: right;">−4.96%</td>
+<td style="text-align: right;">519.67</td>
+<td style="text-align: right;">−2.21%</td>
+<td style="text-align: right;">~520.61</td>
+</tr>
+<tr>
+<td>SMH</td>
+<td style="text-align: right;">589.12</td>
+<td style="text-align: right;">594.07</td>
+<td style="text-align: right;">569.77</td>
+<td style="text-align: right;">−4.09%</td>
+<td style="text-align: right;">560.92</td>
+<td style="text-align: right;">−1.55%</td>
+<td style="text-align: right;">~561.14</td>
+</tr>
+<tr>
+<td>RSP (equal weight)</td>
+<td style="text-align: right;">222.73</td>
+<td style="text-align: right;">220.79</td>
+<td style="text-align: right;">219.79</td>
+<td style="text-align: right;">−0.45%</td>
+<td style="text-align: right;">222.07</td>
+<td style="text-align: right;">+1.04%</td>
+<td style="text-align: right;">~221.63</td>
+</tr>
+<tr>
+<td>Russell 2000</td>
+<td style="text-align: right;">3,052.85</td>
+<td style="text-align: right;">3,057.54</td>
+<td style="text-align: right;">3,017.89</td>
+<td style="text-align: right;">−1.30%</td>
+<td style="text-align: right;">3,032.94</td>
+<td style="text-align: right;">+0.50%</td>
+<td style="text-align: right;">~2,998</td>
+</tr>
+<tr>
+<td>XLE</td>
+<td style="text-align: right;">61.06</td>
+<td style="text-align: right;">62.58</td>
+<td style="text-align: right;">63.68</td>
+<td style="text-align: right;">+1.76%</td>
+<td style="text-align: right;">63.58</td>
+<td style="text-align: right;">−0.16%</td>
+<td style="text-align: right;">~64.43</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td style="text-align: right;">88.27</td>
+<td style="text-align: right;">91.89</td>
+<td style="text-align: right;">88.95</td>
+<td style="text-align: right;">−3.20%</td>
+<td style="text-align: right;">97.33</td>
+<td style="text-align: right;">+9.42%</td>
+<td style="text-align: right;">~99.73</td>
+</tr>
+</tbody>
+</table>
+<p>*S&amp;P 500 IT five-day bars from Central Charts mapped to the 13–17 August calendar; 18–19 August are the two sessions Reuters/TradingKey also describe as −1.9% then −0.73%.</p>
+<p><strong>Extra finding (labeled):</strong> Direxion SOXL, a 3x daily semiconductor product, was reported down close to 20% intraday and about 15% on the close on 18 August versus SOXX −4.96%; that is leverage mechanics, not an additional cash-index fact. <a href="https://www.ainvest.com/news/soxl-20-plunge-bond-market-story-chip-crash-2608/">AInvest</a> (accessed 2026-08-20, confidence: Medium) <strong>Low/Established mix</strong>. Another extra: SK Hynix US-listed line was cited −9.20% on 18 August, outside the requested name list but part of the same memory tape. <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262116031-us-stock-close-down-nasdaq-sox-semiconductor-memory-sandisk-micron-tradingkey">TradingKey 18 August close</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>.</p>
+<blockquote>
+<p>Conflicts noted: (1) TradingKey’s 18 August SOX close of 11,922.46 vs Yahoo 11,992.46 — likely a transposition; Yahoo matches the −4.98% move from 12,621 and is used. (2) One Low-tier wrap (ts2.tech) claimed Nasdaq Composite 26,445.73 / +0.59% on 19 August; official Nasdaq/FRED/Yahoo print is 26,331.09 / +0.16% — discarded. (3) NDTV Profit listed Microsoft −0.35% and Meta −3.58% on 18 August; Yahoo and TradingKey show Microsoft +0.27% and Meta about −4.4% — NDTV not used. (4) Investing.com UK/US live tables showed several 20 August Composite lasts between ~26,140 and ~26,214 earlier in the session; by ~12:10 p.m. ET the Primary Nasdaq last had converged near 26,104. (5) XLK −2.47% vs Reuters GICS IT −1.9% on 18 August is a different index, not a dispute about one print.</p>
+<p>Gaps: No S&amp;P Dow Jones primary file for S5INFT; no Nasdaq official dated table for the June 52-week high (level 27,190.21 is printed, date not Primary-confirmed here); no official S&amp;P 500 Ex-Technology index series (SPXT ETF is thin); 20 August US cash close does not yet exist; Super Micro’s Yahoo price level (~$36–39) is reported as printed, with no split documentation retrieved in this pass.</p>
+</blockquote>
+<p>Thursday afternoon wraps, while the 20 August cash session was still open, attributed the <em>index</em> weakness to fading buyback relief, a rebound in long-end yields, firmer oil after President Trump’s “most crushing economic operation” language on Iran, and a sharp drop in Walmart after a U.S. comps miss — not a second semiconductor liquidation. Sharecast printed the Nasdaq Composite about −0.59% near 26,175 in early U.S. hours, with the 10-year near 4.71% and the 30-year near 5.24%; CNBC’s live blog said Treasury Secretary Scott Bessent told the network that buybacks could exceed the announced $4 billion per operation even as yields retraced Wednesday’s drop. <a href="https://www.sharecast.com/news/market-report-us/us-open-stocks-lower-as-crude-jumps-long8209dated-yields-rebound--23323744.html">Sharecast</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>; <a href="https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html">CNBC 20 Aug live blog</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://invezz.com/uk/news/2026/08/20/dow-opens-340-pts-lower-as-treasury-yields-rise-oil-climbs-and-walmart-slides/">Invezz</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. Those 20 August figures remain last prints, not a cash close, at the time of this synthesis (about 16:30 UTC / 12:30 p.m. ET).</p>
+<hr>
+<h2>Ranking Competing Explanations</h2>
+<p>The price pattern any cause must explain is sourced, not assumed. SOX fell 4.98% on 18 August and another 2.12% on 19 August (−6.99% from the 17 August close). Equal-weight S&amp;P (RSP) was about −0.30% from 13–19 August and <em>rose</em> on Wednesday. Energy gained about 1.8% on Tuesday. Gold miners fell with yields on Tuesday and ripped after the long-end buyback on Wednesday. Mag7 was mixed, not uniformly down. <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.barchart.com/story/news/3937543/stocks-finish-mixed-as-bond-yields-fall-and-chipmakers-slide">Barchart 19 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p><strong>1. Duration / long-end yields (initiating cause).</strong> This is the explanation established desks put first most often, and it is the only mechanism that, in one step, maps a long-end bond shock onto growth names while equal-weight barely moved. Reuters opened the 18 August close with semiconductors leading “as Middle East uncertainty pushed bond yields to multiyear peaks,” then stated the valuation channel: rising borrowing costs “lowered how much investors were willing to pay for potential growth in technology profits.” Burns McKinney of NFJ said “every time bond yields rise, that tends to disproportionately hit the technology names”; Tony Welch of SignatureFD said “there’s nothing that can crack a momentum rally quite like interest rates moving higher.” <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. CNN recorded the 30-year at 5.34%, its highest since 2007, and said a yield surge “can also put pressure on the stock market” by altering “analysts’ calculations for the value of stocks.” <a href="https://www.cnn.com/2026/08/18/investing/global-bond-market">CNN Business</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. AP recorded the 10-year edging <em>down</em> on Tuesday to 4.70% from 4.72% even as the 30-year stayed near its 2007 high, which means the equity hit coincided with the long end, not with a parallel backup in the policy-sensitive 10-year. <a href="https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9">AP 18 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Official CMT closes peaked on 17 August (30-year 5.31%, 10-year 4.72%), not on 18 August (5.28% and 4.71%); the ~5.34% print is an on-the-run/intraday quote. <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202608&amp;type=daily_treasury_yield_curve">U.S. Treasury daily par yield curve, August 2026</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Wednesday is the in-sample test: after Treasury said it would at least double long-end liquidity-support buybacks, the 30-year fell more than the 10-year, the S&amp;P 500 and equal-weight bounced, and gold miners ripped — all the duration-sensitive trades <em>other than chips</em> behaved as the discount-rate channel predicts. <a href="https://apnews.com/article/stocks-futures-bonds-oil-inflation-trump-ai-9e355be634e4a21059fc1d1f20a1239e">AP 19 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. What duration does <em>not</em> fully explain is Wednesday’s residual: SOX still fell more than 2% after yields dropped. <strong>Falsifier already partly observed:</strong> chips continuing lower after the 30-year broke.</p>
+<p><strong>2. Profit-taking after the extreme YTD chip/memory run (concentration of the shock).</strong> This is the co-lede that explains why the duration shock landed on SOX rather than on Mag7 or software. Reuters described investors fleeing stocks that had rallied on AI demand: Micron −7% after nearly 18% in five sessions; Roundhill Memory ETF −8.8% after five straight gains. <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. 24/7 Wall St. printed year-to-date gains through 17 August of 255% for Micron, 653% for Sandisk, 211% for Western Digital, and 262% for Seagate, and wrote that “a crowded, heavily appreciated trade is the first thing sold when the cost of capital moves against it,” with “no news about memory pricing, supply, demand, or customer orders.” <a href="https://247wallst.com/investing/2026/08/18/micron-technology-falls-5-sandisk-sinks-6-western-digital-drops-7-as-higher-rates-test-the-memory-boom/">24/7 Wall St.</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. Barchart recorded software — Intuit, Adobe, Salesforce — <em>rising</em> on Tuesday, which is the opposite of a broad tech-duration wipeout. <a href="https://www.barchart.com/story/news/3915336/stocks-finish-lower-as-chipmakers-and-ai-stocks-fall">Barchart 18 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. EBC, citing BlackRock NAV, said SOXX entered Tuesday with an 85.92% 2026 NAV return through 17 August. <a href="https://www.ebc.com/forex/soxx-fell-5-percent-despite-rising-ai-spending">EBC Financial Group</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. This also helps with Wednesday: if Tuesday were only a discount-rate reset, chips should have bounced with the 30-year; they did not.</p>
+<p><strong>3. Iran–Hormuz–oil as the spark for yields, not a standalone equity shock.</strong> In the Reuters lede this is not a competing cause; it is the spark. McKinney’s quoted chain is talks break down → oil up → inflation worries → bond yields rise → tech is hit. The 60-day U.S.–Iran Memorandum of Understanding expired Monday 17 August; Trump said he had no plans to extend it and, on Tuesday, that “there are no talks.” <a href="https://apnews.com/article/iran-us-war-diplomacy-deal-deadline-nuclear-258e9c556fc861c05ccf6ed2b38515d6">AP</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.al-monitor.com/originals/2026/08/trump-says-no-talks-planned-iran-tehran-says-strait-hormuz-still-shut">Al-Monitor / Reuters</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Tracked Hormuz traffic was in the single digits versus about 130 ships a day before the February war (Kpler via The National and Reuters; Sunday counts of three versus none registered conflict at the margin). <a href="https://www.thenationalnews.com/business/energy/2026/08/17/hormuz-traffic-falls-to-single-digits-as-60-day-deadline-for-us-iran-mou-expires/">The National</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. Energy’s Tuesday outperformance matches oil; equal-weight barely falling does <em>not</em> match a broad oil-inflation risk-off. Ranked as a standalone cause of the SOX/RSP split, oil is weaker than duration. Ranked as the spark of the long-end move, it is well sourced.</p>
+<p>The Federal Reserve’s own July intermeeting account cuts against a clean “oil raised inflation breakevens” story. The 28–29 July minutes say inflation compensation “moved little” in response to higher oil, while nominal yields rose “largely on expectations of higher policy rates” and “driven by corresponding increases in real interest rates.” <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">Federal Reserve, FOMC minutes 28–29 July 2026</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. This suggests the August 18 tech move is better described as Hormuz/oil risk raising real and term yields — and hike odds — which then compressed duration-sensitive multiples, rather than as a jump in inflation expectations.</p>
+<p><strong>4. AI/hyperscaler debt crowding (background, not Tuesday’s lede).</strong> CNN wrote that government bonds were “under pressure from a wave of new corporate debt, including tech firms focused on artificial intelligence,” quoting Nigel Green on hyperscalers competing for the same buyers as governments. <a href="https://www.cnn.com/2026/08/18/investing/global-bond-market">CNN Business</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Reputable 2026 issuance figures are not a single number and are <strong>not</strong> $1.5 trillion of bonds. Reuters/LSEG: Amazon, Alphabet, Meta and Oracle issued about $194 billion of bonds in 2026 through 7 July. Goldman Sachs, in the same piece, expected about $250 billion from five hyperscalers in 2026. PIMCO: $120 billion net USD IG index-eligible hyperscaler supply year-to-date through 4 August. <a href="https://www.channelnewsasia.com/business/hyperscaler-debt-binge-pushes-yields-up-investor-demand-cools-6286196">Channel NewsAsia / Reuters, 29 Jul</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.pimco.com/us/en/insights/the-credit-market-lens-the-ai-split-between-us-dollar-and-euro-investment-grade">PIMCO</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. The $1.5 trillion figure in CNBC’s 14 August piece is Goldman’s estimate of combined <em>lease commitments</em>, including about $1 trillion uncommenced — a stock of off-balance-sheet obligations, not 2026 issuance. <a href="https://www.cnbc.com/2026/08/14/ai-infrastructure-debt-leverage-risks.html">CNBC, 14 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. The Wall Street Journal’s 16 August analysis of about $3 trillion of off-balance-sheet AI commitments was not named in Reuters/AP/CNBC/Barchart/CNN <em>session wraps</em>. Reuters Breakingviews cited Goldman putting spillover to broader U.S. rates from AI issuance at about <strong>five basis points</strong> over the last year. <a href="https://www.theglobeandmail.com/investing/article-dont-blame-us-bond-market-indigestion-on-ai-debt-binge/">The Globe and Mail / Reuters Breakingviews</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Crowding is a plausible reason the long end is the pressure point. It is a poorer match for Tuesday’s Mag7 split (Apple and Microsoft rose) unless the channel is “duration of chip cash flows,” already counted above.</p>
+<p><strong>5. OpenAI Q2 / AI ROI (Wednesday residual, not Tuesday’s SOX crash).</strong> AP’s Tuesday lede used a <em>thematic</em> ROI scare: AI winners sinking on worries that demand for memory and processors “may fizzle out if AI proves less profitable than promised.” <a href="https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9">AP 18 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. The <em>specific</em> OpenAI print — Q2 revenue $6.7 billion, operating loss including stock-based compensation $12.3 billion, as reported by the Wall Street Journal — is a Wednesday story in CNBC’s lede, tied to Broadcom and AMD. <a href="https://www.cnbc.com/2026/08/18/stock-market-today-live-updates.html">CNBC 19 Aug live blog</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Better Broadcom coverage the same day attributed the about-5% decline to Marvell’s Google custom-silicon/TPU-attach 8-K, not to OpenAI. <a href="https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html">CNBC</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-356217/d412696d8k.htm">Marvell 8-K</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. OpenAI can explain part of Wednesday’s chip residual; it cannot be the cause of Tuesday’s ~5% SOX crash, when all 30 SOX names were already down and Nvidia (−2.3%) lagged memory.</p>
+<p><strong>6. Treasury buyback — failed rescue for chips, not a cause of the decline.</strong> Treasury said it would at least double liquidity-support buybacks in the 10–20-year and 20–30-year sectors from a $2 billion maximum to at least $4 billion, effective 9 September through 4 November 2026. <a href="https://home.treasury.gov/news/press-releases/sb0607">U.S. Treasury SB0607</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Indexes and gold miners responded; SOX did not. Ranked as an <em>explanation of why tech fell</em>, this is circular. Ranked as Wednesday’s cross-asset test, it is useful: duration relief without chip relief is why profit-taking and OpenAI/Marvell sit above the buyback as accounts of the residual.</p>
+<p><strong>7. Fed hawkish minutes / hike risk.</strong> Minutes of the 28–29 July FOMC were released at about 2 p.m. Eastern on Wednesday 19 August — after Tuesday’s SOX crash and after Wednesday morning’s buyback-driven yield drop. The document was hawkish in the conditional sense: a 9–3 hold at 3.50–3.75%, with Hammack, Kashkari, and Logan dissenting for a hike, and “many participants” assessing that tightening would likely be necessary if inflation did not decline. <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">Federal Reserve minutes</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.cnbc.com/2026/08/19/fed-minutes-july-2026-officials-saw-need-for-rate-hike-if-inflation-doesnt-cool.html">CNBC minutes</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Barchart printed a 32% chance of a 25 bp September hike after the minutes, <em>down</em> from 35% on Tuesday. <a href="https://www.barchart.com/story/news/3937543/stocks-finish-mixed-as-bond-yields-fall-and-chipmakers-slide">Barchart 19 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. <strong>Falsifier already observed:</strong> the largest down day occurred before the minutes; hike odds did not jump; AP noted 10- and 30-year yields “are less beholden to the Federal Reserve.”</p>
+<p><strong>8. Company earnings misses (Meta, Tesla, Apple guide).</strong> Late-July results are real background and are absent from 18–20 August wrap ledes as a cause. Meta missed EPS and guided light; Tesla missed EPS; Apple beat but guided light on memory/SoC constraints; Alphabet beat operations but printed negative free cash flow after a capex raise; Amazon and Microsoft were received as winners. Nvidia had not reported (due 26 August); Broadcom reports 2 September. Barchart treated Q2 as a <em>bullish</em> offset (about 85% of S&amp;P 500 reporters beating). Apple was green both Tuesday and Wednesday. Meta’s Tuesday drop was attributed by AP to a children’s-safety trial, not the July miss. Full citations in <code>research/financial-tech-company-specific-news-2026-08-20.md</code>.</p>
+<p>The ranking that best fits SOX down ~7% peak-to-trough, equal-weight barely down, energy up Tuesday, and gold miners up Wednesday is therefore <strong>duration as the initiating discount-rate shock, crowded-memory profit-taking as the reason the shock concentrated in SOX, Hormuz/oil as the spark of the long-end move, hyperscaler supply as a background reason the long end is crowded, OpenAI/Marvell as Wednesday residuals, the buyback as a failed duration rescue of chips, and Fed minutes plus Q2 earnings as timing/tape mismatches.</strong> That is a stacked explanation, not eight independent alternatives.</p>
+<p>AP’s Tuesday lede puts AI valuation/ROI ahead of yields; Reuters, CNBC, and Barchart put yields (sparked by oil/Iran) first. Those are not the same ranking. This report scores by explanatory power for the SOX/RSP/energy pattern, not by lede frequency alone.</p>
+<hr>
+<h2>Yields, Duration, and AI Debt Crowding</h2>
+<p>Official Constant Maturity Treasury par yields show a long-end backup already underway before 18 August. From 28 July (10-year 4.61%, 30-year 5.09%) the curve jumped on 29 July and finished July at 4.75% and 5.27%. A second leg carried the 30-year CMT to <strong>5.31% on 17 August</strong> and the 10-year to 4.72% — the highest official 30-year close in the late-July-to-19-August window. On 18 August CMT eased to 4.71% and 5.28%. The 19 August buyback took official closes to 4.65% and 5.19%. <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202608&amp;type=daily_treasury_yield_curve">U.S. Treasury August 2026</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://fred.stlouisfed.org/series/DGS10">FRED DGS10</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Relative to 30 June (4.44% and 4.91%), the 17 August 30-year is a 40-basis-point rise. CNBC described a “buyers’ strike” in the 10- to 30-year sector “since late June.” <a href="https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html">CNBC, 19 Aug buyback</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>.</p>
+<p>Kim Forrest of Bokeh Capital tied the same backup to AI payback risk: yields “portend a tighter environment” and “it’s going to be more expensive to borrow money. Especially in this whole AI thing where time to pay it back is uncertain.” <a href="https://journalrecord.com/?p=765994">The Journal Record / Reuters</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. Krishna Guha of Evercore ISI, after the buyback, said the operation “changes almost nothing in terms of the fundamentals in particular the unchanged need to finance the tidal wave of hyperscaler debt in addition to very large government deficits.” <a href="https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html">CNBC, 19 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Carl Weinberg’s “up to $600 billion” last-year borrowing figure is an unnamed estimate; treat it as directional, not a vendor series. <a href="https://www.cnbc.com/2026/08/18/bond-yields-government-us10y-treasury-note-iran.html">CNBC, 18 Aug</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>.</p>
+<p>Whether hyperscaler duration actually <em>moved</em> Treasury yields is contested. Guha, Weinberg, and CNN’s Green treat extra corporate duration as a term-premium channel. Goldman, via Breakingviews, estimated only about five basis points of spillover. The 18 August equity tape does not resolve that debate: desks priced duration pain in growth names whether the 30-year was being driven by Iran/oil, deficits, Warsh communication, Japanese yields, or AI supply. This suggests the equity channel (discount rates and AI funding costs) can operate even if the Treasury crowding channel is only a few basis points.</p>
+<hr>
+<h2>Geopolitics, Oil, and the Fed</h2>
+<p>Housing starts and import prices printed at 8:30 a.m. ET on 18 August and were <strong>not</strong> cited by Reuters’ equity wrap as the tech driver. Census reported July housing starts 12.4% below June; BLS reported July import prices −0.4% month-over-month (fuel −7.2%), still +5.9% year-over-year. <a href="https://www.census.gov/construction/nrc/current/index.html">Census Bureau</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.bls.gov/news.release/ximpim.htm">BLS</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. A cooler import-price print would, if anything, have been a mild disinflation signal. Jackson Hole (27–29 August) is a positioning event, not a realized 1–20 August catalyst. <a href="https://www.kansascityfed.org/research/jackson-hole-economic-symposium/">Kansas City Fed</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<p>EIA spots put WTI at $86.04 on 17 August and $86.48 on 18 August, Brent Europe at $92.43 and $95.29. Reuters futures prints cluster around Brent just over $91 on Tuesday and about $93 on Thursday. Do not mix spot and futures. <a href="https://www.eia.gov/dnav/pet/PET_PRI_SPT_S1_D.htm">EIA PET_PRI_SPT</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. Trump claimed on 18 August that “The Hormuz Strait is open and operating”; Iranian officials and Kpler tracked counts contradict that operationally. <a href="https://trumpstruth.org/statuses/40962">Trump Truth archive</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<hr>
+<h2>Company-Specific and Sector News</h2>
+<p>The late-July through 20 August window was not a uniform Mag7 earnings wipeout. Meta is the cleanest Mag7 fundamental disappointment (EPS $6.18 versus $7.22 expected; light Q3 revenue guide; free cash flow $784 million). <a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx">Meta IR</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html">CNBC</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. Tesla missed EPS. Apple beat the quarter and guided light on memory and SoC supply. Alphabet beat operations, raised 2026 capex to $195–205 billion, and printed negative free cash flow. Amazon raised cash capex to about $220 billion and was received as a winner. Microsoft beat, with Azure +43%; a useful-life change that prints calendar-2026 capex near $175 billion rather than ~$190 billion is a reclassification, not a spend cut. Micron’s last official print was 24 June (fiscal Q4 guide $50.0 billion ± $1.0 billion, ~86% gross margin) — no in-window miss. Sandisk, Western Digital, and Seagate printed strong results in late July and early August and still saw post-print selling, which is already multiple-bar behavior. Marvell’s 19 August +9.85% after the Google TPU 8-K shows that idiosyncratic positive news could still reprice a name on the same day Broadcom and AMD fell.</p>
+<p>Motley Fool, citing Stock Analysis, put Mag7 at about 33.9% of the S&amp;P 500 in August 2026. <a href="https://www.fool.com/research/magnificent-seven-sp-500/">Motley Fool</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. State Street’s 20 July note already showed the crowded AI-leadership trade had rotated <em>out of Mag7 as a bloc and into semiconductors</em>, with Micron the largest year-to-date S&amp;P 500 contributor through 10 July. <a href="https://www.ssga.com/us/en/individual/insights/mind-on-the-market-20-july-2026">State Street</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. No FactSet or Bloomberg SOX forward P/E print for 18–20 August was retrieved from those vendors directly.</p>
+<hr>
+<h2>Positioning, Flows, and Technicals</h2>
+<p>The 18–19 August semiconductor drop occurred after an already-extended memory run, in a tape Reuters described as below-average in total share volume (14.86 billion versus a 16.88 billion 20-session average), with the VIX remaining in the mid-teens. FRED VIX closes: 14.25 on 14 August, 15.19 on 17 August, <strong>15.84 on 18 August</strong>, 14.89 on 19 August — the highest close since 4 August, then a fade even as SOX fell another 2.12%. <a href="https://fred.stlouisfed.org/series/VIXCLS">FRED VIXCLS</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>. That is not a crash-vol regime.</p>
+<p><strong>No dated 18–19 August creation/redemption table</strong> for QQQ, SMH, SOXX, or MAGS was found. What is dated is the <em>prior</em> week: ETF Central/Trackinsight said the week of 10–14 August QQQ took in $3.0 billion while Information Technology sector ETFs had the largest sector outflow ($1.50 billion); ETF Action printed SOXX −$1.416 billion, XLK −$571 million, SMH −$348 million into <em>rising</em> memory prices. <a href="https://www.etfcentral.com/news/the-weekly-etf-market-monitor-august-10-14-2026">ETF Central / Trackinsight</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.etfaction.com/semiconductor-shake-up-soxx-sheds-1-4b-amid-broad-sector-etf-outflows/">ETF Action</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>. MAGS closed −0.90% on 18 August and <strong>+1.38% on 19 August</strong> while SOXX kept falling — the opposite of Mag7-ETF liquidation driving the second session. <a href="https://query1.finance.yahoo.com/v8/finance/chart/MAGS">Yahoo Finance MAGS</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>. No Bank of America, Goldman, JPMorgan, or Barclays CTA model dated 18–19 August was found. No SpotGamma or dealer-GEX note for those days was retrieved. CTA/gamma amplification remains a <strong>plausible desk hypothesis</strong>, not a measurement.</p>
+<hr>
+<h2>Key Findings</h2>
+<p>According to official Nasdaq, FRED, and Yahoo closes, this is not a multi-month technology crash and not a return to the late-July cycle low. The Nasdaq Composite’s local peak in this rebound was 13 August at 26,803.03; the largest completed down day was Tuesday 18 August (−1.33% to 26,289.71), which Reuters called the biggest daily percentage decline since 29 July. From that 13 August close through Wednesday the Composite was −1.76%; the Nasdaq-100, which did not bounce on Wednesday, was −2.19%; SOX from its 17 August rebound high was <strong>−6.99%</strong>. The 29 July Composite close of 24,442.94 and SOX close of 10,447.49 remain the cycle lows in the late-July-to-August window. Equal-weight S&amp;P was about unchanged. This pattern is a semiconductor-and-memory pullback inside a still-elevated Nasdaq, not a broad de-tech. <a href="https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC">Yahoo Finance <code>^IXIC</code>/<code>^SOX</code></a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-tech-selloff-weighs-down-wall-street-bond-yields-climb">Reuters via The Business Times</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>The initiating mechanism on the established tape is a <strong>long-end duration shock</strong>, not a semiconductor earnings miss. Official 30-year CMT closed at a window high of 5.31% on 17 August; on-the-run quotes printed about 5.34% on 18 August, the highest since 2007 in most wraps. Reuters, CNBC, CNN, and quoted desks (McKinney, Welch, Pavlik) stated the same DCF arithmetic: higher long yields cut what investors will pay for distant technology profits. AP’s observation that the 10-year eased on Tuesday while the 30-year held near a 19-year high is the detail that makes this a <em>long-end</em> story rather than a parallel rate shock. <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202608&amp;type=daily_treasury_yield_curve">U.S. Treasury</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.cnn.com/2026/08/18/investing/global-bond-market">CNN Business</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9">AP 18 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<p>The reason SOX fell several times the Nasdaq Composite, while Apple and Microsoft rose on Tuesday and MAGS bounced on Wednesday, is <strong>positioning in an extended memory-and-storage sleeve</strong>, not Mag7 concentration. Same-day Established coverage said there was no memory-pricing or unit-demand news. Sandisk, Seagate, Western Digital, and Micron had year-to-date gains of several hundred percent through Monday. Prior-week SOXX/SMH ETF outflows into strength look like distribution. VIX 15.84 is inconsistent with a crash or a documented dealer-gamma cascade. This suggests a crowded, high-momentum cohort was the first thing sold when the discount rate moved, in thin mid-August volume. <a href="https://247wallst.com/investing/2026/08/18/micron-technology-falls-5-sandisk-sinks-6-western-digital-drops-7-as-higher-rates-test-the-memory-boom/">24/7 Wall St.</a> (accessed 2026-08-20, confidence: Medium) <strong>Established</strong>; <a href="https://www.ebc.com/forex/soxx-fell-5-percent-despite-rising-ai-spending">EBC Financial Group</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://fred.stlouisfed.org/series/VIXCLS">FRED VIXCLS</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<p>Iran, Hormuz, and oil are the <strong>spark of the yield move</strong>, not an independent “risk-off that flattened all stocks.” The MoU expired 17 August; tracked Hormuz traffic was a small fraction of the prewar ~130 ships/day; energy outperformed on Tuesday. Fed minutes for the July intermeeting period say inflation compensation moved little and nominal yields rose via real rates and hike odds — so the transmission should not be flattened into “oil raised breakevens.” <a href="https://apnews.com/article/iran-us-war-diplomacy-deal-deadline-nuclear-258e9c556fc861c05ccf6ed2b38515d6">AP</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">Federal Reserve minutes</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>.</p>
+<p>Wednesday 19 August is the within-sample split that prevents a single-cause story. Treasury’s buyback announcement reversed official long yields and lifted the S&amp;P 500, the Composite, equal-weight, and gold miners; NDX and SOX did not confirm. That leftover is crowded-hardware unwind plus name-specific news (Marvell/Google helping Marvell and hurting Broadcom; OpenAI’s reported Q2 loss-widening as a thematic residual). The buyback is therefore a <strong>failed rescue for chips</strong>, not a reason chips fell. Hyperscaler bond supply ($194 billion four-name LSEG print through 7 July; Goldman ~$250 billion five-name 2026 forecast) is a real background crowding channel; Goldman’s ~5 bp spillover estimate and the unused $1.5 trillion lease-commitment figure mean it should not be told as “AI issued $1.5 trillion and crashed the 30-year.” <a href="https://home.treasury.gov/news/press-releases/sb0607">U.S. Treasury SB0607</a> (accessed 2026-08-20, confidence: High) <strong>Primary</strong>; <a href="https://www.barchart.com/story/news/3937543/stocks-finish-mixed-as-bond-yields-fall-and-chipmakers-slide">Barchart 19 Aug</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>; <a href="https://www.channelnewsasia.com/business/hyperscaler-debt-binge-pushes-yields-up-investor-demand-cools-6286196">Channel NewsAsia / Reuters</a> (accessed 2026-08-20, confidence: High) <strong>Established</strong>.</p>
+<hr>
+<h2>Strategic Recommendations</h2>
+<ol>
+<li>
+<p><strong>Treat 18–19 August as a semiconductor-and-memory event nested in a duration shock, not as “tech broke.”</strong> Rationale: Composite −1.3% versus SOX ~−7% peak-to-trough, RSP ~flat, Apple/Microsoft up Tuesday, MAGS up Wednesday. Decisions that lump QQQ, Mag7, and SOXX as one factor will mis-read the tape. Evidence: Reuters 18 Aug wrap; Yahoo SOX/RSP/MAGS bars; Barchart 19 Aug.</p>
+</li>
+<li>
+<p><strong>Watch the 30-year and real yields, not the Fed-funds path, as the near-term multiple for this cohort.</strong> Rationale: Tuesday’s hit coincided with a 19-year 30-year high while the 10-year eased into the close; Wednesday’s index bounce tracked the long-end reversal; minutes did not lift hike odds. If the 30-year holds near 5.3% and chips recover, that would weaken the duration channel; if chips keep falling while the long end eases, crowded positioning is doing more of the work. Evidence: Treasury CMT; AP 18 Aug; Barchart 19 Aug; Fed minutes.</p>
+</li>
+<li>
+<p><strong>Do not use $1.5 trillion or $3 trillion as 2026 bond issuance when discussing crowding.</strong> Rationale: those figures are lease-commitment and off-balance-sheet obligation stocks. The sourced 2026 issuance cluster is $120 billion net USD IG (PIMCO) to ~$194–250 billion gross hyperscaler bonds (LSEG/Goldman). Overstating supply produces the wrong policy implication (that buybacks must offset trillions). Evidence: CNBC 14 Aug; Reuters/LSEG 29 Jul; PIMCO 10 Aug; Breakingviews ~5 bp.</p>
+</li>
+<li>
+<p><strong>Separate three clocks: late-July cycle low, 13 August rebound peak, 18–19 August acute tape.</strong> Rationale: several Mag7 fundamental disappointments (Meta, Tesla, Apple guide, Alphabet FCF) printed weeks earlier and were not Tuesday’s lede. OpenAI’s Q2 numbers are an 18 August <em>report</em> and a 19 August <em>residual</em>, not the Tuesday SOX crash. Nvidia (26 Aug) and Broadcom (2 Sep) are still ahead. Evidence: company IR/CNBC earnings wraps; CNBC 19 Aug OpenAI/Marvell coverage.</p>
+</li>
+<li>
+<p><strong>Treat Thursday 20 August as a mixed macro session (oil, Iran “economic warfare,” Walmart, fading Bessent-put), not automatically as day three of a chip liquidation — then re-check the cash close.</strong> Rationale: midday 20 August last prints had the Composite weaker and SOX roughly mixed-to-green versus Wednesday in the earlier snapshot; wraps led with yields retracing and Walmart, not Sandisk. Confidence on 20 August is Medium until the cash close exists. Evidence: CNBC 20 Aug live blog; Sharecast; Invezz.</p>
+</li>
+</ol>
+<p>These are research monitoring rules, not investment advice.</p>
+<hr>
+<h2>Risks and Uncertainties</h2>
+<ul>
+<li><strong>Data gaps:</strong> No official 20 August cash close or CMT at synthesis time (about 12:30 p.m. ET). No dated QQQ/SMH/SOXX/MAGS creation/redemption table for 18–19 August. No retrieved CTA positioning model or dealer-gamma print. No FactSet/Bloomberg SOX forward P/E for those dates. No S&amp;P Dow Jones primary file for S5INFT. Direct Reuters.com HTML often returned 401; wraps were read from Business Times, MarketScreener, SRN, CNA, and Al-Monitor reprints. Direct Kpler dashboards were not retrieved. TIPS/breakeven daily series through 20 August was not fully tabulated here (Barchart cited 10-year breakeven at a two-month high of 2.321% on 19 August, which sits in tension with the July minutes’ “inflation compensation moved little”).</li>
+<li><strong>Low-confidence claims:</strong> Sandisk “most crowded S&amp;P 500 semiconductor” (Morgan Stanley via TechTimes only). Weinberg’s “up to $600 billion.” History of Market SOX P/E reconstruction. ETF Action undated daily flow tables. HDFC Sky’s claim that afternoon minutes pared a 0.6% rally.</li>
+<li><strong>Unresolved conflicts:</strong> AP’s Tuesday lede ranks AI ROI first; Reuters/CNBC/Barchart rank yields first. Official 30-year CMT close peak 17 August versus on-the-run ~5.34% on 18 August. CNBC morning wrap said 5.335% was the highest since 2002; most equity wraps said since 2007. Hormuz Sunday transits: The National/Kpler “three” versus Reuters “none registered.” Goldman ~5 bp crowding spillover versus Guha/Weinberg/Green crowding narrative. CNBC OpenAI-as-Broadcom-drag versus CNBC/SiliconANGLE Marvell-as-Broadcom-drag on the same day. Composite bounced Wednesday; NDX did not — “Nasdaq rose after buybacks” is true only for the Composite.</li>
+<li><strong>Market risks to monitor:</strong> 30-year holding above ~5.2% after the 9 September–4 November buyback window; Hormuz remaining in single-digit traffic; Nvidia (26 Aug) and Broadcom (2 Sep) prints; Jackson Hole (27–29 Aug) as a Warsh communication event; whether memory contract pricing actually breaks, which would convert this from multiple compression into a fundamental miss.</li>
+</ul>
+<hr>
+<h2>Next Steps</h2>
+<ul>
+<li>Capture official 20 August cash closes (COMP, NDX, SOX, CMT 10-year and 30-year) after 4:00 p.m. ET and rewrite the Thursday last-print rows.</li>
+<li>Pull ETF.com/FactSet weekly flows for the week ending 21 August when published, to test whether 18–19 August was a redemption event.</li>
+<li>Tabulate 5-year and 10-year TIPS breakevens daily 1–20 August to test the oil → inflation-expectations leg against the July minutes.</li>
+<li>After Nvidia (26 August) and Broadcom (2 September), re-score whether the hardware unwind was only positioning or the start of an AI-ROI downgrade cycle.</li>
+<li>Decisions this research enables: whether to treat the move as duration-plus-crowding (base reading), as an AI-capex fundamental break (not supported by 18–19 August company news), or as a broad Mag7 unwind (rejected by the tape).</li>
+</ul>
+<hr>
+<h2>Disclaimer</h2>
+<p>This report is a snapshot as of 20 August 2026, compiled while the U.S. cash session was still open. Web content and live quotes change. For a volatile tape (yields, oil, Iran, semiconductors), re-run within 30 days or verify key prints against primary vendors before acting. Nothing in this document is investment advice.</p>
+<p class="footer-note">Exported 2026-08-20 from research/financial-recent-tech-stock-decline-2026-08-20.md. Snapshot research; not investment advice. URLs were live as of the access dates in the report.</p>
+</div>
+</body>
+</html>
