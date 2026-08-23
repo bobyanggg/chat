@@ -22,8 +22,10 @@ Requires Python + `pyyaml` for JSON validation (`pip install pyyaml`).
 
 From [samber/cc-skills deep-research](https://github.com/samber/cc-skills/tree/main/skills/deep-research) (MIT), adapted for Cursor.
 
-| Command / trigger | Skill | Purpose |
-|-------------------|-------|---------|
-| `/deep-research` or “research X / deep dive / landscape analysis” | `deep-research` | Parallel multi-source web research → cited Markdown report under `./research/` |
+| Command | Skill | Purpose |
+|---------|-------|---------|
+| `/deep-research` | `deep-research` | Parallel multi-source web research → cited Markdown report under `./research/` |
+
+Slash-only: `disable-model-invocation: true`. Casual “research X / look into Y” does not start this skill.
 
 Supports 11 types (market, domain, technical, competitive, product, academic, person/org, financial, legal, trend, community). Optional PDF export if `pandoc` or `md-to-pdf` is installed.
