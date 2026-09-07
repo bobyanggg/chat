@@ -279,7 +279,7 @@ _Pending Step 4 — long-form AI film assembly from 4–30s clips._
 
 ### Security and Compliance
 
-_Pending Step 4 — AI content labels, micro-drama rules, face-reference bans._
+See the dedicated axis write-up in `research/compliance-ba-ren-xie-cheng-le-yao-2026-09-07.md`. Summary for this product file: the film was published after China’s 2025-09-01 synthetic-content labeling rules and, according to Lianhe Zaobao, carried a “含AI生成内容” chip; Bilibili’s matching creator declaration is “该视频使用人工智能合成技术.” NRTA Order 16 (微短剧, effective 2026-09-01) defines a micro-drama as a **series whose episodes are each shorter than twenty minutes**, so a 26-minute single film sits outside that statutory definition on the face of the text; it still sits under general generative-AI, deep-synthesis, and platform audiovisual rules. Seedance 2.x blocks raw real-face references, optional visible watermarks, 24-hour output URLs, and 7-day task IDs. OpenAI images carry C2PA plus SynthID. *Soushen Ji* and *Hou Hanshu* economic copyright has expired. No sourced official action names this film as banned as of 2026-09-07.
 
 ---
 
