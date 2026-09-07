@@ -3,7 +3,7 @@ topic: "我這一生最大的罪，是把人寫成了妖（Bilibili AI 短片）
 type: "product"
 goals: "確認作品出處與作者；釐清影像、生圖與後製用了哪些模型與流程；評估技術能力、限制與爆紅原因"
 date: "2026-09-07"
-methodology: "Parallel web research via sub-agents. Citations inline per references/citations.md. Confidence levels: High / Medium / Low. Steps 2–3 completed 2026-09-07; Steps 4–5 pending."
+methodology: "Parallel web research via sub-agents. Citations inline per references/citations.md. Confidence levels: High / Medium / Low. Steps 2–5 completed 2026-09-07. Standard depth (no Step 4.5 outline rewrite)."
 ---
 
 # Research Report — 我這一生最大的罪，是把人寫成了妖
@@ -242,7 +242,17 @@ Seedance 2.5 預覽 2026-06-23、正式 2026-07-31：單次 15 秒改 **30 秒**
 
 ### Recommended Architecture Patterns
 
-_Pending Step 4 — long-form AI film assembly from 4–30s clips._
+2026 年能做出約 26 分鐘寫實 AI 敘事的路，仍是 **靜幀聖經 → 圖生影片 → 可選延長或末幀串接 → 非線性剪輯**，不是一次模型跑完。對本片，作者說圖來自 GPT Image 2、動來自 Seedance 2.5，再串接成片；他沒點名剪輯軟體、鏡頭時長配比、聲音做法或生成次數。那最後一步就是 NLE，不管叫什麼名字。[NOWnews](https://www.nownews.com/news/6868562)（accessed 2026-09-07, confidence: High）；[ByteDance Seed 2.5 部落格](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)（accessed 2026-09-07, confidence: High）— **Primary**。
+
+官方上限寫得很死。BytePlus LAS 上 `dreamina-seedance-2-5-260628` 生成 **4–30 秒、24 fps MP4、480p 或 720p**；1080p／4K 寫在 2.0 enhanced，不在 2.5。支援首幀、首末幀圖生影片。多模態參考 **1–30 張圖**；音訊參考最多 10 段、每段 2–30 秒、總長 ≤30 秒。`generate_audio` 預設開。`return_last_frame` 就是為了把連續影片縫起來。公開路徑擋真人臉參考。[BytePlus LAS](https://docs.byteplus.com/en/docs/byteplus_las/video_gen_enhanced)（accessed 2026-09-07, confidence: High）— **Primary**。Seed 發布文獨立寫參考預算 30 圖＋10 影片＋10 音，並說 30 秒裡已能用時間戳做出起承轉合。GPT Image 2 是靜幀廠：文字加圖進、圖出；`input_fidelity` 不再給調。靜幀聖經在這套堆疊上不是可選：鎖寫實身分（正、側、全身、服裝、表情、場景），再當 Seedance 首幀與 `@Image N` 身分參考。[OpenAI 生圖指南](https://developers.openai.com/api/docs/guides/image-generation)（accessed 2026-09-07, confidence: High）。
+
+影片有三種不該混成一種的官方模式。**圖生影片**（首幀或首末幀）把開場構圖錨在像素上。**多模態參考生影片**在運鏡變時保住卡司與服裝。**影片延長**接著一條已收下的片段。產品頁寫單段 30 秒並支援兩次延長；部落格寫多輪往數分鐘；即夢消費端三方轉述另有約 30–180 秒超長模式。LAS API 仍暴露 4–30 秒加延長，沒有 180 秒欄位。保守架構：生成原生 4–30 秒單位；官方延長只用到身分與光還站得住；要硬重置時用末幀當下一鏡首幀。[Seedance 2.5 產品頁](https://seed.bytedance.com/zh/seedance2_5)（accessed 2026-09-07, confidence: High）。
+
+二十六分鐘是 1,560 秒。官方原生上限 30 秒時，成品至少要約 **52 個生成單位**（每條用滿、不修剪），尚未計重試。[AI Post Hub](https://www.aiposthub.com/ai-short-drama-wen-cangsheng-film-industry/)（accessed 2026-09-07, confidence: High）。平均留下 15 秒則下限約 104。Seed 自己的提示示範已在 30 秒生成裡切鏡；即夢手冊摘要建議時間窗至少三秒。一條 30 秒原生往往是六到十個內部鏡頭，所以用 30 秒多鏡頭組出來的 26 分鐘，時間線上仍可能出現數百個剪輯點。真差不在檔案口號，而在刀在模型裡決定還是在 NLE 裡決定、以及身分准許在 30 秒縫還是每 5 秒縫斷開。
+
+網易創作者彙整：2.5 十五秒有人報 630 即夢積分、2.0 只要 230；密 30 秒提示漏動作會浪費整條貴樣本；因此有人 **2.0 打草稿、2.5 只出英雄鏡**。往三分鐘延長時連戲與聲音變差。[網易智能](https://m.163.com/tech/article/L3FTQKIV00097U7T.html)（accessed 2026-09-07, confidence: High）。理性圖案是混用：對白與必須把對口型騎過去的長鏡頭用 15–30 秒帶時間戳的塊；插入與反應用 4–8 秒首幀 I2V。
+
+聲音是另一個架構決定。原生每段音最便宜拿到屬於這張畫面的嘴型與空間聲，卻是很差的 26 分鐘配樂方法，因為每條邊界都是音色重置。三種實際圖案：(1) 每段原生當現場聲，NLE 抽掉或壓低生成配樂；(2) ADR／TTS 加可選對口型，本片未證實；(3) 連續配樂在模型外鋪。寫實長敘事幾乎一定需要 (3)。不要推論原生 Seedance 對白就是完成聲軌。角色一致：**三十張多模態參考適用**；Octo 相鄰未證實；可靈 Elements 不在已確認工具表。調色與字幕在生成器之後。燒進模型字是錯的長片字幕法。必須留在人身上的：劇本、策展聖經、選 take、為情緒剪、連戲帳、混樂、放字幕、判斷何時 AI 滑是 bug。本片具體未知的是大半張製片紙：NLE、鏡頭配比、聲音鏈、生成次數、帳單、交付解析度如何對上 LAS 720p 上限。
 
 ### Common Pitfalls and Gotchas
 
@@ -279,22 +289,62 @@ _Pending Step 4 — long-form AI film assembly from 4–30s clips._
 
 ### Security and Compliance
 
-See the dedicated axis write-up in `research/compliance-ba-ren-xie-cheng-le-yao-2026-09-07.md`. Summary for this product file: the film was published after China’s 2025-09-01 synthetic-content labeling rules and, according to Lianhe Zaobao, carried a “含AI生成内容” chip; Bilibili’s matching creator declaration is “该视频使用人工智能合成技术.” NRTA Order 16 (微短剧, effective 2026-09-01) defines a micro-drama as a **series whose episodes are each shorter than twenty minutes**, so a 26-minute single film sits outside that statutory definition on the face of the text; it still sits under general generative-AI, deep-synthesis, and platform audiovisual rules. Seedance 2.x blocks raw real-face references, optional visible watermarks, 24-hour output URLs, and 7-day task IDs. OpenAI images carry C2PA plus SynthID. *Soushen Ji* and *Hou Hanshu* economic copyright has expired. No sourced official action names this film as banned as of 2026-09-07.
+> ⚠️ 本節整理公開法規與產品安全說明，供研究用，不是法律意見，也不是對本片的合規認定。
+
+截至 2026-09-07，這裡找到的官方來源 **沒有** 點名本片被禁、下架或行政處罰。聯合早報寫到 9 月 2 日仍可看、仍在每周必看。[聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High）。本環境打不開 B 站觀看頁（HTTP 412），其後狀態未再獨立核實。
+
+上傳時已適用四部門《人工智能生成合成內容標識辦法》（國信辦通字〔2025〕2 號），2025-09-01 施行。顯式標識（觀眾看得見）與隱式元數據分開；影片開頭幀與播放器周圍要顯著提示；使用者發表合成內容須聲明；禁止惡意刪改隱匿標識。[中國政府網](https://www.gov.cn/zhengce/zhengceku/202503/content_7014286.htm)（accessed 2026-09-07, confidence: High）— **Primary**。強制國標 GB 45438-2025 同行。B 站實作：投稿開【創作聲明】選【該視頻使用人工智能合成技術】；2026-05-15 治理帖把 AI 標識升到一等頁，漏標可補標、打回、下架。[嗶哩嗶哩治理小分隊](https://www.bilibili.com/opus/1202507670848798745)（accessed 2026-09-07, confidence: High）。聯合早報寫完成片顯示「含 AI 生成內容」晶片。公開來源沒顯示隱式元數據是否活進發布的 MP4。
+
+廣電總局令第 16 號《微短劇發展管理辦法》2026-09-01 施行（本片上傳後十五天）。第 2 條定義是情節連續的 **劇集，每集不超過二十分鐘**。單支 26 分鐘片長過每集上限，也不是通常意義的劇集——這是最硬的公開理由，不把許可與每集編號機器自動套上。第 33(3) 條仍要分發者對「具有微短劇特徵」的較短 UGC 做內容管理；第 34 條要 AI 微短劇每集顯著提示。若它被認定為微短劇，專題（政治、軍事、司法、公安等）可進 I 類；第 25 條含歪曲歷史人物、宣揚歷史虛無等禁則。那些規則只適用先被認定為微短劇的作品。[國家廣播電視總局](https://www.nrta.gov.cn/art/2026/7/31/art_113_73785.html)（accessed 2026-09-07, confidence: High）— **Primary**。2023 年《生成式人工智能服務管理暫行辦法》仍適用對中國公眾提供與使用生成式 AI。[中國政府網](https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm)（accessed 2026-09-07, confidence: High）。
+
+Seedance 2.x 不支援直接上傳含真人臉的參考；生成 URL 24 小時過期；任務 id 留約 7 天；`watermark` 預設 false。[BytePlus LAS](https://docs.byteplus.com/en/docs/byteplus_las/video_gen_enhanced)（accessed 2026-09-07, confidence: High）。本片是 GPT Image 2 虛構臉，真人臉門預期不響。OpenAI 圖帶 C2PA 與 SynthID；C2PA 可被轉碼剝掉。任何靜幀被重編碼成 Seedance 參考、再進 NLE、再進 B 站，應假設 C2PA 頭已丟。[OpenAI Help Center](https://help.openai.com/en/articles/8912793-provenance-signals-content-credentials-synthid-in-openai-generated-content)（accessed 2026-09-07, confidence: High）。
+
+《搜神記》與《後漢書》作者卒於四、五世紀。中國著作權法第 23 條自然人財產權為有生之年加五十年，早已屆滿；第 22 條人身權不受期限。[國家版權局](https://www.ncac.gov.cn/xxfb/flfg/flfg_532/202103/t20210309_50530.html)（accessed 2026-09-07, confidence: High）。沒找到對本片古典引文的權利人主張。訓練資料義務在提供者側（暫行辦法第 7 條）；上傳者不是訓練者。完成片是否構成視聽作品取決於人的獨創貢獻；報導描述人類劇本與剪輯，但沒有對本片的公開判決。
+
+2025–2026 清朗行動把「用 AI 歪曲歷史人物／二創經典」當執法類別。2026-09-02 第二階段結果點名 B 站等升級偵測；典型案例是《三國》《西遊》低質流量帳，不是這部 B 站寓言。[國家網信辦](https://www.cac.gov.cn/2026-09/02/c_1790099041364574.htm)（accessed 2026-09-07, confidence: High）。類別存在，不證明本片在類別裡。沒有來源記錄點名本片的處分。沒有點名，也不等於正面放行函。
 
 ---
 
 ## Key Findings
 
-_Populated at Step 5._
+According to [聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High）與 [UDN](https://udn.com/news/story/7332/9709067)（accessed 2026-09-07, confidence: High），「我這一生最大的罪，是把人寫成了妖」不是古書原句，而是 2026 年 8 月 17 日 Bilibili UP 主青瓜蛋丶上傳的約 26 分鐘 AI 古裝短片片名單（片內名《妖異簿·問蒼生》）。全片標「含 AI 生成內容」、無人出演。作者留言把劇本認成幾年前隨筆改寫，並聲明情節虛構。播放量按日期讀：8 月 23 日約 1,272 萬，9 月 2 日突破 1,800 萬。這表示提問裡的「罪」首先是一部作品的標題。
+
+According to [Marie Claire 台灣](https://www.marieclaire.com.tw/entertainment/tvshow/95568)（accessed 2026-09-07, confidence: High）引述的作者留言，影像 **主要** 用兩套模型完成：OpenAI **GPT Image 2** 生圖，字節跳動 Seed **Seedance 2.5** 生影片。NOWnews、中央社、聯合早報交叉轉述同一公式。[NOWnews](https://www.nownews.com/news/6868562)（accessed 2026-09-07, confidence: High）。Seed 官方單次原生 **4–30 秒**，參考最多 30 圖／10 影片／10 音，可延長但不是 26 分鐘一次渲出。[Seed 2.5 部落格](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)（accessed 2026-09-07, confidence: High）。This suggests 技術答案是「兩模型加人類剪輯」，不是「一個神奇按鈕」。剪輯軟體、TTS 品牌、音樂來源、即夢還是 API，作者都沒點名。
+
+According to [Chinese Text Project 搜神記卷六](https://ctext.org/wiki.pl?chapter=836102&if=en)（accessed 2026-09-07, confidence: High）與 [後漢書](https://ctext.org/hou-han-shu/wu-xing-wu/zh)（accessed 2026-09-07, confidence: High），片中「寺壁黃人」「木不曲直」「梁伯夏后」「草作人狀」對得上漢代災異紀錄，且古書自己已把它們接到黃巾。影片做第二次翻轉：把徵兆寫成必須誤檔為妖的人事。中央社與 UDN 核對的片尾是「後人讀妖，勿問鬼神，問蒼生」。[中央社](https://www.cna.com.tw/news/acn/202608250306.aspx)（accessed 2026-09-07, confidence: High）。This suggests 核心技術有兩層：生成模型是筆；志怪曲筆才是文法。
+
+According to [Artificial Analysis](https://artificialanalysis.ai/video/leaderboard/text-to-video)（accessed 2026-09-07, confidence: High）與各廠官方頁，2026 年 8 月初一個大陸個人 UP 若要做講中文的寫實古裝長片，Seedance 2.5 是理性預設：當時唯一普遍可及、同時具備約 30 秒原生、中文向原生音、30 張服裝聖經、即夢裡人民幣支付的消費模型。Wan 3.0 規格最近、每秒更便宜、AA Elo 更高，但 8 月初仍偏邀測。可靈與 MiniMax H3 約 15 秒。Veo／Runway／Sora 過不了牆或對白門。This suggests 選型邏輯是「誰能在檔期裡做完」，不是「誰在榜上第一」。
+
+According to [聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High）與 [INSIDE](https://www.inside.com.tw/article/42194-why-ai-short-film-ask-the-common-people-hailed-as-the-most-soulful-ai-animation-became-a-cross-strait-sensation)（accessed 2026-09-07, confidence: High），爆紅順序是先畫面、再劇本、再金句；觀眾共識是「AI 不是重點」。殘餘抱怨是太乾淨的「AI 味」。下架是跨媒體記錄的謠言；9 月 2–3 日仍在架是記錄的事實。網信辦清朗行動把「AI 二創經典」當執法類別，但 9 月 2 日典型案例點的是三國／西遊流量帳，不是本片。[國家網信辦](https://www.cac.gov.cn/2026-09/02/c_1790099041364574.htm)（accessed 2026-09-07, confidence: High）。令第 16 號定義是每集少於 20 分鐘的劇集；26 分鐘單片不自動套進去。This suggests 它證明標好的作者型 AI 短片仍可被平台助推，不是證明禁區已開。
 
 ## Strategic Recommendations
 
-_Populated at Step 5._
+1. **把技術答案寫成三層，不要寫成兩個 App 名。** 已證實：GPT Image 2 靜幀＋Seedance 2.5 動態。合理重建：靜幀聖經 → 4–30 秒 I2V／多鏡頭提示 → 延長或末幀串 → 人類 NLE，粗算至少約 52 次成功生成。未知：剪輯軟體、聲音混、帳單。證據：[Marie Claire](https://www.marieclaire.com.tw/entertainment/tvshow/95568)、[Seed 官方](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)。若有人問「用哪些技術完成的」，先答這三層。
+
+2. **若要做同類片子：先鎖離線靜幀聖經，再用大陸可登入的 30 秒級音畫模型出對白英雄鏡。** 即夢 Seedance 2.5 仍是主選；百煉 Wan 3.0 若帳號已 GA，是最不痛的能力遷移；海螺 H3 當成本對沖。不要把管線建在 Veo、Runway 或已日落的 Sora 上，除非已有外卡且不需要可靠中文原生對白。積分策略採網易實務：便宜模型打草稿、2.5 出英雄鏡。
+
+3. **不要把這部片當微短劇工業樣板，也不要在未讀令第 16 號前把它改成系列變現。** 它是 B 站作者型單片，不像抖音大賽短片、不像愛奇藝持證網絡故事片。若切成每集 <20 分鐘或做成連續劇，黃巾主題靠近專題 I 類風險。證據：[NRTA 令第 16 號](https://www.nrta.gov.cn/art/2026/7/31/art_113_73785.html)。令文第 2 條本身是 High。
+
+4. **讀政治時分開三件事：文本結構、觀眾寓言、官方執法。** 文本是志怪曲筆（High）。觀眾說「電視劇不敢拍的，AI 來做」（High）。官方執法：到 9 月初沒有點名下架（High 就「未找到點名處分」；Low 若讀成「已獲放行」）。不要用「已被禁」的社交帖當事實。
+
+5. **把本片當「剪輯生產已可行、原生時長仍是 30 秒級」的標定物，而不是「電影已被模型取代」。** 觀眾仍讀出 AI 滑。Seed 承認複雜物理與多主體不穩。勞動側真人短劇劇組在縮，春晚檔真人播放仍可遠高於 AI 短片。兩邊都引用。
 
 ## Risks and Uncertainties
 
-_Populated at Step 5._
+- **資料缺口：** 無公開劇本、舊隨筆、製作日誌、鏡頭數、NLE 名稱、TTS／配樂來源、即夢 vs API、帳單。B 站頁 HTTP 412。9 月 3 日之後在架狀態未從頁面核實。作者真名未核實。
+- **低信心主張：** 製作成本「不到萬元」；打賞人民幣 100 萬與投幣 100 萬被部分稿件混用；環球時報在兩模型之外另寫即夢；本片據稱 1920×1080 與 LAS 2.5 720p 上限如何對上。
+- **未解衝突：** 裴令史 vs 裴令時；B 站 8 月 17 日 vs 新榜 8 月 13 日／西瓜 8 月 16 日；Seedance 解析度與延長次數各文件互打；NOWnews 把靜幀→驅動當事實、INSIDE 標猜測。
+- **領域風險：** 「AI＋翻轉歷史人物」是清朗執法類別；本片主題落在該光譜上。令第 16 號對系列形態已上線。閉源積分制把角色聖經鎖在廠商元素裡就不可攜。Sora 已證明影片產品可硬日落。
+- **偏誤：** 英文覆蓋薄；部分兩岸稿件把片子當政治證據。本報告雙引，不把任一營的讀法當作者意圖。作者公開意圖是虛構、辯證、藝術追求。
 
 ## Next Steps
 
-_Populated at Step 5._
+- 若作者或即夢放出幕後：核對鏡頭數、延長與否、聲音鏈、是否 Octo／白模。
+- 對片核對金句、主角讀音（令史／令時）、四個災異如何 staging。
+- 獨立再抓 B 站頁，更新 9 月 3 日之後的在架與播放量。揮發主題應在 30 天內重跑。
+- 若問題轉成「我要做一部」：用本報告矩陣選模型，先做 3 分鐘對話場測角色鎖與中文對白。
+- 本請求已回答：出處、兩套已點名模型、官方能力上限、為何 26 分鐘仍要人類剪輯、文學互文、爆紅與禁言謠言的分層。未公開的 prompt 與專案檔不是公開網能補的。
+
+---
+
+*研究快照日期：2026-09-07。網頁會變。監管、播放狀態與模型價目屬揮發資訊。*
