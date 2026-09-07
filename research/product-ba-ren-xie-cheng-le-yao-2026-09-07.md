@@ -3,7 +3,7 @@ topic: "我這一生最大的罪，是把人寫成了妖（Bilibili AI 短片）
 type: "product"
 goals: "確認作品出處與作者；釐清影像、生圖與後製用了哪些模型與流程；評估技術能力、限制與爆紅原因"
 date: "2026-09-07"
-methodology: "Parallel web research via sub-agents. Citations inline per references/citations.md. Confidence levels: High / Medium / Low. Step 2 completed 2026-09-07; Steps 3–5 pending."
+methodology: "Parallel web research via sub-agents. Citations inline per references/citations.md. Confidence levels: High / Medium / Low. Steps 2–3 completed 2026-09-07; Steps 4–5 pending."
 ---
 
 # Research Report — 我這一生最大的罪，是把人寫成了妖
@@ -140,45 +140,103 @@ Seedance 生成是非同步：`POST /contents/generations/tasks` 再輪詢。輸
 
 ### Review Summary
 
-_Pending Step 3 — reception, controversy, and industry reaction._
+聯合早報寫：到 2026 年 9 月 2 日播放已破 1,800 萬，觀眾仍稱「神作」，同時承認 AI 痕跡明顯；共識是「是不是 AI 做的不是重點，劇本和臺詞比較重要」。[聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High）。接收分兩波：先驚 26 分鐘臉、服、光、運鏡還能接住；過幾天模型退到背景，人開始轉發金句與史官兩難。[INSIDE](https://www.inside.com.tw/article/42194-why-ai-short-film-ask-the-common-people-hailed-as-the-most-soulful-ai-animation-became-a-cross-strait-sensation)（accessed 2026-09-07, confidence: High）；[虛詞](https://p-articles.com/heteroglossia/6178.html)（accessed 2026-09-07, confidence: High）。微博轉述包括「質感立意都是大劇水準」「這才是真正該上院線的東西」「比這十幾年的正劇都牛」。[世界新聞網](https://www.worldjournal.com/wj/story/121233/9709774)（accessed 2026-09-07, confidence: Medium）。香港評論者李照興稱它是第一部「真的可以拿出來放給人看」的 AI 劇，並說它同時回應了網劇兩大舊怨：工拙、沒故事。[虛詞評論](https://p-articles.com/critics/6186.html)（accessed 2026-09-07, confidence: High）。環球時報英文明訪北京 AI 短劇導演趙亞峰（前短劇編劇）：工具能幫視覺與概念測試，但「畫面越好生成，創作者越要問作品到底想說什麼」。川大研究生、AI 劇愛好者李柏樂對同一報說，奇觀留不住人，這部片用非當代背景仍在問誰有權定義歷史。[Global Times](https://www.globaltimes.cn/page/202608/1369011.shtml)（accessed 2026-09-07, confidence: High）。沒有找到具名 AI 研究員或廣電官員針對本片的評論。
+
+抱怨集中在工藝，不是一場「歷史考據戰」。聯合早報引「沒有破綻就是最大的破綻」：嘴與解剖沒崩，畫面卻太乾淨、缺真人髒感，故仍有 AI 味。INSIDE 與虛詞加：眼神銳度與痛感顆粒仍輸真人，穿幫仍在。Marie Claire 寫部分臺詞仍有 AI 腔，觀眾當可原諒。[聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High）；[風傳媒（張亦聖）](https://www.storm.mg/lifestyle/11159055)（accessed 2026-09-07, confidence: High）。作者在被廣泛轉載的留言裡請人辯證看張角與黃巾、勿把片子當信史。[中央社](https://www.cna.com.tw/news/acn/202608250306.aspx)（accessed 2026-09-07, confidence: High）。這表明主導抱怨是殘餘平滑感，主導文化爭論是過度解讀，不是史實糾錯。
+
+### Why it went viral
+
+INSIDE 的 8 月 26 日重建給三層原因：26 分鐘完整敘事證明 AI 影像已離開幾秒段子；《搜神記》與黃巾與當下的縫隙讓不同政治立場都能進去；句子短到可以不帶片子旅行。聯合早報後續特稿同意順序：先畫面，再「把人寫成妖」，再金句。Marie Claire 寫早期討論是提示詞、成本（粗估幾千到約人民幣一萬）、電影質感；長尾是「內容」。一則 Threads「AI 圖只是工具，讓一千多萬人停下來看的還是內容」與上述各報同向。[INSIDE](https://www.inside.com.tw/article/42194-why-ai-short-film-ask-the-common-people-hailed-as-the-most-soulful-ai-animation-became-a-cross-strait-sensation)（accessed 2026-09-07, confidence: High）；[Marie Claire 台灣](https://www.marieclaire.com.tw/entertainment/tvshow/95568)（accessed 2026-09-07, confidence: Medium）。
+
+金句經濟有數據。DailyView KEYPO（8 月 21–27 日）找到 3,162 筆華語網討論，聚類含作者名、片內名，以及「黃天在每一個不肯再跪的人頭上」「你們不是天生該跪」。[DailyView](https://dailyview.tw/popular/detail/33698)（accessed 2026-09-07, confidence: Medium）。跨 Zaobao、CNA、UDN、Storm、Unwire、虛詞反覆出現、因此可當旅行套組的句子包括：標題本身；「人說的話不算數，只有妖說的話朝廷才會怕」；「你們不是天生該跪」；「黃天不在雲上，黃天在每一個不肯再跪的人頭上」；「苦難曾經真實到需要借鬼神開口」；上司那套「寫人＝官逼民反／朝廷失綱／陛下失德，寫妖＝妖道惑眾」；片尾「後人讀妖，勿問鬼神，問蒼生」與獻給沒有名字的人。這表示作品比較像歌詞，不像劇情摘要：可攜句子做了第二波分發。
+
+與 2025–2026 其他爆款 AI 短片比的是種類，不是同一市場。環球時報同文引澎湃：7 月《油條兩半》（逾 110 萬讚、34.2 萬轉）、清明《紙手機》。工商時報寫《紙手機》約 3,000 萬播放、130 萬讚，且被人民日報與央視新聞轉發。[工商時報](https://www.ctee.com.tw/news/20260730700564-430801)（accessed 2026-09-07, confidence: Medium）。那兩部是讓 AI 消失的親情短片。李照興另列 2026 高播：《美猴王》、科幻《三星堆：未來啟示錄》、戰爭短片《坐標》、成本爭議《霍去病》、類型實驗《黑絲女天師》。中央社 9 月 1 日產業稿：2026 上半年抖音上了 22.19 萬部 AI 短片，98.7% 不曾回本，6 月觀眾已厭「AI 臉」。[中央社](https://www.cna.com.tw/news/acn/202609010227.aspx)（accessed 2026-09-07, confidence: High）。對照這堆量，《問蒼生》稀缺的是主題膽量與 26 分鐘完整弧，不是記憶真誠。
+
+### Controversy, censorship, and political readings
+
+謠言與事實要分開。風傳媒、INSIDE、虛詞、UDN 社論都記錄「上線一天被禁」或「即將被禁」的說法；UDN 24 日快評寫有民進黨側帳號指中共下架。[風傳媒（田常）](https://www.storm.mg/article/11159178)（accessed 2026-09-07, confidence: High）；[UDN 重磅快評](https://udn.com/news/story/11091/9709875)（accessed 2026-09-07, confidence: High，黨派評論）。**截至聯合早報 9 月 3 日截稿，片子仍可看，且進了 B 站「每周必看」。** Storm、INSIDE（8 月 26 日下午）、虛詞（25 日）、Unwire（24 日）、中央社（25 日）各自截止點也都寫仍在。本環境 9 月 7 日直抓 B 站回 HTTP 412，是反爬，不能當下架證據。觀眾行為像隨時會禁：聯合早報引「趕緊多看幾遍再下架」，虛詞寫很多人下載。那是觀眾預演，不是官方動作。沒有找到網信辦、廣電或 B 站點名本片下架的聲明。
+
+政治讀法按地理分，多過按喜不喜歡分。大陸側，中央社記網友「電視劇不敢拍的，AI 來做」，比魯迅式諷刺。中央廣播電臺評論把內捲、考公受阻、「躺平」、甚至黃巢迷因讀進張角。[RTI 劉國忠](https://www.rti.org.tw/news?pid=228652&uid=3)（accessed 2026-09-07, confidence: Medium，署名專欄）。環球時報停在較安全框：誰寫歷史、誰的苦難被記住；不把「不是天生該跪」印成政權批判。台灣 UDN 社論把它當「中國創意不全是主旋律」的證據，再對比台灣 AI 短片《油不得你》兩小時內警察上門——那是黨派比較，不是中國政策文件。INSIDE 警告中新社把片子讀成兩岸寓言不是中立事實。香港虛詞強調沒有真人演員必須認領危險臺詞——嘴是合成的，主題因此延長：「人不能說時，找一個非人來說」。反方向的「這是黨批准的農民起義讚歌」存在但次要：張角作為有組織農民領袖在中國教科書本就正確，這被當成「未必自動禁」的制度觀察，**不是**委製或主旋律的證據。作者公開說法是失眠夜的藝術、舊隨筆、兩套工具、請勿當紀錄片。
 
 ### Changelog Highlights (last 12 months)
 
-_Pending Step 3 — model releases that made this film possible (Seedance 2.0→2.5, GPT Image lineage)._
+讓一人做出 26 分鐘古裝敘事的，是 2025–2026 一連串 **原生音訊、參考鎖定、單次更長片段**，再加上把片段縫成分鐘的產品包裝。真正的一小時一次生成、可攜角色 ID，到 2026-09-07 仍未出貨。
+
+Seedance 1.0 於 2025-06-11 公開，帶原生多鏡頭默片與 1080p，**沒有原生音訊**。[arXiv 2506.09113](https://arxiv.org/abs/2506.09113)（accessed 2026-09-07, confidence: High）。即夢 2025-08-20 的「智能多幀」是關鍵幀插值包裝（2–10 張圖、幀間 1–6 秒），不是 54 秒原生模型。[雷鋒網](https://www.leiphone.com/category/industrynews/9iFQYmX15zgL8l2I.html)（accessed 2026-09-07, confidence: Medium）。OpenAI 靜幀線：2025-03-25 GPT-4o 原生生圖 → 2025-04-23 API `gpt-image-1` → 2025-12-16 `gpt-image-1.5`（臉與 logo 較能保住）→ 2026-04-21 **GPT Image 2／Images 2.0**（thinking mode、預設高身分保真）。[OpenAI Images 2.0 系統卡](https://deploymentsafety.openai.com/chatgpt-images-2-0)（accessed 2026-09-07, confidence: High）。沒有任何一代給持久角色 ID；身分仍是每次請求的參考圖。
+
+原生音訊是產業拐點。Google Veo 3 於 2025-05-20 I/O 帶對白／音效／環境聲；Veo 3.1（2025-10-15）加參考圖與場景延長，原生仍是 4／6／8 秒，更長是從最後一秒往後跳的包裝（官方文件寫最多約 20 跳／約 148 秒、延長限 720p）。[Google Developers Blog Veo 3.1](https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/)（accessed 2026-09-07, confidence: High）。可靈 Video 2.6 於 2025-12-03 做同步音畫、最長 10 秒。[Kuaishou IR](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-video-26-model-simultaneous-audio-visual)（accessed 2026-09-07, confidence: High）。Seedance 1.5 pro 於 2025-12-15／16 補上聯合音畫；仍缺混參、專用延長與超長時長。[Seedance 1.5 pro](https://seed.bytedance.com/en/blog/sound-and-vision-all-in-one-take-the-official-release-of-seedance-1-5-pro)（accessed 2026-09-07, confidence: High）。Sora 2 於 2025-09-30 帶對白與 cameo 肖像鎖；消費端 App 2026-04-26 關，API 排 2026-09-24 關且無後繼。[OpenAI Sora discontinuation](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation)（accessed 2026-09-07, confidence: High）。
+
+2026 年 2 月，多參考＋原生音＋約 15 秒成為預設競爭組。可靈 3.0／Omni（2026-02-05）：15 秒、一次生成最多六個鏡頭、元素庫 `@` 呼叫。[Kuaishou IR Kling 3.0](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be)（accessed 2026-09-07, confidence: High）。Seedance 2.0（官方英文稿 2026-02-12）：統一多模態、最多 9 圖＋3 影片＋3 音、15 秒高質量多鏡頭音畫。[Seedance 2.0](https://seed.bytedance.com/en/blog/seedance-2-0-official-launch)（accessed 2026-09-07, confidence: High）。即夢約 2026-04 的 Octo／小章魚是畫布資產卡，產品記憶層，不是模型級 ID。
+
+Seedance 2.5 預覽 2026-06-23、正式 2026-07-31：單次 15 秒改 **30 秒**；參考升到 30 圖＋10 影片＋10 音；多輪延長做「數分鐘」。**30 秒是模型原生；分鐘是包裝。** 即夢「超長／約 180 秒」是產品編排，Seed 研究部落格沒承諾 180 秒一次前向傳遞。[Seed 2.5 部落格](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)（accessed 2026-09-07, confidence: High）。截至 2026-09-07 沒有 Seedance 3.0 公開路線圖，也沒有任何一線廠商文件寫「一小時一次生成」。
 
 ### Community Health
 
-_Pending Step 3._
+社區數字像健康爆款，不像網暴。8 月底報導裡留言約 3.8–4.1 萬、讚約 116–135 萬、分享約 26 萬、打賞約人民幣 100 萬。作者「一覺醒來以為被網暴」本身是健康訊號：量看起來像攻，結果是誇。辯論真實存在：以古諷今還是萬年寓言；是不是「零成本」（INSIDE 引產業文：Seedance 單次約 30 秒，26 分鐘至少約 53 次生成再加剪、樂、字幕）；一人公司該不該取代劇組。虛詞轉 BBC 歸因數字：中國百大短片 AI 佔比從 2025 年初約 7% 到 2026 年初約 38%；演員日薪從約人民幣 2 萬掉到 1,200；中國網絡視聽協會 2026 Q1 稱新上微短劇約 95% 是 AI。那些數字描述片子周圍的產業，不是片下留言本身。中央社 9 月 1 日稿顯示國家用「提質減量」、600 億真人短片支持、平台打「高頻 AI 臉」回答過剩——**沒有**監管點名本片。社區興奮、金句驅動、有一點怕禁，並嵌在更大的勞動與監管戰裡；這部片是說明，不是起因。
 
 ## Strategic Signals
 
 ### Competitive Positioning
 
-_Pending Step 3 — China AIGC short-drama landscape and comparable AI films._
+這部片站在 **量產 AI 微短劇工廠外面**，這正是重點。它是橫屏、全標 AIGC、26 分鐘、B 站首發的作者短片。它不像三個鄰居市場。抖音首屆 AI 創作大賽（2026-06-10 至 08-20）要 ≥2 分鐘原創 AI 敘事、抖音與即夢雙發、24 小時抖音獨佔窗、獎金池人民幣 400 萬加 2,000 萬即夢積分，評審含賈樟柯、陳思誠等；截至 2026-09-07 **沒找到公開入圍名單，也沒來源把本片放進該賽**。[京報網](https://news.bjd.com.cn/2026/06/10/11798273.shtml)（accessed 2026-09-07, confidence: High）。「未來導演扶持計劃」是真人導演管線，不是 AIGC 賽。[京報網](https://news.bjd.com.cn/2026/04/01/11663360.shtml)（accessed 2026-09-07, confidence: High）。字節 2026 年 AI 敘事體面賽道較像即夢＋百花獎：2,038 件投稿，六項榮譽含 Seedance 2.0 兩人歷史戰爭短片《斷鞘》。[京報網／新華轉載](https://news.bjd.com.cn/2026/08/11/11910527.shtml)（accessed 2026-09-07, confidence: High）。愛奇藝走的是持證 AIGC 工業：《奇譚：紙刃渡荒墟》被稱為首部拿到網絡劇片發行許可證的全流程 AIGC 網絡故事片（60 分鐘以上），平台給 AIGC 額外分成。[新華網](https://www.xinhuanet.com/ent/20260723/e78a10e06b8f46a0a30ce2ecb1a9009d/c.html)（accessed 2026-09-07, confidence: High）。
+
+對 AI demo：Seedance 2.5 發布文賣長敘事並請人看 Seed 自己做的示範短片。那是模型卡，不是本片。觀眾討論幾天內從「這是 AI 嗎」轉成引金句。本片因此是 Seedance 2.5 長敘事賣點的 **敘事能力證明**，不是官方 demo。對傳統古偶：星洲等娛樂稿用「血洗古偶劇」；壹心娛樂楊天真說 2026 劇集開工「據說只有去年的 30%」——那是經紀人口頭估計，不是監管數列。[星洲日報](https://www.sinchew.com.my/news/20260826/entertainment/7791273)（accessed 2026-09-07, confidence: Medium）；[網易楊天真](https://www.163.com/dy/article/L4OTGU8N0556NAUX.html)（accessed 2026-09-07, confidence: Medium）。產業反應乾淨地劈開：劇組側（尤其 Seedance 2.0 之後）是真人短劇就業塌；BBC 中文寫日薪從 5,000–20,000 掉向 1,200、百人棚閒置、劇組從 40–50 人縮到 4–5 人。北大 2025 年報告稱微短劇拉動就業約 203 萬；BBC 把該基數當「被打擊人口」是因果跳躍。[BBC 中文](https://www.bbc.com/zhongwen/articles/cvgdqjvzv9go/simp)（accessed 2026-09-07, confidence: High）。對立句是「劇本仍是靈魂」，也是即夢百花獎與抖音大賽修辭。
+
+**字節跳動／OpenAI 針對本片的評論：沒找到來源。** 工具歸屬來自作者留言，不是兩家公司背書。
 
 ### Adoption Signals
 
-_Pending Step 3._
+圍繞本片的採用是 **方法模仿，尚未見到具名翻拍潮**。簡繁英搜尋到 2026-09-07 沒找到重講《問蒼生》的具名複製品。出現的是：(1) 即夢／豆包／可靈／Seedance 2.5 教程市場，含「劇本→關鍵幀→圖生影片」通用指南（**Low**，不列入本片日誌）；(2) 即夢 2026 創作者成長計劃稱自 2025 年 2 月起 19,000+ 創作者、發出逾 1 億積分，超創為邀請制。UP 公開「即夢 AI 超級創作者」徽章是掛在本片上最硬的官方生態訊號。可比的故事優先 2026 AI 短片：可靈《紙手機》（報導跨平台 4,000 萬+）、蒙太神奇《油條兩半》、百花獎《斷鞘》、愛奇藝持證志怪《紙刃渡荒墟》。平台對 AI 敘事現在是 **邀請＋標籤，不是禁**。B 站 2026-05-15「清朗·整治 AI 應用亂象」把標識升到一等上傳控制。本片合規後被「每周必看」助推：平台會放大標好、留得住的 AI 敘事，即便文本政治偏辣——至少到 9 月初仍如此。[Bilibili 治理公告](https://www.bilibili.com/opus/1202507670848798745)（accessed 2026-09-07, confidence: High）— **Primary**。
 
 ### Risk Signals
 
-_Pending Step 3 — labeling rules, possible takedown talk, political-reading risk._
+廣電總局令第 16 號《微短劇發展管理辦法》自 **2026-09-01** 施行（本片上傳之後）。定義是 **連續劇、每集少於 20 分鐘**。專題（政治、軍事、司法、公安等）不論預算都是 I 類，要國家級備案與許可證；AI 作品投資額逾人民幣 80 萬也是 I 類；第 34 條要求 AI 微短劇按國家規則做 **每集顯著提示標識**；第 25 條禁損害國家榮譽、歷史虛無、煽動混亂等。26 分鐘 **單集** B 站片 **不自動等於微短劇**，但若續作成劇、豎屏切、付費分集，就可能進制度；黃巾／官逼民反主題若改成系列，靠近專題風險。[七一網／廣電微信轉令文](https://www.12371.gov.cn/h5/article/1532828209841442816/h5/content_1532828209841442816.html)（accessed 2026-09-07, confidence: High）— **Primary**。四部門《人工智能生成合成內容標識辦法》自 2025-09-01 已要求片頭可見標識與隱式元數據；B 站「含 AI 生成內容」是該規則的平台實作，不是 2026 新品。[中國政府網](https://www.gov.cn/zhengce/zhengceku/202503/content_7014286.htm)（accessed 2026-09-07, confidence: High）。
+
+政治下架在評論文化裡真實，在執法紀錄裡（到 9 月初）未證實。那是容忍快照，不是放行函。商業與勞動風險在周圍產業：視聽協會 2026 Q1 稱約 12.8 萬部微短劇上線、約 12.2 萬（95%+）是 AI。[上海市新聞辦／中國網絡視聽協會](https://www.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/2f93a052-95b0-4748-b327-6138bbd2d351.htm)（accessed 2026-09-07, confidence: High）。DataEye（經產業媒體）稱上半年抖音新 AI 短片／漫劇 22.19 萬、破億播放 1,055 部（0.47%）。「98.7% AI 短片不回本」屬單源 **Low**。春晚檔真人短片播放仍可達 AI 短片約 25 倍（TVOAO）。兩件事可同時真：AI 填目錄，真人拿節日流量，這部 B 站片是第三物——作者型 AI，行為像體面短片，不像兩堆貨。
+
+分析上：戰略讀法不是「AI 取代古偶」（協會與春晚流量都反駁），而是 Seedance 級長片段讓即夢超創能送出傳統古偶不會過會的 26 分鐘寓言，而監管剛給同一技術的 **系列形態** 做了盒子。若它系列化、當微短劇變現、或切成 20 分鐘以下，令第 16 號與專題審查成為硬約束。若維持一次性標籤短片，活風險是內容政治，不是微短劇備案。
 
 ## Comparative Analysis
 
 ### Top Options Head-to-Head
 
-_Pending Step 3 — Seedance 2.5 vs Kling 3 vs Veo / Gemini Omni vs Runway for this use case._
+對 2026 年 8 月一個要做約 26 分鐘寫實漢裝、要講中文的大陸個人 UP，綁定約束不是競技場 Elo，而是：能不能無 VPN、無外卡登入付款；模型能不能在出畫的同一輪吐 **中文對白**；每鏡能帶多少角色／服裝靜幀；26 分鐘要縫多少刀；臉與聲音聖經會不會鎖死在一家廠商。以 2026-09-07 的規格，即夢上的 Seedance 2.5 是理性預設。Wan 3.0 是唯一同為 30 秒原生窗的對手，但 8 月初仍偏預覽／邀測。可靈 3.0 與 MiniMax H3 是 15 秒級大陸備援。Veo／Gemini Omni、Runway Gen-4.5、Sora 過不了入口或對白門，或兩者都過不了。
+
+**Seedance 2.5：** 4–30 秒、原生音畫、30 圖＋10 影片＋10 音。中國門在即夢與豆包專業版。解析度文件互打（即夢上線日 720p vs 部分 API／轉售 1080p）。成本訊號：火山示例 5 秒 16:9 約 ¥7.56（720p）；即夢高級會員連續包有報 ¥499／6,160 積分。對本片：**最佳大陸原生匹配**。
+
+**可靈 3.0／Omni：** 3–15 秒、原生音、中文加方言、Omni 最多約 7 張圖。大陸 klingai.com、支付寶／微信。對本片：**可用備援**，方言與元素庫有用，但原生時長一半、聖經更薄，縫的刀更多。
+
+**Google Veo 3.1／Gemini Omni：** Veo 官方原生 4／6／8 秒；Omni Flash 官方 3–10 秒。AA 榜 Omni Flash 與 Wan 3.0 並列文生影片含音第一（Elo 1238）。Gemini API／AI Studio **不是中國支援區**。對本片：**榜首品質、這個 UP 的生產起點不合格**。
+
+**Runway Gen-4.5：** 官方 API 2–10 秒，`gen4.5` schema **沒有 audio 欄**。美元、牆。對本片：**差**。默片短鏡頭，沒有中文對白門。
+
+**MiniMax H3／海螺 3：** 與 Seedance 2.5 同日上線（2026-07-31）。4–15 秒、原生立體聲、最多約 9 圖 3 影片 3 音。官方 API 約 $0.08／秒（768P）。權重有開源（IR 仍託管）。對本片：**最好的便宜大陸替代**，時長與參考不如 2.5，鎖死風險最低。
+
+**阿里 Wan 3.0：** 官方 2–30 秒、30 fps、原生對白／BGM／音效、最多約 20 個多模態參考。北京目錄價 720p ¥0.6／秒、1080p ¥1.2／秒，比 Seedance 公開 720p 示例便宜。英文 API 仍寫 preview；公開百煉文多落在 2026-08-06–13，即 Seedance 2.5 之後、本片上傳前數日。AA 文生影片含音並列第一。對本片：**最接近的能力雙胞胎**；對 8 月初已在渲的個人，入口時點與邀測狀態才是問題。
+
+**Sora：** 消費端已關、API 將關。從不是大陸消費路徑。GPT Image 2 是另一個產品。對本片影片渲染：**出局**。
+
+為何 Seedance 2.5 是理性選擇：2026-07-31 後兩週，它是唯一 **普遍可及的大陸消費模型**，同時具備 30 秒原生、能講中文的原生音、30 張服裝／角色聖經、即夢裡用微信／支付寶。可靈與 H3 活著但 15 秒、參考更少。Wan 3.0 對得上 30 秒且每秒更便宜，但預覽／邀測，片子開剪時才剛出現在百煉。Google、Runway、Sora 過不了登入或付款。競技場 Elo 會指向 Wan 或 Omni，不是指向能在 B 站檔期裡做完 26 分鐘古裝的那一個。
 
 ### Decision Matrix
 
-| Option | Performance | DX  | Community | Cost | Lock-in | Notes |
-| ------ | ----------- | --- | --------- | ---- | ------- | ----- |
-| _TBD_  |             |     |           |      |         |       |
+| Option | Native length | Audio | Refs | China access | Cost signal | Lock-in | Fit for this film |
+| ------ | ------------- | ----- | ---- | ------------ | ----------- | ------- | ----------------- |
+| **Seedance 2.5** | 4–30s；即夢「約 3 分」是產品延長 | 原生聯合音畫 | 30 圖＋10 影片＋10 音 | 是：即夢／豆包／人民幣 | 即夢 720p 約 26 點／秒；API 示例 ¥7.56／5s 720p | 閉源；積分過期；聖經是靜幀不是 ID | **主選。** 2026 年 8 月初唯一普遍可及的 30s＋厚聖經＋中文原生音 |
+| **Wan 3.0** | 2–30s；30 fps | 原生對白／BGM／SFX | 約 10 圖＋5 影片＋5 音 | 是（北京區），8 月仍偏 preview／邀測 | 北京 ¥0.6／s 720p、¥1.2／s 1080p | 閉源；阿里帳 | **最接近雙胞胎。** 每秒更便宜、AA Elo 更高；時點可能太晚 |
+| **Kling 3.0／Omni** | 3–15s | 原生；中文＋方言 | Omni ≤7 圖 | 是：可靈、支付寶 | 官方 9–12 點／s（720／1080 含音） | 閉源；中／國際積分不互通 | **可用備援。** 刀數約兩倍 |
+| **MiniMax H3** | 4–15s | 原生立體聲；含中文 | ≤9 圖、≤3 影片、≤3 音 | 是：海螺 | 官方 $0.08／s 768P | 權重部分開源；IR 仍託管 | **最好的便宜替代與鎖死對沖** |
+| **Gemini Omni Flash** | 3–10s | 預設音畫；非英語「未評估」 | 首幀為主 | 否（非中國區；美元） | AA $6／min | Google 帳＋SynthID | 榜首，不是這個 UP |
+| **Veo 3.1** | 4／6／8s | 有聲 | 「資產圖」，數量官方表未寫清 | 否（us-central1） | AA $24／min | Vertex／C2PA | 太短、太貴、沒大陸門 |
+| **Runway Gen-4.5** | 2–10s | 官方 schema 無 audio | 1 張首幀 | 否 | 12 點／s | App／API 積分分裂 | 差：默片、無中文對白門 |
+| **Sora 2** | n/a（退出中） | n/a | n/a | 否 | n/a | 2026-09-24 硬日落、無後繼 | 出局 |
 
 ### Migration and Lock-in Risks
 
-_Pending Step 3._
+閉源大陸消費 App（即夢、可靈、海螺、百煉）都鎖月積分、提示詞語法、參考打包規則。臉與服裝若離線保存 **靜幀聖經** 就可攜；若只存在廠商「元素」裡就不可攜。Seedance 的 30 圖包進不了可靈 Omni 的 7 槽或 H3 的 9 槽，除非重排聖經。原生音 **不會** 給你一條 26 分鐘配樂：五十幾段各自生成的床會在 NLE 裡互打。H3 是這裡唯一公開權重的選項，但質量關鍵的 Context-IR 仍託管，「開源」不是完整逃生口。Wan 3.0 是能力層最不痛的遷移（同 30 秒級、原生音、多模態參考），且 1080p 每秒比 Seedance 720p 示例便宜——若你的百煉帳真的 GA。Google 與 Runway 加 SynthID／C2PA、美元帳、對 VPN 不友善的條款；不是大陸生產遷移。Sora 是強迫遷移且無後繼。若有人要重做這部片：把 GPT 級或即夢靜幀當廠商中立角色聖經；Seedance 2.5（或已 GA 的 Wan 3.0）出對白英雄鏡；H3 做覆蓋與補拍的成本對沖。不要把管線重建在 Veo、Omni、Runway 或 Sora 上，除非製作人已有外卡且不需要可靠的中文原生對白。
+
+> Conflicts noted（Step 3）: 播放量是時間序列快照，不是互相否定，除香港 01 8 月 28 日 1,447 萬低於前幾日若干數字。工具鏈：多數寫兩模型，環球時報另加即夢。下架是記錄在案的謠言；9 月 2–3 日仍在是記錄在案的事實。CNAA「AI 約 95% 的 **部數**」與 TVOAO「春晚 **播放** 真人仍 25 倍」可並存。BBC「兩百萬工作被打」把 2025 拉動就業估計改寫成替代。楊天真 30% 帶「據說」。DataEye 400 億是 2026 **預測**。26 分鐘 vs 令文每集 **少於 20 分鐘**。Seedance 解析度與即夢 3 分鐘模式文件互打。Wan 3.0 preview vs AA 已上榜。
+> Gaps: 無字節／OpenAI 對本片聲明；無大賽入圍名單；無具名翻拍；無製作帳單；9 月 3 日之後的在架狀態未從頁面核實；無漢服／中文對白專項分數。
 
 ## Implementation Considerations
 
@@ -188,7 +246,36 @@ _Pending Step 4 — long-form AI film assembly from 4–30s clips._
 
 ### Common Pitfalls and Gotchas
 
-_Pending Step 4._
+做一部約 26 分鐘的 Seedance 2.5 古裝片，真正的風險不是「模型會不會出畫面」，而是同一套失敗模式會在五十幾段成功鏡頭上複利。Seed 官方單次最長 30 秒，INSIDE 把 1,560 秒／30 秒算成至少約 53 次成功生成再加廢片；那是這部片的結構約束，不是行銷口號。[INSIDE](https://www.inside.com.tw/article/42194-why-ai-short-film-ask-the-common-people-hailed-as-the-most-soulful-ai-animation-became-a-cross-strait-sensation)（accessed 2026-09-07, confidence: High）；[ByteDance Seed 2.5 英文部落格](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)（accessed 2026-09-07, confidence: High）。下面分開寫兩層：**觀眾對《把人寫成了妖》成片回報了什麼**，以及 **Seedance 2.5／GPT Image 2 作為工具的通用坑**。兩者不能混成一句「這部片也有某某穿幫」。
+
+**本片觀眾實際說出口的，不是換臉、不是嘴型崩。** 聯合早報引彈幕：有人看了近兩分鐘才問「這是用 AI 製作的嗎」；同一篇也寫，觀眾誇 26 分鐘內樣貌、場景、光影大致統一，強光下瞳孔收縮、主角寫字筆畫基本正確，被當成「一定和 AI 打磨了很久」。同報接著寫：不少觀眾仍認為 AI 痕跡明顯，金句是「沒有破綻就是最大的破綻」——影片**未出現**人物變形、嘴型錯位等常見 AI 穿幫，但畫面過於乾淨、光滑，少了真人實拍的瑕疵，反而讓人看出「AI 味」。[聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High）。INSIDE 獨立補一層：臉、服、光比早期 AI 短片穩，但眼神銳利度與痛苦層次仍輸真人，「甚至是某些細節上，穿幫的次數還不在少數」。[INSIDE](https://www.inside.com.tw/article/42194-why-ai-short-film-ask-the-common-people-hailed-as-the-most-soulful-ai-animation-became-a-cross-strait-sensation)（accessed 2026-09-07, confidence: Medium，因未列具體穿幫鏡頭）。澳門力報更具體：部分動作銜接略顯僵硬，群眾場面人物細節不完全一致，某些鏡頭光影與尺度有變化。[澳門力報](https://www.exmoo.com/article/264667.html)（accessed 2026-09-07, confidence: Medium）。香港 01、洞傳媒、力報都把成片策略寫成同一套規避：多用中遠景、剪影、煙霧、低飽和水墨，降低口型、手部與肢體破綻的可讀性。這是記者對成片語言的解讀，**不是作者自述**，也不是 B 站彈幕原文；本環境無法直抓 `BV1rHbY6MEB9`（HTTP 412）。[香港 01](https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60384498/ai%E7%9F%AD%E5%8A%87-%E6%8A%8A%E4%BA%BA%E5%AF%AB%E6%88%90%E4%BA%86%E5%A6%96-%E6%87%B6%E4%BA%BA%E5%8C%85-%E7%B6%B2%E6%B0%91%E5%B0%81%E7%A5%9E%E4%BD%9C10%E5%A4%A7%E9%87%8D%E9%BB%9E%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E9%9A%B1%E5%96%BB)（accessed 2026-09-07, confidence: Medium）；[洞傳媒](https://taiwandomnews.com/%e7%94%9f%e6%b4%bb/92385/)（accessed 2026-09-07, confidence: Low，轉述香港 01 同一觀察）。沒有 mainstream 來源點名本片有漢服形制錯誤、現代物品入鏡、或片內中文亂碼；主導抱怨是殘餘平滑感與微表情，不是考據戰。
+
+**官方自己承認的上限，比教程狠。** Seed 中文發布文把「油膩感」當成前代已知病：2.5「有效弱化了視頻生成中常見的『油膩感』」，並對材質、膚質、眼神、光影、飽和度做系統優化；同文說減少了字幕與背景音樂不受控。英文稿把同一件事寫成「more natural, polished visual quality than commonly seen in AI-generated video」，並 minimize uncontrolled subtitles and background music。收尾兩語種一致承認還有進步空間：複雜運動的物理合理性、極多主體交互場景的穩定性。[ByteDance Seed 中文部落格](https://seed.bytedance.com/zh/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)（accessed 2026-09-07, confidence: High）— **Primary**；[英文同文](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)（accessed 2026-09-07, confidence: High）。OpenAI 圖像指南把 GPT Image 家族（含 `gpt-image-2`）的失敗模式寫進 Limitations：複雜提示可達約兩分鐘延遲；文字渲染「significantly improved」但仍可能在精確排字與清晰度上失敗；身分「may occasionally struggle to maintain visual consistency for recurring characters or brand elements across multiple generations」；版面敏感構圖仍難精確落位。[OpenAI Image generation guide](https://developers.openai.com/api/docs/guides/image-generation)（accessed 2026-09-07, confidence: High）— **Primary**。Cookbook 的對策是把不變量每次重講、字面文字加引號、用 `medium`／`high` 跑小字與密排，並用「change only X / keep everything else」防編輯漂移；它沒有給漢代銘文或小楷正確率。[OpenAI cookbook prompting guide](https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide)（accessed 2026-09-07, confidence: High）。
+
+**身分漂移是通用 Seedance／GPT Image 坑，不是本片觀眾的主訴。** OpenAI 自己把跨次生成角色一致性列為官方限制。實務上，Seedance 沒有公開的 Identity-Lock 滑桿或使用者可見 seed lock；一致性靠參考槽怎麼花、以及延長而不是重抽。**Low-tier tutorial：** 若干工具部落格把「Identity-Lock」當功能名賣，ByteDance 材料裡找不到這個開關。[AI Video Sensei](https://aivideosensei.com/guides/seedance-2-5-character-consistency)（accessed 2026-09-07, confidence: Low）。GitHub 上也沒有官方 Seedance 2.5 issue tracker——模型閉源。能找到的是第三方診斷技能：`Emily2040/seedance-2.0` 把「Product or face changes」歸因於 I2V 提示重寫了可見身分或動作過載，把「Identity reference conflicts with continuity source」列成延長失敗；`lukasersil/seedance-25` 把「faces that drift, crowds that look like clones」寫成人人都會撞的修復句。這些是實務清單，不是廠商缺陷資料庫。[GitHub Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0/blob/main/skills/seedance-troubleshoot/SKILL.md)（accessed 2026-09-07, confidence: Medium，就社群觀測而言）；[GitHub lukasersil/seedance-25](https://github.com/lukasersil/seedance-25)（accessed 2026-09-07, confidence: Low）。AIX 財經／搜狐在即夢上六場景實測：單人 30 秒與雙人北宋打鬥裡「沒有隨著鏡頭切換而變臉」，但把 50 槽參考拉滿時，檸檬參考圖最後生成了橙汁——槽位變多，模型仍會把素材角色弄錯。[搜狐／AIX財經](https://www.sohu.com/a/1057749967_116132)（accessed 2026-09-07, confidence: Medium）。Hacker News 在 2.5 發布文下（442 分、255 則）抱怨的是官方 demo 卷，不是本片：連續性錯誤、禮盒前後不一致、背景交通逆向、接吻時手瞬移回身側、整體仍「stiff and unnatural」。[@globular-toast / HN](https://news.ycombinator.com/item?id=49138302)（accessed 2026-09-07, confidence: Medium，就 demo 觀感而言）。對這部用 GPT Image 2 假臉、再餵 Seedance 參考圖的古裝片，身分風險在聖經本身會漂，不在真人臉審核。
+
+**手與解剖：GPT Image 論壇仍在報；本片觀眾幾乎沒拿它當出戲點。** OpenAI Developer Community 2026-07 的 GPT Image 2.0 問題匯總裡，使用者回報六指、上臂過長、肢體被遮擋後重建錯長度；有人覺得 2.0 在解剖上相對 1.5 退步，提示「five fingers only」不穩。[OpenAI forum, GPT Image 2.0 issues](https://community.openai.com/t/collection-of-gpt-image-generator-2-0-issues-bugs-and-work-around-tips-check-first-post/1379535/353)（accessed 2026-09-07, confidence: Medium）。Seed 官方把複雜接觸與多主體交互列為未解物理問題；GitHub 診斷技能對唇形失敗的第一修復是鎖構圖、縮短對白、指定說話人，對不穩文字則「keep text static」。本片側，聯合早報明確寫**沒看到**常見肢體變形；香港 01／力報的解讀是作者用中遠景把這些失敗藏進煙霧。那是規避成功的證據，不是「模型已經不會畫手」。
+
+**口型同步：官方賣點與本片觀感對得上，通用坑仍在。** Seed 發布文與搜狐轉述都把十余種語言的口型／語速同步當 2.5 升級；聯合早報引觀眾：這部片沒有常見嘴型錯位。GitHub 技能與即夢實測仍把長對白、鏡頭大動、未指定說話人列成唇形失敗條件。通用對策是把英雄對白放進 30 秒原生窗、近景少動、或像本片那樣把說話人推到中遠景與剪影——後者是成片選擇，不是模型保證。
+
+**光影連續與 30 秒／延長落差，是長片製作的真坑，也是本片少數被點名的殘餘。** 力報寫某些鏡頭光影與尺度有變化，這是對**本片**的觀察。通用層，Seed 宣稱多輪延長會保持主體、環境與敘事節奏；產品頁較保守，寫最多延長兩次。搜狐實測把雙人打鬥向後延長 10 秒：外貌、服裝、武器接住了，但結尾的靜止對峙被拉長、新動作沒有情緒過渡——「能夠識別前一段視頻長什麼樣，卻還不能完全理解劇情講到哪里」。[搜狐／AIX財經](https://www.sohu.com/a/1057749967_116132)（accessed 2026-09-07, confidence: Medium）。**Low-tier tutorial：** 18183 寫「三十秒是即夢所有生成模式裡畫質和穩定性都最高的檔位」「延長部分因為插值和續寫可能畫質輕微衰減」，並建議高潮放原生 30 秒、過渡放延長。這與官方「延長保持連貫」的行銷並排，但 18183 不是 Seed 文件。[18183](https://www.18183.com/gonglue/202607/mvll0en8.html)（accessed 2026-09-07, confidence: Low）。GitHub 技能把「Extension quality degrades」的第一修復寫成：用回傳末幀當下一鏡首幀，一次只改一個變量。[GitHub Emily2040](https://github.com/Emily2040/seedance-2.0/blob/main/skills/seedance-troubleshoot/SKILL.md)（accessed 2026-09-07, confidence: Medium）。網易智能彙整創作者經驗：30 秒減少拆段，但漏動作之後整段重抽更貴；Jay Nwabueze 在 Dreamina 看到 2.5 的 15 秒要 630 積分、2.0 只要 230，做法是 2.0 打草稿、2.5 出英雄鏡頭。[網易科技](https://www.163.com/tech/article/L3FTQKIV00097U7T.html)（accessed 2026-09-07, confidence: Medium）。
+
+**「AI 平滑／油膩」是本片觀眾的主訴，也是 Seed 自己點名要壓的東西。** 2.0 社群把蠟質膚、用力過猛的表情、千人一面當退熱後的真實抱怨；2.5 官方用「弱化油膩感」回應。搜狐實測說蠟質明顯減輕、毛孔與明暗較像真人。聯合早報對本片的轉述幾乎是同一病的殘留形態：解剖沒崩，乾淨本身成了破綻。**Low-tier tutorial：** 18183 建議在剪映加 5–8% 膠片顆粒與微銳化來「去油」——這是後期補丁，不是模型保證。[18183](https://www.18183.com/gonglue/202608/14b2vrss.html)（accessed 2026-09-07, confidence: Low）。Hacker News 對官方 demo 的判斷同向：明顯 glitch 少了，但仍「looks wrong」。[@efficax / HN](https://news.ycombinator.com/item?id=49138302)（accessed 2026-09-07, confidence: Medium）。
+
+**積分燃燒與即夢過期，是這條管線的經濟坑，不是觀影坑。** 極目新聞上線日記者坐在即夢 App：2.5、720p、非會員 5／10／15／30 秒對 130／260／390／780 點，約每秒 26 點；對照 2.0 VIP 每秒約 14 點。基礎會員連續包月 41 元／月贈 725 點——不夠一次完整 30 秒 2.5。[極目新聞 via 網易](https://www.163.com/dy/article/L36N8Q9T053469LG.html)（accessed 2026-09-07, confidence: High）。HN 使用者轉述 Twitter：Dreamina 30 秒約 1,440 credits／約 15 美元，與 780 點中國價衝突，應視為不同表面或含稅／會員折扣，不能合成一個數。[@JimsonYang / HN](https://news.ycombinator.com/item?id=49138302)（accessed 2026-09-07, confidence: Low）。即夢官方積分規則：每日免費積分當日 24:00 清零；訂閱積分自發放起 30 天，會員到期或取消則失效／凍結後清零；充值積分有效期兩年；消耗順序是快過期者優先，預設每日免費 → 訂閱 → 充值。延長生成時長標為會員功能。[Dreamina／即夢積分規則](https://lf26-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/bbb8a810-1fd5-4962-a24a-9b01acd3dec4.html)（accessed 2026-09-07, confidence: High）— **Primary**。對 26 分鐘片：成功鏡頭至少約 52×30 秒，尚未計重抽。用 780 點／條粗算，僅成功鏡就約 40,560 點；若走 2.0 草稿＋2.5 英雄鏡，點數曲線完全不同。沒有來源公布青瓜蛋的實際帳單。
+
+**片內中文是 GPT Image／Seedance 的通用弱項；本片沒被觀眾拿來罵標題字。** OpenAI 官方只承認「precise text placement and clarity」仍可能失敗，沒有分語言正確率。VentureBeat／社群公告把多語文字當 2.0 賣點。對立的實務來源：**Low-tier：** 圖叮 2026-04／07 寫大字號少字中文看運氣、小字密集別賭，建議「AI 留白＋後期貼字」；BestHub 類教程給出標題 ≤10 字、文字區 ≤4 的經驗上限，不是官方指標。[圖叮AI](https://tudingai.cn/blog/202607/gpt-image-2-chinese-text-garbled-workarounds/)（accessed 2026-09-07, confidence: Low）；[圖叮 能力邊界](https://tudingai.cn/blog/202604/gpt-image-2-capability-boundaries/)（accessed 2026-09-07, confidence: Low）。Qwen-Image-2.0 技術報告的對照圖把 GPT Image 2 的中文海報評成主標題以外常不可讀——這是競爭對手論文，當對立證據而非中立基準。[arXiv 2605.10730](https://arxiv.org/abs/2605.10730)（accessed 2026-09-07, confidence: Medium）。Seed 自己說 2.5 減少了不受控字幕；GitHub 技能仍把運動中的小字／logo 列成必崩項。對東漢卷宗、招牌、題字：穩妥做法是靜幀裡少生成可讀長句，或後期疊字。聯合早報對本片「寫字筆畫基本正確」是讚書寫動作，不是讚牆上文案 OCR。
+
+**歷史服裝錯誤與現代物洩漏，是古裝管線的提示詞病，不是本片已核實的穿幫清單。** 沒有 mainstream 影評點名本片把明制馬面裙或拉鍊穿進東漢。通用層，漢服教程反覆寫的坑是：只寫「古裝／hanfu」會得到無朝代影樓裝、唐廓型加明繡、左衽（斂服）、運動鞋／手錶／現代耳環、西方骨相。**Low-tier tutorial，標明以免誤當史據：** [AI 工具指南](https://aitoolsguidebook.com/zh/articles/hanfu-character-prompts/)（accessed 2026-09-07, confidence: Low）；[FlowPix](https://www.flowpixai.com/ai-art/ai-painting-hanfu-gufeng.html)（accessed 2026-09-07, confidence: Low）；[圖叮 形制避坑](https://tudingai.cn/blog/202606/ai-generate-ecommerce-batch-bl-27edbe/)（accessed 2026-09-07, confidence: Low）。Seedance 側，官方與較乾淨的提示指南都要求給參考圖寫角色（哪張管身分、哪張管場景），並明示排除項，否則參考圖背景、路人、logo 會漏進成片。Morphic 把「Reference text appears in video」列成未排除文字遷移；Tryonr 把「刪除無人機與前景軌道、其餘保持不變」當清穿幫公式——皆 **Low-tier**，但與官方「其餘保持不變」的編輯語法同向。[Morphic Seedance 2.5 指南](https://morphic.com/resources/how-to/seedance-2-5-guide)（accessed 2026-09-07, confidence: Low）；[Tryonr](https://tryonr.com/zh/blog/seedance-2-5-video-editing-extend)（accessed 2026-09-07, confidence: Low）。搜狐實測裡，工業機械臂鏡頭開頭無故出現提示詞沒要求的鋼筆特寫，再靠局部編輯換成手機——這是「模型自己加現代物」的通用例子，與本片無直接對照。
+
+**五十幾段原生音床互打，是長片剪輯的結構坑。** Seedance 預設 `generate_audio: true`（BytePlus／多數表面；部分轉售把預設寫成 false，屬文件衝突）。每段 MP4 內建對白、環境聲、有時還有 BGM。官方 2.5 宣稱減少不受控 BGM，但 LinkedIn 實務串仍寫負面提示「no music」壓不住，只好做分軌或後期剝樂；有人把「同一套合成床」當成 AI 廣告的新指紋。[Justinas Vosylius / LinkedIn](https://www.linkedin.com/posts/justinas-vosylius_generativeai-aivideo-genai-activity-7493583013293809664-5Br9)（accessed 2026-09-07, confidence: Low）。GitHub 技能把「Audio phase restarted」列成延長／接片失敗：完成的對白或音樂相位沒被記下，下一段會重開。Flixpress 比較延長與末幀串接時寫：兩幀對得上，房間底噪、聲線、配樂重啟仍會露出接縫。[Flixpress](https://flixpress.com/seedance-2-5-extension-vs-last-frame-chaining-which-keeps-a-60-second-video-consistent/)（accessed 2026-09-07, confidence: Low）。作者沒公布 NLE 或是否關原生音；觀眾誇「配音很專業」不能當流程證據。結構上，26 分鐘若保留每段原生 BGM，接點會打架；若要一條連續配樂，必須在剪輯器重鋪，而不是指望 50 段各自生成的床對上調。
+
+**API 產物 URL 24 小時過期，是開發者坑；真人臉參考封鎖對這部假臉片幾乎不相干。** BytePlus LAS 明文：Seedance 2.x **不支援直接上傳含真人臉的參考圖或影片**；要用肖像須走白名單素材庫、授權上傳後以素材 ID 呼叫。生成預簽名鏈接「valid for 24 hours」。[BytePlus LAS](https://docs.byteplus.com/en/docs/Byteplus_LAS/video_gen_enhanced)（accessed 2026-09-07, confidence: High）— **Primary**。DEV 實務文在 2.5 回傳裡看到 `X-Tos-Expires=86400`；任務 ID 另留約 7 天，但檔案不在。[DEV Community](https://dev.to/codesugar_lin_037a57b06a4/seedance-25-api-the-official-endpoint-and-6-gotchas-a22)（accessed 2026-09-07, confidence: Medium）。本片角色是 GPT Image 2 生成臉，官方真人臉閘門不是障礙；若有人把「長得像張晚意／陳曉」的截圖當參考圖反餵 API，才可能撞審核。聯合早報只記觀眾覺得主角「有幾分相似」，沒有說作者用了真人劇照。[聯合早報](https://www.zaobao.com.sg/entertainment/story20260903-9619222)（accessed 2026-09-07, confidence: High，就觀感轉述而言）。
+
+把這些壓回這部片的製作含義：觀眾已經證明，2026 年 8 月用 Seedance 2.5＋GPT Image 2 可以把換臉、崩嘴、明顯六指壓到「不讓人出戲」；他們沒有證明油膩感、群眾臉、光影跳、延長後的劇情節奏、以及五十段音床能在一次生成裡消失。官方承認的失敗模式（複雜物理、多主體、跨次角色一致性、精確中文排字）仍然是排片時要主動避開或後期修的東西，而不是被這部神作取消的東西。
+
+> Conflicts noted（pitfalls）: 即夢 780 點／30 秒 vs HN 轉述 Dreamina 1,440 credits／~$15；`generate_audio` 預設 true（官方／多數 API）vs 部分轉售文件寫 false；官方「延長保持主體與節奏」vs 搜狐實測「畫面接住、劇情斷拍」vs Low-tier「延長畫質衰減」；OpenAI 多語文字賣點 vs 圖叮「中文仍賭運氣」vs Qwen 論文對照圖；香港 01「用中遠景掩蓋口型破綻」是記者推論，聯合早報則寫觀眾沒看到嘴型錯位——兩者可並存（掩蓋成功），但不能當成作者自述。GitHub 無官方 issue，只有第三方技能庫。
+> Gaps: B 站頁 HTTP 412，無彈幕原文庫；無作者製作日誌、廢片率、即夢 vs API、是否關原生音；無本片漢服形制或現代物穿幫的逐鏡清單；無獨立 Seedance 2.5 Elo；OpenAI 無分語言文字正確率；延長「最多兩次」產品頁 vs 部落格「數分鐘」vs 即夢約 180 秒超長模式未在本軸逐一核對。
 
 ### Security and Compliance
 
