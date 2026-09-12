@@ -49,3 +49,20 @@ Examples:
 ```
 
 Slash-only: `disable-model-invocation: true`. Markdown/CSV need no extra tools. `--sheet` needs `gws` (`npm i -g @googleworkspace/cli`).
+
+### General trip planner (skywain)
+
+From [skywain/trip-planner-skill](https://github.com/skywain/trip-planner-skill) (MIT), adapted for Cursor.
+
+| Command | Skill | Purpose |
+|---------|-------|---------|
+| `/trip-planner` | `trip-planner` | Full trip: cities, flights, hour-by-hour days, hotels, HTML + KML |
+
+Also runs on natural language, e.g. `plan me 12 days in Japan`.
+
+```
+/trip-planner Japan, 12-15 days in October from London, mid budget, history and food
+```
+
+Needs Python 3.9+. Optional: `fast-flights` for live flight prices. Working files go in `./trips/`.
+
