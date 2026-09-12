@@ -20,6 +20,7 @@ Do not run this skill for casual flight questions. Wait for `/flight-report`.
 - Needs `fast-flights` (`python3 -m pip install --user fast-flights`, or a venv). If install fails, fall back to Google Flights + airline sites and mark prices `verify at link`.
 - Write the Markdown report under `./flight-report/` in the repo root. JSON dumps can stay in `/tmp` or `./flight-report/`.
 - Search **all** full-service carriers on the route (including Cathay), not only CI / BR / JX / ANA / JAL. Apply a nonstop filter only if the user asked 直飛.
+- If the user said **不要廉航** or **全服務**, every table is full-service only. Do not list Jetstar / Scoot / Tigerair / Peach / Thai Lion / HK Express / ZIPAIR / Jeju / T'Way or other LCC “for completeness” or because the template wants the absolute cheapest.
 - Never treat a marketing “month from TWD X” floor as the price for a specific pair. Checkout / script JSON wins.
 - Do not book, pay, or enter personal data.
 
@@ -174,7 +175,7 @@ Follow the template at `.cursor/skills/flight-report/references/report-template.
 
 Key formatting rules:
 - Use a Markdown table for the price comparison
-- Show TOP 10 cheapest flights (or combinations for flexible round-trip)
+- Show TOP 10 cheapest flights (or combinations for flexible round-trip). If the user said 不要廉航 / 全服務, this TOP 10 is full-service only.
 - For flexible round-trip, include: 天（含頭含尾）/夜、請假天數、行李費、總成本
 - **請假天數算法**：去程當天一律算請假（除非出發時間在晚上 22:00 之後），回程當天不算請假。中間的平日全部算請假
 - Include "各天數最便宜" and "依請假天數推薦" sections for flexible round-trip
