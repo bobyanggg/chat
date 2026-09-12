@@ -32,22 +32,37 @@
 
 ---
 
-## 機票（只要全服務，不要廉航，2026-09-12 查）
+## 機票（只要全服務，不要廉航）
 
-只比 **華航、長榮、星宇、ANA、JAL**。不要樂桃／酷航／虎航／捷星。經濟艙來回，行李多半含 1 件。2 月是台北–東京偏貴月（KAYAK 歷史均價約 TWD 16,629）。
+查詢 2026-09-12。只比 **華航、長榮、星宇、ANA、JAL**。經濟艙來回，行李多半含 1 件。
 
-| 航空 | 航線 | 來回約 | 來源 |
-|------|------|--------|------|
-| **華航 CI** | TPE–NRT | 2 月地板 **TWD 13,946** | [華航](https://flights.china-airlines.com/zh-tw/flights-from-taipei-to-tokyo) |
-| **星宇 JX** | TPE–NRT | **TWD 14,498–14,501**（例 2/17–3/14、2/24–3/04） | [星宇](https://www.starlux-airlines.com/flights/zh-tw/flights-from-taipei-to-tokyo) |
-| **長榮 BR** | TPE–NRT | 淡季樣本約 TWD 14,784；2027/3 約 16,850–17,096 | [長榮](https://flights.evaair.com/zh-tw/) |
-| **ANA** | TSA–HND | **TWD 15,994–17,672**（例 2/10–2/17 約 15,994） | [ANA](https://flights.ana.co.jp/zh-tw/flights-from-taipei-to-tokyo) |
-| **長榮 BR** | TSA–HND | **TWD 17,822**（樣本 2027/2/14–2/22） | 同上 |
-| **JAL** | TPE/TSA–HND | 通常跟 ANA／長榮同級或略貴 | [JAL](https://www.jal.co.jp/) |
+時間用 **2026/10/25–2027/3 冬季班表**（2027/2 走這套）。訂位當下以官網為準。價是官網月地板／樣本，**2/20–2/25 當天可能更高**。
 
-**主推：華航或星宇桃園–成田，約 TWD 14,000。** 要松山–羽田少轉車：ANA／長榮約 TWD 16,000–18,000。
+排序：配合這趟（去程午前到、Day 6 能逛再傍晚走）＞機場方便＞價。
 
-怎麼訂：官網來回搜 **2/20–2/25**。沒艙就挪前後 1–2 天。不要拆兩張單程（全服務單程很貴）。比價：[Google Flights](https://www.google.com/travel/flights?q=Flights%20from%20Taipei%20to%20Tokyo%20on%202027-02-20%20through%202027-02-25)。
+### 前 10 優選（主推 2/20 去、2/25 回）
+
+| # | 去程 | 回程 | 航空 | 來回約 | 訂哪 |
+|---|------|------|------|--------|------|
+| **1** | 2/20 六 **JX800** TPE 08:25 → NRT 12:35 | 2/25 四 **JX805** NRT 20:10 → TPE 23:20 | 星宇 | 2 月地板 **TWD 14,711**；2 月多數日約 15,856 | [星宇](https://www.starlux-airlines.com/flights/zh-tw/flights-from-taipei-to-tokyo) |
+| **2** | 2/20 **JX802** TPE 10:10 → NRT 14:20 | 2/25 **JX805** NRT 20:10 → TPE 23:20 | 星宇 | 同上 | 同上 |
+| **3** | 2/20 **CI100** TPE 09:30 → NRT 13:30 | 2/25 **CI105** NRT 17:45 → TPE 20:55 | 華航 | 2 月地板 **TWD 15,857** | [華航](https://flights.china-airlines.com/zh-tw/flights-from-taipei-to-tokyo) |
+| **4** | 2/20 **CI100** TPE 09:30 → NRT 13:30 | 2/25 **CI109** NRT 19:30 → TPE 22:45 | 華航 | 同上 | 同上 |
+| **5** | 2/20 **JL096** TSA 09:10 → HND 13:05 | 2/25 **JL099** HND 18:10 → TSA 21:00 | JAL | 約 TWD 16,000 起（跟 ANA 同級或略貴） | [JAL](https://www.jal.co.jp/) |
+| **6** | 2/20 **JL802** TPE 10:55 → NRT 14:55 | 2/25 **JL809** NRT 18:05 → TPE 21:10 | JAL | 約 TWD 16,000 起 | 同上 |
+| **7** | 2/20 **CI220** TSA 09:00 → HND 12:50 | 2/25 **CI221** HND 14:15 → TSA 17:15 | 華航 | 約 TWD 16,000 起 | [華航](https://flights.china-airlines.com/zh-tw/flights-from-taipei-to-tokyo) |
+| **8** | 2/20 **NH852** TSA 13:30 → HND 17:30 | 2/25 **NH853** HND 12:40 → TSA 15:50 | ANA | 2 月地板 **TWD 16,006**（例 2/13–2/27） | [ANA](https://flights.ana.co.jp/zh-tw/flights-from-taipei-to-tokyo) |
+| **9** | 2/20 **BR192** TSA 07:15 → HND 11:00 | 2/25 **BR191** HND 12:15 → TSA 15:05 | 長榮 | 樣本 **TWD 17,822**（2/14–2/22） | [長榮](https://flights.evaair.com/zh-tw/) |
+| **10** | 2/20 **BR198** TPE 08:50 → NRT 12:55 | 2/25 **BR197** NRT 14:00 → TPE 17:05 | 長榮 | 約 TWD 16,850 起 | 同上 |
+
+比價（不訂）：[Google Flights 2/20–2/25](https://www.google.com/travel/flights?q=Flights%20from%20Taipei%20to%20Tokyo%20on%202027-02-20%20through%202027-02-25)。不要拆兩張單程。
+
+**怎麼挑**
+- 要便宜＋Day 6 能逛：**#1 星宇 JX800／JX805**。
+- 要松山－羽田、回程真的傍晚：**#5 JAL JL096／JL099**（長榮／ANA 松山回程都偏中午）。
+- **#7–#10** 回程 12:00–14:15，銀座只能上午或砍掉。
+
+班表來源：星宇 [AeroRoutes NW26](https://www.aeroroutes.com/eng/260730-jxnw26nrt)；華航／長榮／ANA／JAL 冬季時刻 [FlightMapper](https://info.flightmapper.net/)＋航空官網。
 
 成田進城：京成 Skyliner 約 40–50 分到日暮里再轉新宿，或 N'EX。預留 90 分。
 
@@ -128,8 +143,8 @@
 
 | 項目 | 約 |
 |------|-----|
-| 全服務來回（華航／星宇 TPE–NRT） | 約 TWD 14,000 |
-| 松山–羽田（ANA／長榮） | 約 TWD 16,000–18,000 |
+| 全服務來回（星宇／華航 TPE–NRT） | 約 TWD 14,700–16,000 |
+| 松山–羽田（JAL／ANA／長榮） | 約 TWD 16,000–18,000 |
 | 新幹線東京–湯澤來回指定席 | ¥14,000（早鳥可再低） |
 | 雪票 3 天 | ¥20,000–22,000 |
 | 租雪具＋雪衣 3 天 | ¥36,000 |
