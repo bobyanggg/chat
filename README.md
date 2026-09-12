@@ -29,3 +29,23 @@ From [samber/cc-skills deep-research](https://github.com/samber/cc-skills/tree/m
 Slash-only: `disable-model-invocation: true`. Casual “research X / look into Y” does not start this skill.
 
 Supports 11 types (market, domain, technical, competitive, product, academic, person/org, financial, legal, trend, community). Optional PDF export if `pandoc` or `md-to-pdf` is installed.
+
+### Japan trip planning (abalmeo)
+
+From [abalmeo/claude-skill-japan-recs](https://github.com/abalmeo/claude-skill-japan-recs) (MIT), adapted for Cursor.
+
+| Command | Skill | Purpose |
+|---------|-------|---------|
+| `/japan-recs <area>` | `japan-recs` | Research one area (restaurants / activities / vibes) → Markdown or CSV |
+| `/japan-trip <city> <days>` | `japan-trip` | Full trip plan by neighborhood → `./japan-trip/` |
+
+Examples:
+
+```
+/japan-recs Shinjuku
+/japan-recs Shinjuku --both --csv
+/japan-trip Tokyo 7 days
+/japan-trip Osaka 5 days --interests "ramen, nightlife"
+```
+
+Slash-only: `disable-model-invocation: true`. Markdown/CSV need no extra tools. `--sheet` needs `gws` (`npm i -g @googleworkspace/cli`).
