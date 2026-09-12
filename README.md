@@ -64,5 +64,22 @@ Slash-only: `disable-model-invocation: true`. Casual “plan me 12 days in Japan
 /trip-planner Japan, 12-15 days in October from London, mid budget, history and food
 ```
 
-Needs Python 3.9+. Optional: `fast-flights` for live flight prices. Working files go in `./trips/`.
+Needs Python 3.9+. Optional: `fast-flights` for live flight prices (`scripts/flight_scan.py`). Working files go in `./trips/`.
+
+### Flight price report (danny0926)
+
+From [danny0926/flight-report](https://github.com/danny0926/flight-report) (MIT), adapted for Cursor.
+
+| Command | Skill | Purpose |
+|---------|-------|---------|
+| `/flight-report` | `flight-report` | Google Flights 比價 → `./flight-report/` 繁中報告 |
+
+Slash-only: `disable-model-invocation: true`. Casual “找機票 / 國泰多少” does not start this skill.
+
+```
+/flight-report 桃園到東京 2027/2/14-2/28 玩5~6天 全服務
+/flight-report TPE NRT 2027-02-20 to 2027-02-25 round-trip
+```
+
+Needs `fast-flights` (`pip install fast-flights`). Reports go in `./flight-report/`.
 

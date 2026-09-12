@@ -1,5 +1,7 @@
 # trip-planner working files
 /trips/
+# flight-report working files
+/flight-report/*.json
 /geocache.json
 /suncache.json
 /plan.geo.json
