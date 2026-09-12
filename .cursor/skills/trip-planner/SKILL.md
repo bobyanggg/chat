@@ -1,20 +1,7 @@
 ---
 name: trip-planner
-description: >-
-  End-to-end international trip planning: turns "I want to go to X for N days" into a
-  verified, bookable plan — route skeleton across cities, flight price scans
-  (international + domestic legs), train-vs-fly decisions, hour-by-hour daily
-  timelines with opening hours, dwell times, holiday collisions and tappable
-  turn-by-turn map links (小时级行程+地图导航+离线KML), hotel shortlists by
-  neighborhood, budget rollup, and a booking checklist with deep links. Use this
-  whenever the user asks to plan a trip, vacation, itinerary or honeymoon, compare
-  flight dates/prices, pick between cities or routes, schedule a travel day hour by
-  hour, fill a spare block of time ("I'm near X with 2 free hours"), turn a finished
-  plan into a designed page (eight themed renders: illustrated / clay / noir / glass /
-  journal / zine / splash / portal — 插画/黏土/夜航/玻璃/手账/Zine/闪屏/穿越版), or asks
-  旅行规划/行程安排/机票比价/去某国玩N天怎么安排/现在有空档干嘛/把行程做成好看的网页 — even if they only
-  mention one piece (just flights, just hotels, or just navigation), the playbook and
-  verification rules here still apply. Also use when the user invokes /trip-planner.
+description: End-to-end trip plan — cities, flights, hour-by-hour days, hotels, HTML + KML. Use only when the user invokes /trip-planner.
+disable-model-invocation: true
 metadata:
   author: skywain
   source: https://github.com/skywain/trip-planner-skill
@@ -24,7 +11,9 @@ metadata:
 Source: adapted from [skywain/trip-planner-skill](https://github.com/skywain/trip-planner-skill) (MIT) for Cursor.
 
 ## Trigger
-`/trip-planner` or a trip ask like "plan me 12 days in Japan".
+`/trip-planner`
+
+Do not run this skill for casual trip questions. Wait for `/trip-planner`.
 
 ## Cursor notes
 - Skill root: `.cursor/skills/trip-planner/`. Run `scripts/` and `themes/` from that path.

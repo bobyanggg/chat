@@ -2,7 +2,7 @@
 
 ## Cursor skills
 
-Project skills under `.cursor/skills/`.
+Project skills under `.cursor/skills/`. All of them are slash-only (`disable-model-invocation: true`). Casual chat does not start a skill.
 
 ### Outline-based research (Weizhena)
 
@@ -58,7 +58,7 @@ From [skywain/trip-planner-skill](https://github.com/skywain/trip-planner-skill)
 |---------|-------|---------|
 | `/trip-planner` | `trip-planner` | Full trip: cities, flights, hour-by-hour days, hotels, HTML + KML |
 
-Also runs on natural language, e.g. `plan me 12 days in Japan`.
+Slash-only: `disable-model-invocation: true`. Casual “plan me 12 days in Japan” does not start this skill.
 
 ```
 /trip-planner Japan, 12-15 days in October from London, mid budget, history and food
