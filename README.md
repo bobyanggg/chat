@@ -64,5 +64,5 @@ Slash-only: `disable-model-invocation: true`. Casual “plan me 12 days in Japan
 /trip-planner Japan, 12-15 days in October from London, mid budget, history and food
 ```
 
-Needs Python 3.9+. Optional: `fast-flights` for live flight prices. Working files go in `./trips/`.
+Needs Python 3.9+. Optional: `fast-flights` for live flight prices (`scripts/flight_scan.py`). No standalone `/flights` skill — compare on Google Flights + the airline site, including Cathay. Working files go in `./trips/`.
 
