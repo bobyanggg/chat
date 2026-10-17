@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>雪泥鴻爪 — 東京・湯澤 2027</name>
+<Folder><name>Day 1 2027-02-21 — 成田抵達・東京車站／日本橋半日</name>
+<Placemark><name>1. 成田機場</name><Point><coordinates>140.392900,35.772000,0</coordinates></Point></Placemark>
+<Placemark><name>2. 東京車站</name><Point><coordinates>139.767100,35.681200,0</coordinates></Point></Placemark>
+<Placemark><name>3. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>4. 一番街</name><Point><coordinates>139.767100,35.681200,0</coordinates></Point></Placemark>
+<Placemark><name>5. 日本橋</name><Point><coordinates>139.774400,35.682500,0</coordinates></Point></Placemark>
+<Placemark><name>Day 1 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>140.392900,35.772000,0 139.767100,35.681200,0 139.770600,35.676900,0 139.767100,35.681200,0 139.774400,35.682500,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 2 2027-02-22 — 淺草寺・仲見世・晴空塔（月曜閉館博物館全部避開）</name>
+<Placemark><name>1. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>2. 淺草寺</name><Point><coordinates>139.796700,35.714800,0</coordinates></Point></Placemark>
+<Placemark><name>3. 新仲見世</name><Point><coordinates>139.794600,35.711800,0</coordinates></Point></Placemark>
+<Placemark><name>4. 晴空塔</name><Point><coordinates>139.810700,35.710100,0</coordinates></Point></Placemark>
+<Placemark><name>5. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>Day 2 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>139.770600,35.676900,0 139.796700,35.714800,0 139.794600,35.711800,0 139.810700,35.710100,0 139.770600,35.676900,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 3 2027-02-23 — 上野經典・東京國立博物館（天皇誕生日・開館律例）</name>
+<Placemark><name>1. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>2. 東京國立博物館</name><Point><coordinates>139.776500,35.718800,0</coordinates></Point></Placemark>
+<Placemark><name>3. 上野公園</name><Point><coordinates>139.771400,35.714800,0</coordinates></Point></Placemark>
+<Placemark><name>4. 阿美橫丁</name><Point><coordinates>139.774500,35.710500,0</coordinates></Point></Placemark>
+<Placemark><name>5. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>Day 3 route</name><Style><LineStyle><color>ff00aa00</color><width>3</width></LineStyle></Style><LineString><coordinates>139.770600,35.676900,0 139.776500,35.718800,0 139.771400,35.714800,0 139.774500,35.710500,0 139.770600,35.676900,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 4 2027-02-24 — 東京→湯澤・午後半日滑雪</name>
+<Placemark><name>1. 東京車站</name><Point><coordinates>139.767100,35.681200,0</coordinates></Point></Placemark>
+<Placemark><name>2. ガーラ湯沢駅</name><Point><coordinates>138.803500,36.950000,0</coordinates></Point></Placemark>
+<Placemark><name>3. GALA湯澤滑雪場</name><Point><coordinates>138.805500,36.952500,0</coordinates></Point></Placemark>
+<Placemark><name>4. NASPAニューオータニ 溫泉</name><Point><coordinates>138.797200,36.934800,0</coordinates></Point></Placemark>
+<Placemark><name>5. CoCoLo湯沢／ぽんしゅ館</name><Point><coordinates>138.809300,36.936000,0</coordinates></Point></Placemark>
+<Placemark><name>Day 4 route</name><Style><LineStyle><color>ff00aaff</color><width>3</width></LineStyle></Style><LineString><coordinates>139.767100,35.681200,0 138.803500,36.950000,0 138.805500,36.952500,0 138.797200,36.934800,0 138.809300,36.936000,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 5 2027-02-25 — GALA 全日滑雪・首班纜車</name>
+<Placemark><name>1. ガーラ湯沢駅</name><Point><coordinates>138.803500,36.950000,0</coordinates></Point></Placemark>
+<Placemark><name>2. GALA湯澤滑雪場</name><Point><coordinates>138.805500,36.952500,0</coordinates></Point></Placemark>
+<Placemark><name>3. NASPAニューオータニ 溫泉</name><Point><coordinates>138.797200,36.934800,0</coordinates></Point></Placemark>
+<Placemark><name>4. CoCoLo湯沢／ぽんしゅ館</name><Point><coordinates>138.809300,36.936000,0</coordinates></Point></Placemark>
+<Placemark><name>Day 5 route</name><Style><LineStyle><color>ffaa00aa</color><width>3</width></LineStyle></Style><LineString><coordinates>138.803500,36.950000,0 138.805500,36.952500,0 138.797200,36.934800,0 138.809300,36.936000,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 6 2027-02-26 — GALA 第二全日・風停改岩原／湯澤高原</name>
+<Placemark><name>1. ガーラ湯沢駅</name><Point><coordinates>138.803500,36.950000,0</coordinates></Point></Placemark>
+<Placemark><name>2. GALA湯澤滑雪場</name><Point><coordinates>138.805500,36.952500,0</coordinates></Point></Placemark>
+<Placemark><name>3. NASPAニューオータニ 溫泉</name><Point><coordinates>138.797200,36.934800,0</coordinates></Point></Placemark>
+<Placemark><name>4. CoCoLo湯沢／ぽんしゅ館</name><Point><coordinates>138.809300,36.936000,0</coordinates></Point></Placemark>
+<Placemark><name>Day 6 route</name><Style><LineStyle><color>ff777777</color><width>3</width></LineStyle></Style><LineString><coordinates>138.803500,36.950000,0 138.805500,36.952500,0 138.797200,36.934800,0 138.809300,36.936000,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 7 2027-02-27 — 午前溫泉・新幹線回東京・新宿半日</name>
+<Placemark><name>1. NASPAニューオータニ 溫泉</name><Point><coordinates>138.797200,36.934800,0</coordinates></Point></Placemark>
+<Placemark><name>2. CoCoLo湯沢／ぽんしゅ館</name><Point><coordinates>138.809300,36.936000,0</coordinates></Point></Placemark>
+<Placemark><name>3. 越後湯澤站（發車）</name><Point><coordinates>138.809300,36.936000,0</coordinates></Point></Placemark>
+<Placemark><name>4. 東京車站</name><Point><coordinates>139.767100,35.681200,0</coordinates></Point></Placemark>
+<Placemark><name>5. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>6. 新宿御苑</name><Point><coordinates>139.710000,35.685200,0</coordinates></Point></Placemark>
+<Placemark><name>7. 都廳展望室</name><Point><coordinates>139.691700,35.689600,0</coordinates></Point></Placemark>
+<Placemark><name>8. 回憶橫丁</name><Point><coordinates>139.699500,35.693400,0</coordinates></Point></Placemark>
+<Placemark><name>Day 7 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>138.797200,36.934800,0 138.809300,36.936000,0 138.809300,36.936000,0 139.767100,35.681200,0 139.770600,35.676900,0 139.710000,35.685200,0 139.691700,35.689600,0 139.699500,35.693400,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 8 2027-02-28 — 退房・前往機場（不觀光）</name>
+<Placemark><name>1. 京橋飯店</name><Point><coordinates>139.770600,35.676900,0</coordinates></Point></Placemark>
+<Placemark><name>2. 東京車站</name><Point><coordinates>139.767100,35.681200,0</coordinates></Point></Placemark>
+<Placemark><name>3. 成田機場</name><Point><coordinates>140.392900,35.772000,0</coordinates></Point></Placemark>
+<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>139.770600,35.676900,0 139.767100,35.681200,0 140.392900,35.772000,0</coordinates></LineString></Placemark>
+</Folder>
+</Document></kml>

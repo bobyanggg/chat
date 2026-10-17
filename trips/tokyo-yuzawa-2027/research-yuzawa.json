@@ -1,0 +1,487 @@
+{
+  "days": [
+    {
+      "date": "2027-02-24",
+      "tz": "Asia/Tokyo",
+      "city": "湯澤",
+      "label": "東京→湯澤・午後半日滑雪",
+      "travel_day": true,
+      "rain_alt": "風停／暴雪取消纜車 → 改 NASPA 溫泉＋室內泳池（日歸 9:00–18:00、最終受付 17:00、大人¥1,500，官網 naspa.co.jp/poolspa/spa as of 2026-10；泳池時刻依行事曆、2027-02 當日未公布）及越後湯澤站 CoCoLo／ぽんしゅ館室內。勿改去岩原夜滑：住站前則平日末班接駁早於夜場（2025-26 季型）。",
+      "late_cut": "遲到 >1h → 砍站前美食街久坐，改飯店內用餐；滑雪保 15:30 下山（末班纜車 16:00）。行李未先解決則取消滑雪、只留溫泉＋站內。",
+      "ribbon": "東京站 →新幹線71–90′→ ガーラ湯沢駅 →步行5′→ GALA滑雪 →接駁10′→ NASPA溫泉 →接駁3′→ CoCoLo／ぽんしゅ館",
+      "walking_km": {
+        "total": 2.4,
+        "how": "構內＋更衣室 0.8×1.3 + NASPA 館內 ~0.6 + CoCoLo 散步 ~0.8；雪道不計步行"
+      },
+      "timeline": [
+        {
+          "t": "07:30-08:00",
+          "what": "東京站集合・指定席改札（只帶過夜包＋滑雪衣；城市衣已寄放或宅急便）",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "2/23 為天皇誕生日、2/24 仍可能滿員 — 必須指定席。大件於前一晚宅急便東京飯店→湯澤飯店（翌日達）或東京投幣櫃／飯店寄放。"
+        },
+        {
+          "t": "08:00-09:30",
+          "what": "JR 上越新幹線／谷川號 東京→ガーラ湯沢（或越後湯澤）指定席 大人約¥7,330 · 約71–90分",
+          "kind": "hop",
+          "verify": "est",
+          "map": false,
+          "price": "約¥7,330",
+          "note": "2025-26 冬東京→ガーラ湯沢直通每日有開；2026-27 臨時列車 PDF 截至 2026-10-17 未公布 — 此為季型，時刻勿當當日表。備援：上越新幹線至越後湯澤（約70–80分）＋GALA 免費接駁約10分。票價 NAVITIME 2026-03-16；Smart-EX／えきねっと 一個月前 10:00 JST 開賣（本程 2027-01-24 10:00）。"
+        },
+        {
+          "t": "09:30-10:30",
+          "what": "抵達 ガーラ湯沢駅・買券＋租雪具（FISCHER SNOW BASE）",
+          "kind": "free",
+          "tag": "pinned",
+          "price": "纜車全日 WEB 大人¥7,500／4小時 WEB ¥7,000；雪具3點成人1日¥6,500（2025-26 季型）",
+          "note": "纜車＋升降機全日窗口¥8,000／WEB¥7,500、4小時¥7,500／WEB¥7,000 — gala.co.jp/winter/hours-pricing as of 2026-10-17。午前抵達滑逾4小時則買全日 WEB。租借官網仍掛 2025-12-20～2026-04-05：07:30 開、最終貸出 15:15、歸還 17:45；成人滑雪3點 1日¥6,500／2日¥13,000、單板2點同額、雪衣上下¥5,500 — gala.co.jp/winter/rental as of 2026-10-17（2026-27 價未公布，T-14 重核）。南區 2026-27 全季關閉。"
+        },
+        {
+          "t": "10:30-10:40",
+          "what": "步行 ガーラ湯沢駅構內→GALA 纜車站／更衣室 約5–10分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "10:40-11:40",
+          "what": "午餐 · GALA 山麓／山中食堂一帶",
+          "kind": "meal",
+          "tag": "swap→越後湯澤站 CoCoLo",
+          "note": "移動日先坐下來吃再滑；不點名餐廳。食堂時段以現場為準。"
+        },
+        {
+          "t": "11:40-15:30",
+          "what": "GALA 湯澤午後半日滑雪",
+          "kind": "anchor",
+          "tag": "opener",
+          "price": "已含於纜車券",
+          "note": "觀光纜車 08:40–16:00、升降機通常 08:30–16:30（官網 hours-pricing as of 2026-10-17）。2 月積雪：氣象廳湯澤 1991–2020 平年 2 月最深 202 cm、降雪 288 cm；SnowJapan GALA 2 月下旬常 200–480 cm（弱年 2025-26 至 2026-03-01 仍約 190 cm）。南區關閉故本季場地較小。GALA 無夜滑票種、營業至 16:30 — 視為無夜滑。"
+        },
+        {
+          "t": "15:30-15:50",
+          "what": "歸還租借・免費接駁 GALA→NASPA 約10分",
+          "kind": "hop",
+          "verify": "est",
+          "note": "GALA↔越後湯澤免費接駁約10分（已知）；NASPA 官網寫站到飯店接駁約3分。班表未核，留區間。"
+        },
+        {
+          "t": "15:50-17:20",
+          "what": "NASPA ニューオータニ 溫泉（大浴場・露天）",
+          "kind": "anchor",
+          "tag": "skippable",
+          "price": "住宿客含；日歸大人¥1,500",
+          "note": "弱鹼性單純泉。日歸 9:00–18:00 最終 17:00、毛巾袋含，受付在滑雪中心 — naspa.co.jp/poolspa/spa as of 2026-10。住宿客日中至深夜／早朝（清掃時段除外）。若住站前旅館則 swap→飯店風呂，不必繞 NASPA。"
+        },
+        {
+          "t": "17:20-17:30",
+          "what": "接駁 NASPA→越後湯澤站 約3分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "17:30-19:00",
+          "what": "晚餐 · 越後湯澤站 CoCoLo 美食街／ぽんしゅ館一帶",
+          "kind": "meal",
+          "tag": "swap→NASPA 飯店餐",
+          "note": "美食＝區域不是餐廳。ぽんしゅ館越後湯澤驛店 2026-10–11 海報季型 9:30–19:00（延長日 9:00–19:30）；2 月時刻未公布 — 以 2026-10 季型＋T-14 重核。唎酒番所、酒風呂、炸彈飯糰家、糀カフェ皆在同一棟。"
+        }
+      ],
+      "stops": [
+        {
+          "name": "ガーラ湯沢駅",
+          "query": "GALA Yuzawa Station ガーラ湯沢駅, Yuzawa, Niigata",
+          "mode": "train"
+        },
+        {
+          "name": "GALA湯澤滑雪場",
+          "query": "GALA Yuzawa Ski Resort, Yuzawa, Niigata"
+        },
+        {
+          "name": "NASPAニューオータニ 溫泉",
+          "query": "NASPA New Otani, Yuzawa, Niigata",
+          "mode": "bus"
+        },
+        {
+          "name": "CoCoLo湯沢／ぽんしゅ館",
+          "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+          "mode": "bus"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-25",
+      "tz": "Asia/Tokyo",
+      "city": "湯澤",
+      "label": "GALA 全日滑雪・首班纜車",
+      "travel_day": false,
+      "rain_alt": "雨／強風停纜 → 主線改 NASPA 室內溫泉＋泳池（日歸最終 17:00；泳池通常 13:00–20:30 最終 19:30，指定日不同，2027-02-25 行事曆未核）及ぽんしゅ館唎酒・酒風呂（10:30–18:30 最終 18:00，2026-10–11 海報季型）。備援雪場：岩原（較低、緩坡）或湯澤高原（站西口步行約9分）。",
+      "late_cut": "遲到 >1h → 砍站前晚餐改飯店；絕不過 15:45 仍在山頂（末班纜車 16:00）。風停不空等，直接執行 rain_alt。",
+      "ribbon": "越後湯澤／NASPA →接駁10′→ ガーラ湯沢駅 →步行5′→ GALA全日滑雪 →接駁10′→ NASPA溫泉 →接駁3′→ CoCoLo／ぽんしゅ館",
+      "walking_km": {
+        "total": 2.8,
+        "how": "GALA 基地步行 1.0×1.3 + 溫泉館內 0.6 + CoCoLo 0.9；雪道不計"
+      },
+      "timeline": [
+        {
+          "t": "07:30-07:50",
+          "what": "飯店出發・接駁往 GALA（目標 08:10 到租借）",
+          "kind": "hop",
+          "verify": "est",
+          "map": false,
+          "note": "NASPA→GALA 接駁約數分–10分；站前飯店則越後湯澤東口免費接駁約10分。班表 est。"
+        },
+        {
+          "t": "07:50-08:00",
+          "what": "步行 ガーラ湯沢駅構內→GALA 纜車站／更衣室 約5–10分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "08:00-08:40",
+          "what": "租借（若尚未拿多日套）・排隊首班觀光纜車",
+          "kind": "free",
+          "tag": "opener",
+          "note": "租借 07:30 開（2025-26 季型）。纜車 08:40 起 — hours-pricing as of 2026-10-17。"
+        },
+        {
+          "t": "08:40-12:00",
+          "what": "GALA 湯澤上午滑雪（首班纜車 opener）",
+          "kind": "anchor",
+          "tag": "opener",
+          "price": "ゴンドラ＆リフト WEB 大人¥7,500",
+          "note": "全日 WEB¥7,500／窗口¥8,000，官網 as of 2026-10-17。南區關閉、場地較小，人潮會更集中中央。2 月平年雪量見 2/24 注。強風 → swap 岩原或湯澤高原。"
+        },
+        {
+          "t": "12:00-13:00",
+          "what": "午餐 · GALA 山中食堂一帶",
+          "kind": "meal",
+          "tag": "swap→山麓食堂",
+          "note": "連續滑超過 3.5 小時必須坐下。不點名餐廳。"
+        },
+        {
+          "t": "13:00-15:40",
+          "what": "GALA 湯澤下午續滑",
+          "kind": "anchor",
+          "tag": "skippable",
+          "note": "升降機通常至 16:30、纜車 16:00。15:40 開始收；疲勞或風大改提前下山泡湯。"
+        },
+        {
+          "t": "15:40-16:00",
+          "what": "歸還當日件（若非連日租）・接駁 GALA→NASPA 約10分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "16:00-17:30",
+          "what": "NASPA 溫泉（或站前旅館風呂）",
+          "kind": "anchor",
+          "tag": "swap→岩原いわっぱらの湯",
+          "price": "住宿客含；日歸¥1,500",
+          "note": "日歸最終 17:00 — 16:00 到仍來得及。岩原 RC2「いわっぱらの湯」13:00–17:00（第三方整理 2025-26 季型，未核 2026-27）且平日末班接駁約 17:30，站前客不要為夜滑留下來。"
+        },
+        {
+          "t": "17:30-17:40",
+          "what": "接駁 NASPA→越後湯澤站 約3分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "17:40-19:10",
+          "what": "晚餐 · 越後湯澤站 CoCoLo 美食街／ぽんしゅ館",
+          "kind": "meal",
+          "tag": "swap→NASPA 晚餐",
+          "note": "若飯店一泊二食，此段改點心／唎酒，正餐回飯店。ぽんしゅ館季型見 2/24。"
+        }
+      ],
+      "stops": [
+        {
+          "name": "ガーラ湯沢駅",
+          "query": "GALA Yuzawa Station ガーラ湯沢駅, Yuzawa, Niigata",
+          "mode": "bus"
+        },
+        {
+          "name": "GALA湯澤滑雪場",
+          "query": "GALA Yuzawa Ski Resort, Yuzawa, Niigata"
+        },
+        {
+          "name": "NASPAニューオータニ 溫泉",
+          "query": "NASPA New Otani, Yuzawa, Niigata",
+          "mode": "bus"
+        },
+        {
+          "name": "CoCoLo湯沢／ぽんしゅ館",
+          "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+          "mode": "bus"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-26",
+      "tz": "Asia/Tokyo",
+      "city": "湯澤",
+      "label": "GALA 第二全日・風停改岩原／湯澤高原",
+      "travel_day": false,
+      "rain_alt": "GALA 風停或南區關閉後場地過擠 → 改岩原スキー場（預定 2026-12-19～2027-03-28、日間 8:00–17:00、大人一日券¥5,500；ナイター 17:00 起、平日／週日至 19:00 — iwa-ppara.com/price 本頁標 2026-27 as of 2026-10）或湯澤高原（高原區預定 2026-12-18～2027-04-04、山麓 12-25～3-28 — yuzawakogen.com as of 2026-08）。室內備案同 2/25：NASPA 溫泉／泳池＋ぽんしゅ館。",
+      "late_cut": "遲到 >1h 或風停公告 → 立刻改岩原／湯澤高原，不空等 GALA；晚上保溫泉。住站前則不要留岩原滑夜場（平日末班接駁 2025-26 季型 17:30 自 RC2）。",
+      "ribbon": "越後湯澤／NASPA →接駁10′→ GALA（風停→岩原15′或湯澤高原步行9′） →接駁→ 溫泉 →接駁3′→ CoCoLo／ぽんしゅ館",
+      "walking_km": {
+        "total": 2.8,
+        "how": "同 2/25 量級；若改湯澤高原則站西口步行約 0.6 km×1.3 另計"
+      },
+      "timeline": [
+        {
+          "t": "07:40-08:00",
+          "what": "接駁往 GALA（先看官方營運／風停推播）",
+          "kind": "hop",
+          "verify": "est",
+          "map": false,
+          "note": "T-1 早上看 GALA 營運。風停則改東口岩原接駁或西口步行去湯澤高原繩索站。"
+        },
+        {
+          "t": "08:00-08:10",
+          "what": "步行 ガーラ湯沢駅構內→GALA 纜車（風停則改岩原 RC2 或湯澤高原山麓）約5–10分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "08:10-08:40",
+          "what": "更衣・目標 08:40 纜車",
+          "kind": "free",
+          "tag": "opener"
+        },
+        {
+          "t": "08:40-12:00",
+          "what": "GALA 第二全日上午（風停 swap→岩原或湯澤高原）",
+          "kind": "anchor",
+          "tag": "swap→岩原スキー場",
+          "price": "GALA WEB 大人¥7,500；岩原一日大人¥5,500",
+          "note": "本季 GALA 南區關閉，第二天風大或人擠就換場，不要硬滑。岩原：新潟縣南魚沼郡湯沢町土樽731-79 TEL 025-787-3211；東口免費接駁約9–15分。湯澤高原：站西口步行約9分／600 m 或冬期 NASPA–湯澤高原–GALA 免費接駁（官網 FAQ）。岩原有夜滑但站前客平日接駁接不上，今晚改溫泉。"
+        },
+        {
+          "t": "12:00-13:00",
+          "what": "午餐 · 雪場食堂一帶",
+          "kind": "meal",
+          "tag": "swap→CoCoLo",
+          "note": "換場也在該場食堂吃，不折返車站午餐。"
+        },
+        {
+          "t": "13:00-15:30",
+          "what": "下午續滑",
+          "kind": "anchor",
+          "tag": "skippable",
+          "note": "GALA 15:30 收；岩原日間至 17:00 但接駁要抓末班。今晚溫泉是 pinned 體驗，不要用夜滑換掉。"
+        },
+        {
+          "t": "15:30-15:50",
+          "what": "下山接駁 → NASPA 或站前旅館",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "15:50-17:30",
+          "what": "晚間溫泉（NASPA 或站前大浴場）",
+          "kind": "anchor",
+          "tag": "pinned",
+          "price": "住宿客含",
+          "note": "行程指定今晚泡湯。NASPA 日歸最終 17:00，住宿客不受限。湯澤東映露天大岩風呂、雙葉「ふたばの湯」皆為站圈選項。"
+        },
+        {
+          "t": "17:30-17:40",
+          "what": "接駁／步行 → 越後湯澤站 CoCoLo",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "17:40-19:10",
+          "what": "晚餐 · CoCoLo 美食街／ぽんしゅ館",
+          "kind": "meal",
+          "tag": "swap→飯店餐",
+          "note": "若明日短滑，今晚可把不滑的行李交給飯店翌朝宅急便回東京（翌日達，趕不上 2/27 午後車則改隨身上車）。"
+        }
+      ],
+      "stops": [
+        {
+          "name": "ガーラ湯沢駅",
+          "query": "GALA Yuzawa Station ガーラ湯沢駅, Yuzawa, Niigata",
+          "mode": "bus"
+        },
+        {
+          "name": "GALA湯澤滑雪場",
+          "query": "GALA Yuzawa Ski Resort, Yuzawa, Niigata"
+        },
+        {
+          "name": "NASPAニューオータニ 溫泉",
+          "query": "NASPA New Otani, Yuzawa, Niigata",
+          "mode": "bus"
+        },
+        {
+          "name": "CoCoLo湯沢／ぽんしゅ館",
+          "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+          "mode": "bus"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-27",
+      "tz": "Asia/Tokyo",
+      "city": "湯澤",
+      "label": "午前溫泉或短滑・午後新幹線回東京",
+      "travel_day": true,
+      "rain_alt": "天氣差或趕車 → 主線維持溫泉＋ぽんしゅ館室內，取消短滑。NASPA 日歸 9:00–18:00；ぽんしゅ館室內季型 9:30–19:00。",
+      "late_cut": "不滑到趕不上回程。行李託運／取件後再＋30分才是最晚到站。短滑若 10:30 還沒上纜車 → 改溫泉。午後列車時刻未核，用 T＝發車 → T−30分在改札（已含行李緩衝）。",
+      "ribbon": "NASPA／旅館溫泉 →接駁3′→ CoCoLo／ぽんしゅ館 →步行5′→ 越後湯澤站（發車）",
+      "walking_km": {
+        "total": 1.6,
+        "how": "溫泉館內 0.5 + CoCoLo 0.8 + 站內 0.3；若短滑另加 GALA 基地但不建議與趕車疊加"
+      },
+      "timeline": [
+        {
+          "t": "08:00-08:30",
+          "what": "退房・行李放飯店或越後湯澤站投幣櫃（ overnight 包上車）",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "移動日先解決行李再活動。大件不要帶去雪場。站內大櫃週末午前會滿 — 備案飯店寄放後折返。"
+        },
+        {
+          "t": "08:30-08:40",
+          "what": "接駁或步行 往溫泉（已住 NASPA 則館內）",
+          "kind": "hop",
+          "verify": "est",
+          "map": false,
+          "note": "住宿→第一站；飯店若不在 stops，此段不進地圖鏈。"
+        },
+        {
+          "t": "08:40-10:30",
+          "what": "午前溫泉（NASPA 或站前旅館風呂）",
+          "kind": "anchor",
+          "tag": "opener",
+          "price": "住宿客含；日歸大人¥1,500",
+          "note": "三日滑雪後的恢復槽。swap→GALA 短滑僅在：行李已存、已買 4小時 WEB¥7,000、且能在 11:30 下山。GALA 纜車 08:40–16:00 但回程列車優先。4小時券 hours-pricing as of 2026-10-17。"
+        },
+        {
+          "t": "10:30-10:40",
+          "what": "接駁 NASPA→越後湯澤站 約3分（或步行站前旅館→CoCoLo）",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "10:40-12:10",
+          "what": "午餐＋唎酒／伴手禮 · CoCoLo 美食街／ぽんしゅ館",
+          "kind": "meal",
+          "tag": "skippable",
+          "note": "美食區域。酒風呂 10:30–18:30 最終 18:00（2026-10–11 海報季型）— 趕車日不必進浴。2 月營業時刻 T-14 重核。"
+        },
+        {
+          "t": "12:10-12:20",
+          "what": "步行 CoCoLo→越後湯澤站新幹線改札 構內約5分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "12:20",
+          "what": "越後湯澤站待命（行李＋30分緩衝之後）",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "最晚實用列車＝你選定的上越新幹線指定席；T＝發車時刻，T−30分在改札（行李已處理）。2/27 週六＋連假後週末，指定席必訂。2026-27 谷川直通 PDF 未出；一般越後湯澤→東京約70–80分。票價未核 2027 — 去程 NAVITIME 約¥7,330（2026-03-16）當量級。Assembler 補東京抵達。"
+        }
+      ],
+      "stops": [
+        {
+          "name": "NASPAニューオータニ 溫泉",
+          "query": "NASPA New Otani, Yuzawa, Niigata"
+        },
+        {
+          "name": "CoCoLo湯沢／ぽんしゅ館",
+          "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+          "mode": "bus"
+        },
+        {
+          "name": "越後湯澤站（發車）",
+          "query": "Echigo-Yuzawa Station 越後湯沢駅, Niigata"
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "base": "湯澤 3 晚（2027-02-24 入住 → 2027-02-27 退房）",
+      "area": "越後湯澤站圈或 NASPA／GALA 接駁沿線",
+      "why": "三日滑雪要每晚能走路或短接駁去溫泉與站內美食街；大件用宅急便，不住需要每天拖箱的山屋。中檔、選可免費取消。2/23 天皇誕生日連假尾，週末房可能偏貴，優先可退方案。",
+      "options": [
+        {
+          "name": "NASPAニューオータニ",
+          "band": "中檔偏上 · 冬季一泊二食 大人¥21,800起（官網 2026-12-24～2027-03-27 方案，as of 2026-10；素泊／含早另有）。含 NASPA Ski Garden 升降機（單板不可）。",
+          "link": "https://www.booking.com/searchresults.html?ss=NASPA+New+Otani+Yuzawa+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+        },
+        {
+          "name": "湯沢東映ホテル",
+          "band": "中檔站前溫泉 · 越後湯澤站徒歩約7分、湯澤高原山麓徒歩0分、露天大岩風呂。房價不編造，以 dated 搜尋為準。",
+          "link": "https://www.booking.com/searchresults.html?ss=Yuzawa+Toei+Hotel+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+        },
+        {
+          "name": "ホテル双葉（越後湯澤溫泉）",
+          "band": "中檔溫泉旅館 · 站接送迎 8:00–21:00、送り 8:00–12:00（官網 as of 2026-10）。高台，非駅直結。房價不編造。",
+          "link": "https://www.booking.com/searchresults.html?ss=Hotel+Futaba+Yuzawa+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+        }
+      ]
+    }
+  ],
+  "tour_options": [],
+  "checklist_items": [
+    {
+      "item": "Smart-EX／えきねっと 指定席：東京→ガーラ湯沢或越後湯澤（2027-02-24）",
+      "deadline": "開賣 2027-01-24 10:00 JST（一個月前）",
+      "price": "大人指定席約¥7,330（NAVITIME as of 2026-03-16；2027 價 T-14 重核）",
+      "link": "https://smart-ex.jp/",
+      "note": "2/23 天皇誕生日翌日，早班仍可能滿。備援上越新幹線至越後湯澤＋GALA 免費接駁。谷川直通 2026-27 PDF 截至 2026-10-17 未公布。"
+    },
+    {
+      "item": "Smart-EX 指定席：越後湯澤→東京（2027-02-27 午後）",
+      "deadline": "開賣 2027-01-27 10:00 JST",
+      "price": "量級同去程；周末＋連假後，指定席必訂",
+      "link": "https://smart-ex.jp/",
+      "note": "勿滑過需趕上的列車。行李處理後再＋30分＝最晚到站。"
+    },
+    {
+      "item": "湯澤飯店 3 晚、可免費取消（2027-02-24→02-27）",
+      "deadline": "現在訂可退；出發前 2–3 週比價",
+      "price": "NASPA 冬季一泊二食大人¥21,800起（官網 as of 2026-10）；其餘查 Booking",
+      "link": "https://www.booking.com/searchresults.html?ss=Echigo-Yuzawa+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw",
+      "note": "優先 NASPA／東映／雙葉。官網：https://www.naspa.co.jp/ https://hotel-futaba.com/"
+    },
+    {
+      "item": "GALA WEB 纜車券（2/24 全日或4小時、2/25–26 全日；2/27 短滑才買4小時）",
+      "deadline": "出發前數日；超早割已完售",
+      "price": "全日 WEB 大人¥7,500／窗口¥8,000；4小時 WEB¥7,000／窗口¥7,500（gala.co.jp/winter/hours-pricing as of 2026-10-17）",
+      "link": "https://gala.co.jp/winter/hours-pricing/",
+      "note": "南區 2026-27 關閉。Webket 超早割¥4,300 已完售（官網 2026-10-02）。"
+    },
+    {
+      "item": "宅急便：東京飯店→湯澤飯店（2/23 晚交件，2/24 達）",
+      "deadline": "2027-02-23 晚、依飯店截止（通常翌午前）",
+      "price": "未核（按件計；不編造）",
+      "link": "https://www.kuronekoyamato.co.jp/",
+      "note": "車上只留過夜包＋滑雪衣。城市衣留東京投幣櫃／原飯店寄放亦可。回程若 2/26 晚再寄東京＝2/27 達，趕不上當日車則改隨身。"
+    },
+    {
+      "item": "GALA 雪具租借（現場；連滑可看2日套）",
+      "deadline": "現場 07:30 起；最終貸出季型 15:15",
+      "price": "成人滑雪3點 1日¥6,500／2日¥13,000（2025-26 季型，gala.co.jp/winter/rental as of 2026-10-17；2026-27 未公布）",
+      "link": "https://gala.co.jp/winter/rental/",
+      "note": "2/24 午後＋2/25＋2/26＝三日，可 2日套＋1日或三日單日。雪衣另計¥5,500/日。"
+    }
+  ],
+  "unverified": [
+    "2026-27 冬 JR 東日本谷川號東京→ガーラ湯沢直通時刻表（臨時列車 PDF 截至 2026-10-17 未公布）；2/24、2/27 具體發車時刻為 71–90 分季型。",
+    "GALA 2026-27 租借價與貸出時刻（官網 rental 頁仍顯示 2025-26）；現抄 1日¥6,500 為季型。",
+    "ぽんしゅ館越後湯澤驛店 2027-02 營業時間（僅有 2026-10–11 海報 9:30–19:00 季型）。",
+    "岩原→越後湯澤免費接駁 2026-27 班表（夜滑官方已核；末班平日 17:30／週末 18:20 為 2025-26 季型）。",
+    "NASPA 室內泳池 2027-02-24–27 當日是否營業（官網分通常日／指定日／特定日，須查行事曆）。",
+    "GALA 免費接駁與 NASPA 接駁的精確班距（僅有「約10分／約3分」）。",
+    "湯澤東映・雙葉 2027-02 可退房價（不編造；以 dated Booking／官網結帳為準）。",
+    "GALA 未在 hours-pricing 列出夜滑票 — 依 16:30 收纜視為無夜滑，但官網無「不做ナイター」一句原文。"
+  ],
+  "searches_used": 8
+}
