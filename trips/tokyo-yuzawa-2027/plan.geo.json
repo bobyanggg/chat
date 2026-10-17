@@ -1,0 +1,1342 @@
+{
+ "trip": "雪泥鴻爪 — 東京・湯澤 2027",
+ "lang": "zh",
+ "tz": "Asia/Tokyo",
+ "cover": {
+  "zh": "雪泥鴻爪",
+  "en": "Traces in the Snow",
+  "sub": "應似飛鴻踏雪泥 — 蘇軾《和子由澠池懷舊》",
+  "credit": "—— 蘇軾（公版）",
+  "kick": "東京・湯澤 2027",
+  "kick_en": "TOKYO · YUZAWA 2027"
+ },
+ "prefs": {
+  "theme": "illustrated",
+  "pictures": "stock",
+  "travel_style": "public",
+  "lodging": "hotel · mid-range, refundable；湯澤可改溫泉旅館",
+  "scenery": [
+   "city",
+   "mountain"
+  ],
+  "pace": 3,
+  "budget": "mid",
+  "notes": "assumed origin TPE（繁中提問、未寫出發地，取台灣最大國際門戶桃園）；護照中華民國；2 成人；大眾運輸；中檔可退房；主題 illustrated／stock；無生圖能力。日期取 2027-02-21（日）→ 02-28（日）覆蓋「2/22 那週」，並接上台灣 228 連假前段（2/28 和平紀念日、3/1 補假未納入除非加一天）。"
+ },
+ "meta": {
+  "dates": "2027-02-21 → 2027-02-28",
+  "party": "2 成人，中華民國護照，不自駕",
+  "route": "台北桃園 → 成田 → 東京 → 湯澤 → 東京 → 成田 → 台北",
+  "budget_total": "約 TWD 11–13 萬／兩人（含來回機票、中檔住宿、滑雪券＋租借、新幹線）",
+  "fx": "1 TWD = 4.87 JPY（open.er-api.com, 2026-10-17 — frankfurter 無 TWD）",
+  "generated": "2026-10-17",
+  "self_check": "自检:发现并修复 10 处 — (1) 2/27 東京與湯澤兩份日程撞日，合併為一移動日、錨點壓到 2；(2) 2/21 晨班 12:35 抵成田＝半日而非零觀光，把散步提前到下午；(3) 2/23 天皇誕生日改排上野室內、滑雪改平日 24–26 避開雪場人潮；(4) 2/22 月曜閉館博物館全部拿掉；(5) GALA 南區 2026-27 關閉寫進滑雪日；(6) 保險必須加滑雪特定活動，一般旅平險常除外；(7) 湯澤座標手填，避免 Nominatim 誤指秋田湯澤；(8) 直通谷川號 2026-27 PDF 未出，備援改越後湯澤＋接駁；(9) 匯率改 open.er-api（frankfurter 無 TWD）；(10) 2/27 都廳改 free／skippable，移動日錨點只留溫泉＋御苑。",
+  "headless_note": "無互動確認：出發地依繁中推斷為 TPE；骨架自選「東京 3 晚＋湯澤 3 晚＋東京 1 晚」。本次沒有生圖能力，頁面用內建插畫素材（仍是成品頁，只是不如定制圖貼合）；有 OpenRouter key 的話放進 themes/.auth_header 再告訴我，就能為這趟生成。"
+ },
+ "decisions": [
+  "骨架選東京 3 晚（21–24）→ 湯澤 3 晚（24–27）→ 東京 1 晚（27–28）。滑雪放週三至週五，避開 2/23 天皇誕生日雪場人潮。",
+  "國際線飛成田不飛羽田：晨班星宇／華航進成田約中午到，當日還能進東京；價在 JAL／星宇 2027-02 月曆約 TWD 1.5 萬起。備援羽田／松山。",
+  "雪場主場 GALA（站內直結）。本季南區關閉、場地變小；風停改岩原或湯澤高原，不空等。",
+  "不住天天換飯店。大件 2/23 晚宅急便東京→湯澤，車上只留過夜包＋滑雪衣。",
+  "自检:发现并修复 10 处 — 見 meta.self_check。"
+ ],
+ "checklist": [
+  {
+   "item": "確認免簽證入境條件（台灣護照、身分證字號、來回機票＋住宿證明）",
+   "deadline": "T-14 · 2027-02-07",
+   "price": "免簽證 90 日觀光",
+   "link": "https://www.koryu.or.jp/tw/visa/taipei/exemption/",
+   "note": "日本台灣交流協會；BOCA 同步 90 日。護照效期須覆蓋停留。入境可能問行程／財力。"
+  },
+  {
+   "item": "旅遊門診（疫苗／預防用藥諮詢，本計畫不開處方）",
+   "deadline": "出發前 4–6 週＝2027-01-10 前；已更近就本週約",
+   "price": "依診所",
+   "link": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+   "note": "議程：常規疫苗＋麻疹（CDC Level 1, 2025-05-28）；A 肝（多數旅客考慮）；B 肝（60 歲以下未接種）；日本腦炎（冬山區短住通常不需要，仍問醫師）。"
+  },
+  {
+   "item": "旅遊保險（必須含休閒滑雪／單板；一般旅平險常把雪上運動除外）",
+   "deadline": "現在 · 2026-10-17",
+   "price": "依保單",
+   "link": "https://www.cathay-ins.com.tw/cathayins/personal/travel/activities/",
+   "note": "向承辦人講明「日本雪場內休閒滑雪／單板」。保留雪場事故證明。急難電話填進保單後再寫進 brief。"
+  },
+  {
+   "item": "雪季／地震危害閘門：GALA 營運＋JMA 警報",
+   "deadline": "T-7 與每日出門前；免費取消截止日前可改期",
+   "price": "—",
+   "link": "https://gala.co.jp/winter/",
+   "note": "官方季：2026-12-19～2027-05-05 計畫滑走。弱雪年可能提前收。強風／暴雪改室內溫泉。住宿保持可退到閘門。"
+  },
+  {
+   "item": "來回機票 TPE↔NRT（或 TPE/TSA↔HND）2 成人",
+   "deadline": "現在比價 · 2026-10-17",
+   "price": "約 TWD 15,000–18,000／人來回（JAL 2027-02 月曆 TWD 15,023 起；星宇 TWD 14,629 起；as of 2026-10-17）",
+   "link": "https://www.google.com/travel/flights?q=Flights%20from%20TPE%20to%20NRT%20on%202027-02-21%20returning%202027-02-28%20for%202%20adults",
+   "link_text": "Google Flights",
+   "note": "fast-flights 3.1 API 對不上舊掃描器，Google 格點失敗。第二來源：JAL＋星宇官網月曆。無瀏覽器。2/21–28 當日價可能因假日偏高。"
+  },
+  {
+   "item": "東京京橋／八重洲飯店 3 晚 2027-02-21→02-24（可退）",
+   "deadline": "現在訂可退 · 2026-10-17",
+   "price": "約 ¥18,000–25,000／晚（Ikyu as of 2026-10-17，非 2027 實價）",
+   "link": "https://www.booking.com/searchresults.html?ss=Mitsui+Garden+Hotel+Kyobashi+Tokyo&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+  },
+  {
+   "item": "湯澤飯店 3 晚 2027-02-24→02-27（可退）",
+   "deadline": "現在訂可退 · 2026-10-17",
+   "price": "NASPA 一泊二食大人 ¥21,800 起（官網 as of 2026-10）；站前東映／雙葉查 Booking",
+   "link": "https://www.booking.com/searchresults.html?ss=Echigo-Yuzawa+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+  },
+  {
+   "item": "東京京橋 1 晚 2027-02-27→02-28（可退）",
+   "deadline": "現在訂可退 · 2026-10-17",
+   "price": "約 ¥18,000–27,000／晚（週六可能偏高）",
+   "link": "https://www.booking.com/searchresults.html?ss=Mitsui+Garden+Hotel+Kyobashi+Tokyo&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+  },
+  {
+   "item": "Smart-EX 指定席：東京→ガーラ湯沢或越後湯澤（2027-02-24）",
+   "deadline": "開賣 2027-01-24 10:00 JST",
+   "price": "大人指定席約 ¥7,330（NAVITIME as of 2026-03-16）",
+   "link": "https://smart-ex.jp/",
+   "note": "天皇誕生日翌日早班可能滿。備援：上越新幹線至越後湯澤＋GALA 免費接駁約 10 分。"
+  },
+  {
+   "item": "Smart-EX 指定席：越後湯澤→東京（2027-02-27 午後）",
+   "deadline": "開賣 2027-01-27 10:00 JST",
+   "price": "量級同去程",
+   "link": "https://smart-ex.jp/"
+  },
+  {
+   "item": "GALA WEB 纜車券（2/24 全日或 4 小時、2/25–26 全日）",
+   "deadline": "T-3 · 2027-02-18",
+   "price": "全日 WEB 大人 ¥7,500／窗口 ¥8,000（gala.co.jp as of 2026-10-17）",
+   "link": "https://gala.co.jp/winter/hours-pricing/",
+   "note": "南區 2026-27 關閉。超早割已完售。"
+  },
+  {
+   "item": "東京晴空塔網上入場券（2027-02-22）",
+   "deadline": "T-3 · 2027-02-18",
+   "price": "天望デッキ大人 ¥1,800 起（官網 as of 2026-10-17）",
+   "link": "https://www.tokyo-skytree.jp/ticket/"
+  },
+  {
+   "item": "宅急便：東京飯店→湯澤飯店（2/23 晚交件）",
+   "deadline": "2027-02-23 晚、依飯店截止",
+   "price": "按件計（不編造）",
+   "link": "https://www.kuronekoyamato.co.jp/"
+  },
+  {
+   "item": "護照影本 ×2＋保單／機票雲端備份；出國登錄",
+   "deadline": "T-1 · 2027-02-20",
+   "price": "免費",
+   "link": "https://www.boca.gov.tw/sp-abre-main-1.html",
+   "note": "領事事務局出國登錄或 LINE @boca.tw。"
+  },
+  {
+   "item": "T-14 再核：錨點時刻與票價、警示燈號、免簽規則、GALA 積雪",
+   "deadline": "T-14 · 2027-02-07",
+   "note": "淺草寺、東博、晴空塔、新宿御苑、GALA 營業、新幹線時刻、JAL／星宇當日價。"
+  },
+  {
+   "item": "T-7 再核：東京／湯澤預報，套用寒冷／強風規則",
+   "deadline": "T-7 · 2027-02-14",
+   "note": "湯澤 2 月平年雨雪日占比高。強風停纜→ NASPA／ぽんしゅ館。"
+  },
+  {
+   "item": "T-3 再核：JR 東日本延誤、雪場關閉、機票已在錢包",
+   "deadline": "T-3 · 2027-02-18",
+   "note": "https://www.jreast.co.jp/ ＋ gala.co.jp 營運。"
+  },
+  {
+   "item": "T-1：eSIM 可收簡訊、現金、卡未鎖、雪具租借時間",
+   "deadline": "T-1 · 2027-02-20",
+   "note": "eSIM 約 TWD 300–500／週。現金約 TWD 4,000–6,000 等值日圓（小店／食堂）。"
+  }
+ ],
+ "legs": [
+  {
+   "type": "international flight",
+   "date": "2027-02-21",
+   "carrier": "星宇航空 JX800（冬型）／備援華航 CI100",
+   "from": "TPE",
+   "to": "NRT",
+   "dep": "08:25",
+   "arr": "12:35",
+   "price": "TWD 14,600–18,000／人來回（兩人合計約 TWD 29,000–36,000）",
+   "bags": "經濟艙通常含 1×23 kg；以訂位艙等為準（Basic 可能僅手提）",
+   "link": "https://www.google.com/travel/flights?q=Flights%20from%20TPE%20to%20NRT%20on%202027-02-21%20returning%202027-02-28%20for%202%20adults",
+   "note": "來源：星宇官網 2027-02 月曆 TWD 14,629 起；JAL 2027-02 月曆 TPE–NRT TWD 15,023 起（例 2027-02-12–17）；長榮其他 2027 日期 TWD 17,860 起。as of 2026-10-17。Google 格點掃描失敗（fast-flights 3.1 API）。無瀏覽器。時刻為 2026-10-25 起冬型，2027-02 班表 T-14 再核。不可退廉價艙勿先鎖。",
+   "backup": "華航 CI100 冬型 09:30 TPE→13:30 NRT（2026-10-29 起）。或松山 TSA→羽田 HND（市區到市區；Kayak 寫 2 月均價偏高）。Skyscanner: https://www.skyscanner.net/transport/flights/tpe/nrt/270221/270228/?adultsv2=2&cabinclass=economy&rtn=1&preferdirects=true&currency=TWD&locale=zh-TW"
+  },
+  {
+   "type": "international flight",
+   "date": "2027-02-28",
+   "carrier": "星宇／華航 成田午後回桃園（與去程同一張來回票）",
+   "from": "NRT",
+   "to": "TPE",
+   "dep": "15:00",
+   "arr": "18:10",
+   "price": "含在去程來回價",
+   "bags": "同去程",
+   "link": "https://www.google.com/travel/flights?q=Flights%20from%20TPE%20to%20NRT%20on%202027-02-21%20returning%202027-02-28%20for%202%20adults",
+   "note": "回程鐘點 Google 第一頁不顯示；上列 15:00 為規劃用午後視窗，不是已核班表。訂位後用 T−3 h 到航廈改寫 2/28。第二來源同去程官網月曆。",
+   "backup": "改晚班則 2/28 整天是機場日；改羽田則改單軌／京急。"
+  },
+  {
+   "type": "shinkansen",
+   "date": "2027-02-24",
+   "carrier": "JR 東日本 上越新幹線 たにがわ／とき",
+   "from": "東京",
+   "to": "ガーラ湯沢（或越後湯澤）",
+   "dep": "08:00",
+   "arr": "09:30",
+   "price": "大人指定席約 ¥7,330（約 TWD 1,500；NAVITIME as of 2026-03-16）",
+   "bags": "合計三邊 >160 cm 的箱子在上越線通常沒東海道那種強制指定席，仍建議不要拖大箱；用宅急便",
+   "link": "https://smart-ex.jp/",
+   "note": "直通ガーラ湯沢 2025-26 冬每日有；2026-27 臨時 PDF 截至 2026-10-17 未出。時刻為季型。可退／改依 JR 規定。",
+   "backup": "東京→越後湯澤（約 70–80 分）＋ GALA 免費接駁約 10 分。"
+  },
+  {
+   "type": "shinkansen",
+   "date": "2027-02-27",
+   "carrier": "JR 東日本 上越新幹線",
+   "from": "越後湯澤",
+   "to": "東京",
+   "dep": "12:20",
+   "arr": "13:50",
+   "price": "大人指定席約 ¥7,330（約 TWD 1,500）",
+   "bags": "overnight 包上車",
+   "link": "https://smart-ex.jp/",
+   "note": "週六指定席必訂。開賣 2027-01-27 10:00 JST。",
+   "backup": "下一班とき／たにがわ；不要為了多滑一小時趕末班。"
+  }
+ ],
+ "days": [
+  {
+   "date": "2027-02-21",
+   "tz": "Asia/Tokyo",
+   "city": "東京",
+   "label": "成田抵達・東京車站／日本橋半日",
+   "travel_day": true,
+   "rain_alt": "主線已在室內（N'EX＋一番街）。雨大取消日本橋。",
+   "late_cut": "落地晚於 15:00 → 砍日本橋，只留飯店＋一番街晚餐。",
+   "ribbon": "成田 →N'EX60′→ 東京站 →步行8′→ 京橋飯店 →步行8′→ 一番街 →步行12′→ 日本橋",
+   "walking_km": {
+    "total": 3.2,
+    "how": "飯店↔一番街↔日本橋環線估 2.4×1.3（未經 geocode，est）"
+   },
+   "note": "晨班（星宇 JX800 冬型 08:25 TPE → 12:35 NRT，as of 2026-10-25 時刻表）落地後 入國＋N'EX 約 60 分，約 14:30–15:00 到京橋。15:00 前抵＝半日。不買票。",
+   "timeline": [
+    {
+     "t": "08:25-12:35",
+     "what": "星宇 JX800 桃園→成田（冬型時刻；2027 班表 T-14 再核）",
+     "kind": "hop",
+     "verify": "est",
+     "map": false,
+     "tag": "pinned",
+     "note": "直飛約 3 h 10。入國＋取行李預留 45–70 分。"
+    },
+    {
+     "t": "13:20-14:25",
+     "what": "N'EX 成田機場→東京站 約 60 分 大人約 ¥3,070（JR 東日本官網價型）",
+     "kind": "hop",
+     "verify": "est",
+     "note": "指定席；週末＋連假後可能滿。備援京成 Skyliner 至日暮里再轉山手線。"
+    },
+    {
+     "t": "14:25-15:00",
+     "what": "步行 東京站→京橋飯店入住",
+     "kind": "hop",
+     "verify": "est"
+    },
+    {
+     "t": "15:00-15:40",
+     "what": "京橋／八重洲飯店入住、換 Suica／PASMO",
+     "kind": "free",
+     "tag": "pinned"
+    },
+    {
+     "t": "15:40-16:50",
+     "what": "東京車站一番街／GRANSTA 散步（免票、室內）",
+     "kind": "free",
+     "tag": "opener",
+     "note": "營業律例 as of 2026-10-17，見原城日。"
+    },
+    {
+     "t": "16:50-18:00",
+     "what": "晚餐 · 八重洲／一番街",
+     "kind": "meal",
+     "tag": "swap→GRANSTA八重洲餐廳"
+    },
+    {
+     "t": "18:10-18:40",
+     "what": "日本橋夜景（可選）",
+     "kind": "free",
+     "tag": "skippable"
+    }
+   ],
+   "stops": [
+    {
+     "name": "成田機場",
+     "query": "Narita Airport Terminal 2, Japan",
+     "lat": 35.772,
+     "lon": 140.3929
+    },
+    {
+     "name": "東京車站",
+     "query": "Tokyo Station, Japan",
+     "mode": "train",
+     "lat": 35.6812,
+     "lon": 139.7671
+    },
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "mode": "walk",
+     "lat": 35.6769,
+     "lon": 139.7706
+    },
+    {
+     "name": "一番街",
+     "query": "東京駅一番街, 東京都千代田区",
+     "mode": "walk",
+     "lat": 35.6812,
+     "lon": 139.7671
+    },
+    {
+     "name": "日本橋",
+     "query": "Nihonbashi Bridge, Chuo-ku, Tokyo, Japan",
+     "mode": "walk",
+     "lat": 35.6825,
+     "lon": 139.7744
+    }
+   ],
+   "sun": "天亮 05:55 · ☀ 06:20 / 🌇 17:28 · JST · sunrise-sunset.org",
+   "hop_links": [
+    "https://www.google.com/maps/dir/?api=1&origin=35.772000%2C140.392900&destination=35.681200%2C139.767100&travelmode=transit",
+    "https://www.google.com/maps/dir/?api=1&origin=35.681200%2C139.767100&destination=35.676900%2C139.770600&travelmode=walking",
+    "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.681200%2C139.767100&travelmode=walking",
+    "https://www.google.com/maps/dir/?api=1&origin=35.681200%2C139.767100&destination=35.682500%2C139.774400&travelmode=walking"
+   ]
+  },
+  {
+   "date": "2027-02-22",
+   "tz": "Asia/Tokyo",
+   "city": "東京",
+   "label": "淺草寺・仲見世・晴空塔（月曜閉館博物館全部避開）",
+   "travel_day": false,
+   "rain_alt": "淺草寺本堂有頂；新仲見世是拱廊。雨大就把戶外拍照縮短，午餐後提早入晴空塔＋東京索拉瑪海城室內（與塔同一棟，免另買塔票也可逛）。不改去上野／西洋美術館：多數月曜休館。",
+   "late_cut": "遲到 >1 h → 先砍新仲見世散步，再把晴空塔改只上天望デッキ（不買回廊）。淺草寺本堂 17:00 閉堂，須 16:00 前離開。",
+   "ribbon": "京橋飯店 →地鐵20–30′→ 淺草寺 →步行8′→ 新仲見世 →地鐵8–12′→ 晴空塔 →地鐵25–35′→ 京橋飯店",
+   "walking_km": {
+    "total": 5.5,
+    "how": "站內步行＋境內約 1.5 + 新仲見世 1.0 + 塔內約 0.6 + 乘車段×1.3 估（est，未經 geocode）"
+   },
+   "note": "滑雪行程的休息城日：不排東京國立博物館、西洋美術館等月曜閉館館。交通算帳：銀座線＋都營淺草線＋返程地鐵／半藏門線約 3–4 段，刷 IC；本日有 JR 需求低，不買東京地鐵 24h 券。",
+   "timeline": [
+    {
+     "t": "08:30-08:45",
+     "what": "京橋飯店出發（備圍巾；2 月早晨偏冷）",
+     "kind": "free",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:45-09:15",
+     "what": "地鐵 銀座線(往淺草方向) 約9站/18–25分 ¥180–240 · 京橋飯店→淺草寺 · 出口7雷門側",
+     "kind": "hop",
+     "verify": "est",
+     "note": "京橋站步行接入。全程門到門含出入口 25–35分 +10分緩衝。票價未核官網，刷 IC。",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.714800%2C139.796700&travelmode=transit"
+    },
+    {
+     "t": "09:15-10:45",
+     "what": "淺草寺（雷門・仲見世参道・本堂）",
+     "kind": "anchor",
+     "price": "免費",
+     "tag": "opener",
+     "note": "營業律例 as of 2026-10-17（senso-ji.jp）：本堂 10–3月 6:30–17:00、4–9月 6:00–17:00；境內可走。不收費。頭一小時人較少。寺內勿大聲；本堂可脫帽。2027-02 當日時刻 T-14 再查。"
+    },
+    {
+     "t": "10:45-10:55",
+     "what": "步行 淺草寺→新仲見世 約 0.4 km · 8分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.714800%2C139.796700&destination=35.711800%2C139.794600&travelmode=walking"
+    },
+    {
+     "t": "10:55-12:10",
+     "what": "新仲見世／淺草商店街散步（市場街，非預約餐廳）",
+     "kind": "anchor",
+     "price": "免費（購物另計）",
+     "tag": "skippable",
+     "note": "拱廊為主，雨備好用。這是本日「市場」塊，不是上野阿美橫丁（跨區）。"
+    },
+    {
+     "t": "12:10-13:25",
+     "what": "午餐 · 淺草（天婦羅／鰻魚／ホッピー通り一帶）",
+     "kind": "meal",
+     "tag": "swap→索拉瑪海城餐廳",
+     "note": "只指定用餐區。指名店只當備註，不訂位。"
+    },
+    {
+     "t": "13:25-13:40",
+     "what": "地鐵 都營淺草線(往押上方向) 1站/約8–12分 · 新仲見世→晴空塔 · 押上站",
+     "kind": "hop",
+     "verify": "est",
+     "note": "門到門含步行。也可徒步約 20–25分（約 1.2–1.5 km）；>1.6 km 才必須標 walk，本日採地鐵。",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.711800%2C139.794600&destination=35.710100%2C139.810700&travelmode=transit"
+    },
+    {
+     "t": "13:40-14:45",
+     "what": "東京晴空塔展望台",
+     "kind": "anchor",
+     "price": "天望デッキ大人 ¥1,800～／デッキ＋回廊 ¥3,000～（官網 as of 2026-10-17；窗口＋¥500）",
+     "tag": "pinned",
+     "note": "營業律例 as of 2026-10-17：平日例 10:00–22:00、最終入場 21:00（2026-10-19 週一官網日曆）；週末例 9:00 開。2027-02-22 當日未公布，T-14 查 en.tokyo-skytree.jp/open-hours/。網上預約，勿現場當第一方案。展望 45–60分＋排隊。"
+    },
+    {
+     "t": "14:45-16:00",
+     "what": "東京索拉瑪海城室內逛（可選）",
+     "kind": "free",
+     "tag": "skippable",
+     "note": "與晴空塔同一棟，不另建 stop。累了可坐、買伴手禮。時刻本輪未核，當購物設施 T-14 再查。"
+    },
+    {
+     "t": "16:00-16:35",
+     "what": "地鐵 半藏門線(往澀谷方向) 至大手町／東京 約20–30分 · 晴空塔→京橋飯店",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.710100%2C139.810700&destination=35.676900%2C139.770600&travelmode=transit"
+    },
+    {
+     "t": "18:00-19:30",
+     "what": "晚餐 · 日本橋／京橋／八重洲一帶（回飯店圈）",
+     "kind": "meal",
+     "tag": "swap→一番街拉麵街",
+     "note": "本日第四塊是晚餐區不是第四個景點。"
+    }
+   ],
+   "stops": [
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "lat": 35.6769,
+     "lon": 139.7706
+    },
+    {
+     "name": "淺草寺",
+     "query": "浅草寺, 東京都台東区浅草",
+     "mode": "transit",
+     "lat": 35.7148,
+     "lon": 139.7967
+    },
+    {
+     "name": "新仲見世",
+     "query": "新仲見世通, 浅草, 東京",
+     "mode": "walk",
+     "lat": 35.7118,
+     "lon": 139.7946
+    },
+    {
+     "name": "晴空塔",
+     "query": "Tokyo Skytree, Oshiage, Tokyo, Japan",
+     "mode": "transit",
+     "lat": 35.7101,
+     "lon": 139.8107
+    },
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "mode": "transit",
+     "lat": 35.6769,
+     "lon": 139.7706
+    }
+   ],
+   "sun": "天亮 05:54 · ☀ 06:18 / 🌇 17:29 · JST · sunrise-sunset.org",
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.676900%2C139.770600&travelmode=walking&waypoints=35.714800%2C139.796700%7C35.711800%2C139.794600%7C35.710100%2C139.810700"
+  },
+  {
+   "date": "2027-02-23",
+   "tz": "Asia/Tokyo",
+   "city": "東京",
+   "label": "上野經典・東京國立博物館（天皇誕生日・開館律例）",
+   "travel_day": false,
+   "rain_alt": "主線東博已是室內。雨大把上野公園改成館內加時（東洋館／法隆寺寶物館同一園區），阿美橫丁騎樓仍可走。不改去 teamLab：假日易售罄、且在麻布台／豐洲，和上野不同簇。",
+   "late_cut": "遲到 >1 h → 砍上野公園散步，博物館仍留；再晚則阿美橫丁改成路過買食。東博最終入場 16:30（17:00 閉館律例）。",
+   "ribbon": "京橋飯店 →JR 20–30′→ 東京國立博物館 →步行8′→ 上野公園 →步行10′→ 阿美橫丁 →JR 15–20′→ 京橋飯店",
+   "walking_km": {
+    "total": 5.8,
+    "how": "館內約 1.5 + 公園 1.5 + 阿美橫丁 1.0 + 站步行×1.3（est）"
+   },
+   "note": "天皇誕生日（祝日）人潮大，開館即入。東博休館律例 as of 2026-10-17（tnm.jp）：月曜日休館（祝日月曜則開、改翌平日休）。2027-02-22 是普通月曜→休；2027-02-23 是火曜祝日→應開。官網已列 2026 年度例外（含 2027-03-29 月曜開館等），未把 2/23 列為休館。當日時刻 T-14 再查。不排吉卜力（需抽籤／售罄窗口）。",
+   "timeline": [
+    {
+     "t": "08:45-09:15",
+     "what": "步行至東京站＋JR 山手線(往池袋方向) 2站/6–8分 全程約20–30分 · 京橋飯店→東京國立博物館 · 上野公園口",
+     "kind": "hop",
+     "verify": "est",
+     "note": "祝日開館排隊，09:00 到門口；普通場地 15分裕量，祝日取上限。",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.718800%2C139.776500&travelmode=transit"
+    },
+    {
+     "t": "09:15-09:30",
+     "what": "東博門口排隊入場",
+     "kind": "free",
+     "tag": "pinned",
+     "note": "開館 9:30。祝日不要改下午入場。"
+    },
+    {
+     "t": "09:30-11:45",
+     "what": "東京國立博物館（東博コレクション／本館）",
+     "kind": "anchor",
+     "price": "一般 ¥1,000（平常展 as of 2026-10-17；特別展另票）",
+     "tag": "opener",
+     "note": "營業律例 as of 2026-10-17：9:30–17:00，最終入場閉館前 30分；金土延至 20:00。本日火曜祝日走平日白天檔，不是金土夜開。旗艦館可吃 3–4 h，本日只留 2 h 多（滑雪後休息節奏）；想看完就用 late_cut 砍公園。票價會在年度切換，T-14 連費也要再查。"
+    },
+    {
+     "t": "11:45-11:55",
+     "what": "步行 東京國立博物館→上野公園 約 0.4 km · 8分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.718800%2C139.776500&destination=35.714800%2C139.771400&travelmode=walking"
+    },
+    {
+     "t": "11:55-12:45",
+     "what": "上野公園／不忍池散步",
+     "kind": "anchor",
+     "price": "免費",
+     "tag": "swap→東博館內加時",
+     "note": "公園塊、輕量。2 月樹木光禿、風大則縮短。不排上野動物園（另票、戶外、祝日更擠）。"
+    },
+    {
+     "t": "12:45-13:15",
+     "what": "上野東照宮或清水觀音堂（可選，仍在園區內）",
+     "kind": "free",
+     "tag": "skippable",
+     "note": "同一公園簇，不要先去阿美橫丁再折返。社寺 30分。時刻本輪未核到 2027-02 當日；不去也不傷主線。T-14 查開閉。"
+    },
+    {
+     "t": "13:15-13:30",
+     "what": "步行 上野公園→阿美橫丁 約 0.7 km · 10分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.714800%2C139.771400&destination=35.710500%2C139.774500&travelmode=walking"
+    },
+    {
+     "t": "13:30-15:00",
+     "what": "午餐＋阿美橫丁市場散步",
+     "kind": "meal",
+     "tag": "swap→上野駅構內",
+     "note": "市場 60–90分含吃。週日店休較多，本日火曜祝日多數開，但個別店 T-14 無法保證。食物＝這條街，不訂位。"
+    },
+    {
+     "t": "15:00-15:25",
+     "what": "JR 山手線(往東京方向) 2站/6–8分 全程約15–20分 · 阿美橫丁→京橋飯店",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.710500%2C139.774500&destination=35.676900%2C139.770600&travelmode=transit"
+    },
+    {
+     "t": "18:00-19:30",
+     "what": "晚餐 · 日本橋／京橋一帶",
+     "kind": "meal",
+     "tag": "swap→GRANSTA八重洲"
+    }
+   ],
+   "stops": [
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "lat": 35.6769,
+     "lon": 139.7706
+    },
+    {
+     "name": "東京國立博物館",
+     "query": "東京国立博物館, 上野公園, 東京",
+     "mode": "transit",
+     "lat": 35.7188,
+     "lon": 139.7765
+    },
+    {
+     "name": "上野公園",
+     "query": "Ueno Park, Taito-ku, Tokyo, Japan",
+     "mode": "walk",
+     "lat": 35.7148,
+     "lon": 139.7714
+    },
+    {
+     "name": "阿美橫丁",
+     "query": "Ameyoko, Ueno, Tokyo, Japan",
+     "mode": "walk",
+     "lat": 35.7105,
+     "lon": 139.7745
+    },
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "mode": "transit",
+     "lat": 35.6769,
+     "lon": 139.7706
+    }
+   ],
+   "sun": "天亮 05:53 · ☀ 06:17 / 🌇 17:30 · JST · sunrise-sunset.org",
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.676900%2C139.770600&travelmode=walking&waypoints=35.718800%2C139.776500%7C35.714800%2C139.771400%7C35.710500%2C139.774500"
+  },
+  {
+   "date": "2027-02-24",
+   "tz": "Asia/Tokyo",
+   "city": "湯澤",
+   "label": "東京→湯澤・午後半日滑雪",
+   "travel_day": true,
+   "rain_alt": "風停／暴雪取消纜車 → 改 NASPA 溫泉＋室內泳池（日歸 9:00–18:00、最終受付 17:00、大人¥1,500，官網 naspa.co.jp/poolspa/spa as of 2026-10；泳池時刻依行事曆、2027-02 當日未公布）及越後湯澤站 CoCoLo／ぽんしゅ館室內。勿改去岩原夜滑：住站前則平日末班接駁早於夜場（2025-26 季型）。",
+   "late_cut": "遲到 >1h → 砍站前美食街久坐，改飯店內用餐；滑雪保 15:30 下山（末班纜車 16:00）。行李未先解決則取消滑雪、只留溫泉＋站內。",
+   "ribbon": "東京站 →新幹線71–90′→ ガーラ湯沢駅 →步行5′→ GALA滑雪 →接駁10′→ NASPA溫泉 →接駁3′→ CoCoLo／ぽんしゅ館",
+   "walking_km": {
+    "total": 2.4,
+    "how": "構內＋更衣室 0.8×1.3 + NASPA 館內 ~0.6 + CoCoLo 散步 ~0.8；雪道不計步行"
+   },
+   "timeline": [
+    {
+     "t": "07:30-08:00",
+     "what": "東京站集合・指定席改札（只帶過夜包＋滑雪衣；城市衣已寄放或宅急便）",
+     "kind": "free",
+     "tag": "pinned",
+     "note": "2/23 為天皇誕生日、2/24 仍可能滿員 — 必須指定席。大件於前一晚宅急便東京飯店→湯澤飯店（翌日達）或東京投幣櫃／飯店寄放。"
+    },
+    {
+     "t": "08:00-09:30",
+     "what": "JR 上越新幹線／谷川號 東京→ガーラ湯沢（或越後湯澤）指定席 大人約¥7,330 · 約71–90分",
+     "kind": "hop",
+     "verify": "est",
+     "map": false,
+     "price": "約¥7,330",
+     "note": "2025-26 冬東京→ガーラ湯沢直通每日有開；2026-27 臨時列車 PDF 截至 2026-10-17 未公布 — 此為季型，時刻勿當當日表。備援：上越新幹線至越後湯澤（約70–80分）＋GALA 免費接駁約10分。票價 NAVITIME 2026-03-16；Smart-EX／えきねっと 一個月前 10:00 JST 開賣（本程 2027-01-24 10:00）。"
+    },
+    {
+     "t": "09:30-10:30",
+     "what": "抵達 ガーラ湯沢駅・買券＋租雪具（FISCHER SNOW BASE）",
+     "kind": "free",
+     "tag": "pinned",
+     "price": "纜車全日 WEB 大人¥7,500／4小時 WEB ¥7,000；雪具3點成人1日¥6,500（2025-26 季型）",
+     "note": "纜車＋升降機全日窗口¥8,000／WEB¥7,500、4小時¥7,500／WEB¥7,000 — gala.co.jp/winter/hours-pricing as of 2026-10-17。午前抵達滑逾4小時則買全日 WEB。租借官網仍掛 2025-12-20～2026-04-05：07:30 開、最終貸出 15:15、歸還 17:45；成人滑雪3點 1日¥6,500／2日¥13,000、單板2點同額、雪衣上下¥5,500 — gala.co.jp/winter/rental as of 2026-10-17（2026-27 價未公布，T-14 重核）。南區 2026-27 全季關閉。"
+    },
+    {
+     "t": "10:30-10:40",
+     "what": "步行 ガーラ湯沢駅構內→GALA 纜車站／更衣室 約5–10分",
+     "kind": "hop",
+     "verify": "est"
+    },
+    {
+     "t": "10:40-11:40",
+     "what": "午餐 · GALA 山麓／山中食堂一帶",
+     "kind": "meal",
+     "tag": "swap→越後湯澤站 CoCoLo",
+     "note": "移動日先坐下來吃再滑；不點名餐廳。食堂時段以現場為準。"
+    },
+    {
+     "t": "11:40-15:30",
+     "what": "GALA 湯澤午後半日滑雪",
+     "kind": "anchor",
+     "tag": "opener",
+     "price": "已含於纜車券",
+     "note": "觀光纜車 08:40–16:00、升降機通常 08:30–16:30（官網 hours-pricing as of 2026-10-17）。2 月積雪：氣象廳湯澤 1991–2020 平年 2 月最深 202 cm、降雪 288 cm；SnowJapan GALA 2 月下旬常 200–480 cm（弱年 2025-26 至 2026-03-01 仍約 190 cm）。南區關閉故本季場地較小。GALA 無夜滑票種、營業至 16:30 — 視為無夜滑。"
+    },
+    {
+     "t": "15:30-15:50",
+     "what": "歸還租借・免費接駁 GALA→NASPA 約10分",
+     "kind": "hop",
+     "verify": "est",
+     "note": "GALA↔越後湯澤免費接駁約10分（已知）；NASPA 官網寫站到飯店接駁約3分。班表未核，留區間。"
+    },
+    {
+     "t": "15:50-17:20",
+     "what": "NASPA ニューオータニ 溫泉（大浴場・露天）",
+     "kind": "anchor",
+     "tag": "skippable",
+     "price": "住宿客含；日歸大人¥1,500",
+     "note": "弱鹼性單純泉。日歸 9:00–18:00 最終 17:00、毛巾袋含，受付在滑雪中心 — naspa.co.jp/poolspa/spa as of 2026-10。住宿客日中至深夜／早朝（清掃時段除外）。若住站前旅館則 swap→飯店風呂，不必繞 NASPA。"
+    },
+    {
+     "t": "17:20-17:30",
+     "what": "接駁 NASPA→越後湯澤站 約3分",
+     "kind": "hop",
+     "verify": "est"
+    },
+    {
+     "t": "17:30-19:00",
+     "what": "晚餐 · 越後湯澤站 CoCoLo 美食街／ぽんしゅ館一帶",
+     "kind": "meal",
+     "tag": "swap→NASPA 飯店餐",
+     "note": "美食＝區域不是餐廳。ぽんしゅ館越後湯澤驛店 2026-10–11 海報季型 9:30–19:00（延長日 9:00–19:30）；2 月時刻未公布 — 以 2026-10 季型＋T-14 重核。唎酒番所、酒風呂、炸彈飯糰家、糀カフェ皆在同一棟。"
+    }
+   ],
+   "stops": [
+    {
+     "name": "東京車站",
+     "query": "Tokyo Station, Japan",
+     "lat": 35.6812,
+     "lon": 139.7671
+    },
+    {
+     "name": "ガーラ湯沢駅",
+     "query": "GALA Yuzawa Station ガーラ湯沢駅, Yuzawa, Niigata",
+     "mode": "train",
+     "lat": 36.95,
+     "lon": 138.8035
+    },
+    {
+     "name": "GALA湯澤滑雪場",
+     "query": "GALA Yuzawa Ski Resort, Yuzawa, Niigata",
+     "lat": 36.9525,
+     "lon": 138.8055
+    },
+    {
+     "name": "NASPAニューオータニ 溫泉",
+     "query": "NASPA New Otani, Yuzawa, Niigata",
+     "mode": "bus",
+     "lat": 36.9348,
+     "lon": 138.7972
+    },
+    {
+     "name": "CoCoLo湯沢／ぽんしゅ館",
+     "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+     "mode": "bus",
+     "lat": 36.936,
+     "lon": 138.8093
+    }
+   ],
+   "sun": "天亮 05:56 · ☀ 06:21 / 🌇 17:34 · JST · sunrise-sunset.org",
+   "hop_links": [
+    "https://www.google.com/maps/dir/?api=1&origin=36.950000%2C138.803500&destination=36.952500%2C138.805500&travelmode=walking",
+    "https://www.google.com/maps/dir/?api=1&origin=36.952500%2C138.805500&destination=36.934800%2C138.797200&travelmode=transit",
+    "https://www.google.com/maps/dir/?api=1&origin=36.934800%2C138.797200&destination=36.936000%2C138.809300&travelmode=transit"
+   ]
+  },
+  {
+   "date": "2027-02-25",
+   "tz": "Asia/Tokyo",
+   "city": "湯澤",
+   "label": "GALA 全日滑雪・首班纜車",
+   "travel_day": false,
+   "rain_alt": "雨／強風停纜 → 主線改 NASPA 室內溫泉＋泳池（日歸最終 17:00；泳池通常 13:00–20:30 最終 19:30，指定日不同，2027-02-25 行事曆未核）及ぽんしゅ館唎酒・酒風呂（10:30–18:30 最終 18:00，2026-10–11 海報季型）。備援雪場：岩原（較低、緩坡）或湯澤高原（站西口步行約9分）。",
+   "late_cut": "遲到 >1h → 砍站前晚餐改飯店；絕不過 15:45 仍在山頂（末班纜車 16:00）。風停不空等，直接執行 rain_alt。",
+   "ribbon": "越後湯澤／NASPA →接駁10′→ ガーラ湯沢駅 →步行5′→ GALA全日滑雪 →接駁10′→ NASPA溫泉 →接駁3′→ CoCoLo／ぽんしゅ館",
+   "walking_km": {
+    "total": 2.8,
+    "how": "GALA 基地步行 1.0×1.3 + 溫泉館內 0.6 + CoCoLo 0.9；雪道不計"
+   },
+   "timeline": [
+    {
+     "t": "07:30-07:50",
+     "what": "飯店出發・接駁往 GALA（目標 08:10 到租借）",
+     "kind": "hop",
+     "verify": "est",
+     "map": false,
+     "note": "NASPA→GALA 接駁約數分–10分；站前飯店則越後湯澤東口免費接駁約10分。班表 est。"
+    },
+    {
+     "t": "07:50-08:00",
+     "what": "步行 ガーラ湯沢駅構內→GALA 纜車站／更衣室 約5–10分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=36.950000%2C138.803500&destination=36.952500%2C138.805500&travelmode=walking"
+    },
+    {
+     "t": "08:00-08:40",
+     "what": "租借（若尚未拿多日套）・排隊首班觀光纜車",
+     "kind": "free",
+     "tag": "opener",
+     "note": "租借 07:30 開（2025-26 季型）。纜車 08:40 起 — hours-pricing as of 2026-10-17。"
+    },
+    {
+     "t": "08:40-12:00",
+     "what": "GALA 湯澤上午滑雪（首班纜車 opener）",
+     "kind": "anchor",
+     "tag": "opener",
+     "price": "ゴンドラ＆リフト WEB 大人¥7,500",
+     "note": "全日 WEB¥7,500／窗口¥8,000，官網 as of 2026-10-17。南區關閉、場地較小，人潮會更集中中央。2 月平年雪量見 2/24 注。強風 → swap 岩原或湯澤高原。"
+    },
+    {
+     "t": "12:00-13:00",
+     "what": "午餐 · GALA 山中食堂一帶",
+     "kind": "meal",
+     "tag": "swap→山麓食堂",
+     "note": "連續滑超過 3.5 小時必須坐下。不點名餐廳。"
+    },
+    {
+     "t": "13:00-15:40",
+     "what": "GALA 湯澤下午續滑",
+     "kind": "anchor",
+     "tag": "skippable",
+     "note": "升降機通常至 16:30、纜車 16:00。15:40 開始收；疲勞或風大改提前下山泡湯。"
+    },
+    {
+     "t": "15:40-16:00",
+     "what": "歸還當日件（若非連日租）・接駁 GALA→NASPA 約10分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=36.952500%2C138.805500&destination=36.934800%2C138.797200&travelmode=transit"
+    },
+    {
+     "t": "16:00-17:30",
+     "what": "NASPA 溫泉（或站前旅館風呂）",
+     "kind": "anchor",
+     "tag": "swap→岩原いわっぱらの湯",
+     "price": "住宿客含；日歸¥1,500",
+     "note": "日歸最終 17:00 — 16:00 到仍來得及。岩原 RC2「いわっぱらの湯」13:00–17:00（第三方整理 2025-26 季型，未核 2026-27）且平日末班接駁約 17:30，站前客不要為夜滑留下來。"
+    },
+    {
+     "t": "17:30-17:40",
+     "what": "接駁 NASPA→越後湯澤站 約3分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=36.934800%2C138.797200&destination=36.936000%2C138.809300&travelmode=transit"
+    },
+    {
+     "t": "17:40-19:10",
+     "what": "晚餐 · 越後湯澤站 CoCoLo 美食街／ぽんしゅ館",
+     "kind": "meal",
+     "tag": "swap→NASPA 晚餐",
+     "note": "若飯店一泊二食，此段改點心／唎酒，正餐回飯店。ぽんしゅ館季型見 2/24。"
+    }
+   ],
+   "stops": [
+    {
+     "name": "ガーラ湯沢駅",
+     "query": "GALA Yuzawa Station ガーラ湯沢駅, Yuzawa, Niigata",
+     "mode": "bus",
+     "lat": 36.95,
+     "lon": 138.8035
+    },
+    {
+     "name": "GALA湯澤滑雪場",
+     "query": "GALA Yuzawa Ski Resort, Yuzawa, Niigata",
+     "lat": 36.9525,
+     "lon": 138.8055
+    },
+    {
+     "name": "NASPAニューオータニ 溫泉",
+     "query": "NASPA New Otani, Yuzawa, Niigata",
+     "mode": "bus",
+     "lat": 36.9348,
+     "lon": 138.7972
+    },
+    {
+     "name": "CoCoLo湯沢／ぽんしゅ館",
+     "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+     "mode": "bus",
+     "lat": 36.936,
+     "lon": 138.8093
+    }
+   ],
+   "sun": "天亮 05:55 · ☀ 06:20 / 🌇 17:35 · JST · sunrise-sunset.org",
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=36.950000%2C138.803500&destination=36.936000%2C138.809300&travelmode=walking&waypoints=36.952500%2C138.805500%7C36.934800%2C138.797200"
+  },
+  {
+   "date": "2027-02-26",
+   "tz": "Asia/Tokyo",
+   "city": "湯澤",
+   "label": "GALA 第二全日・風停改岩原／湯澤高原",
+   "travel_day": false,
+   "rain_alt": "GALA 風停或南區關閉後場地過擠 → 改岩原スキー場（預定 2026-12-19～2027-03-28、日間 8:00–17:00、大人一日券¥5,500；ナイター 17:00 起、平日／週日至 19:00 — iwa-ppara.com/price 本頁標 2026-27 as of 2026-10）或湯澤高原（高原區預定 2026-12-18～2027-04-04、山麓 12-25～3-28 — yuzawakogen.com as of 2026-08）。室內備案同 2/25：NASPA 溫泉／泳池＋ぽんしゅ館。",
+   "late_cut": "遲到 >1h 或風停公告 → 立刻改岩原／湯澤高原，不空等 GALA；晚上保溫泉。住站前則不要留岩原滑夜場（平日末班接駁 2025-26 季型 17:30 自 RC2）。",
+   "ribbon": "越後湯澤／NASPA →接駁10′→ GALA（風停→岩原15′或湯澤高原步行9′） →接駁→ 溫泉 →接駁3′→ CoCoLo／ぽんしゅ館",
+   "walking_km": {
+    "total": 2.8,
+    "how": "同 2/25 量級；若改湯澤高原則站西口步行約 0.6 km×1.3 另計"
+   },
+   "timeline": [
+    {
+     "t": "07:40-08:00",
+     "what": "接駁往 GALA（先看官方營運／風停推播）",
+     "kind": "hop",
+     "verify": "est",
+     "map": false,
+     "note": "T-1 早上看 GALA 營運。風停則改東口岩原接駁或西口步行去湯澤高原繩索站。"
+    },
+    {
+     "t": "08:00-08:10",
+     "what": "步行 ガーラ湯沢駅構內→GALA 纜車（風停則改岩原 RC2 或湯澤高原山麓）約5–10分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=36.950000%2C138.803500&destination=36.952500%2C138.805500&travelmode=walking"
+    },
+    {
+     "t": "08:10-08:40",
+     "what": "更衣・目標 08:40 纜車",
+     "kind": "free",
+     "tag": "opener"
+    },
+    {
+     "t": "08:40-12:00",
+     "what": "GALA 第二全日上午（風停 swap→岩原或湯澤高原）",
+     "kind": "anchor",
+     "tag": "swap→岩原スキー場",
+     "price": "GALA WEB 大人¥7,500；岩原一日大人¥5,500",
+     "note": "本季 GALA 南區關閉，第二天風大或人擠就換場，不要硬滑。岩原：新潟縣南魚沼郡湯沢町土樽731-79 TEL 025-787-3211；東口免費接駁約9–15分。湯澤高原：站西口步行約9分／600 m 或冬期 NASPA–湯澤高原–GALA 免費接駁（官網 FAQ）。岩原有夜滑但站前客平日接駁接不上，今晚改溫泉。"
+    },
+    {
+     "t": "12:00-13:00",
+     "what": "午餐 · 雪場食堂一帶",
+     "kind": "meal",
+     "tag": "swap→CoCoLo",
+     "note": "換場也在該場食堂吃，不折返車站午餐。"
+    },
+    {
+     "t": "13:00-15:30",
+     "what": "下午續滑",
+     "kind": "anchor",
+     "tag": "skippable",
+     "note": "GALA 15:30 收；岩原日間至 17:00 但接駁要抓末班。今晚溫泉是 pinned 體驗，不要用夜滑換掉。"
+    },
+    {
+     "t": "15:30-15:50",
+     "what": "下山接駁 → NASPA 或站前旅館",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=36.952500%2C138.805500&destination=36.934800%2C138.797200&travelmode=transit"
+    },
+    {
+     "t": "15:50-17:30",
+     "what": "晚間溫泉（NASPA 或站前大浴場）",
+     "kind": "anchor",
+     "tag": "pinned",
+     "price": "住宿客含",
+     "note": "行程指定今晚泡湯。NASPA 日歸最終 17:00，住宿客不受限。湯澤東映露天大岩風呂、雙葉「ふたばの湯」皆為站圈選項。"
+    },
+    {
+     "t": "17:30-17:40",
+     "what": "接駁／步行 → 越後湯澤站 CoCoLo",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=36.934800%2C138.797200&destination=36.936000%2C138.809300&travelmode=transit"
+    },
+    {
+     "t": "17:40-19:10",
+     "what": "晚餐 · CoCoLo 美食街／ぽんしゅ館",
+     "kind": "meal",
+     "tag": "swap→飯店餐",
+     "note": "若明日短滑，今晚可把不滑的行李交給飯店翌朝宅急便回東京（翌日達，趕不上 2/27 午後車則改隨身上車）。"
+    }
+   ],
+   "stops": [
+    {
+     "name": "ガーラ湯沢駅",
+     "query": "GALA Yuzawa Station ガーラ湯沢駅, Yuzawa, Niigata",
+     "mode": "bus",
+     "lat": 36.95,
+     "lon": 138.8035
+    },
+    {
+     "name": "GALA湯澤滑雪場",
+     "query": "GALA Yuzawa Ski Resort, Yuzawa, Niigata",
+     "lat": 36.9525,
+     "lon": 138.8055
+    },
+    {
+     "name": "NASPAニューオータニ 溫泉",
+     "query": "NASPA New Otani, Yuzawa, Niigata",
+     "mode": "bus",
+     "lat": 36.9348,
+     "lon": 138.7972
+    },
+    {
+     "name": "CoCoLo湯沢／ぽんしゅ館",
+     "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+     "mode": "bus",
+     "lat": 36.936,
+     "lon": 138.8093
+    }
+   ],
+   "sun": "天亮 05:54 · ☀ 06:18 / 🌇 17:36 · JST · sunrise-sunset.org",
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=36.950000%2C138.803500&destination=36.936000%2C138.809300&travelmode=walking&waypoints=36.952500%2C138.805500%7C36.934800%2C138.797200"
+  },
+  {
+   "date": "2027-02-27",
+   "tz": "Asia/Tokyo",
+   "city": "湯澤 → 東京",
+   "label": "午前溫泉・新幹線回東京・新宿半日",
+   "travel_day": true,
+   "rain_alt": "天氣差或趕車 → 取消短滑，只留溫泉＋ぽんしゅ館室內。抵東京後若雨：砍新宿御苑，改都廳展望室＋伊勢丹室內。",
+   "late_cut": "10:30 還沒上纜車 → 不滑。新幹線晚於 14:30 抵東京站 → 砍御苑（冬季最後入園 16:00），行李進飯店後直奔都廳。",
+   "ribbon": "NASPA溫泉 →接駁3′→ ぽんしゅ館 →新幹線70–80′→ 東京站 →步行8′→ 京橋飯店 →地鐵25–35′→ 新宿御苑 →地鐵→ 都廳",
+   "walking_km": {
+    "total": 4.2,
+    "how": "湯澤站內 1.0 + 御苑 2.0 + 都廳 0.4 + 站步行×1.3（est）"
+   },
+   "note": "移動日：行李先解決再活動。錨點 ≤2（溫泉＋御苑）；都廳 skippable。上越新幹線 2026-27 冬臨時時刻截至 2026-10-17 未公布，以下為季型 70–80 分。",
+   "timeline": [
+    {
+     "t": "08:00-08:30",
+     "what": "湯澤飯店退房・行李放櫃或隨身上車",
+     "kind": "free",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:40-10:20",
+     "what": "午前溫泉（NASPA 或站前旅館風呂）",
+     "kind": "anchor",
+     "tag": "opener",
+     "price": "住宿客含；日歸大人¥1,500",
+     "note": "三日滑雪後的恢復槽。短滑僅在行李已存且能 11:30 下山時才換。"
+    },
+    {
+     "t": "10:40-12:00",
+     "what": "午餐＋伴手禮 · CoCoLo／ぽんしゅ館",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "12:20-13:50",
+     "what": "上越新幹線 越後湯澤→東京 指定席 大人約¥7,330 · 約70–80分",
+     "kind": "hop",
+     "verify": "est",
+     "price": "約¥7,330",
+     "note": "2/27 週六指定席必訂。Smart-EX 開賣 2027-01-27 10:00 JST。票價 NAVITIME as of 2026-03-16。"
+    },
+    {
+     "t": "13:50-14:20",
+     "what": "步行 東京車站→京橋飯店寄行李／入住",
+     "kind": "hop",
+     "verify": "est"
+    },
+    {
+     "t": "14:20-14:50",
+     "what": "京橋飯店寄行李",
+     "kind": "free",
+     "tag": "pinned"
+    },
+    {
+     "t": "14:50-15:25",
+     "what": "地鐵 丸之內線 至新宿御苑前 約25–35分",
+     "kind": "hop",
+     "verify": "est"
+    },
+    {
+     "t": "15:25-16:20",
+     "what": "新宿御苑",
+     "kind": "anchor",
+     "tag": "opener",
+     "price": "入場費 ⚠️ 本輪未核到官網數字（T-14 查 policies.env.go.jp）",
+     "note": "冬季 9:00–16:30、最後入園 16:00（as of 2026-10-17）。晚到就砍，改都廳。"
+    },
+    {
+     "t": "16:30-17:20",
+     "what": "東京都廳第一本廳舍展望室（可選）",
+     "kind": "free",
+     "price": "免費",
+     "tag": "skippable",
+     "note": "9:30–22:00 as of 2026-10-17。室內、免費。移動日第 3 個景點，不當錨點。"
+    },
+    {
+     "t": "17:40-19:00",
+     "what": "晚餐 · 回憶橫丁／新宿西口巷弄",
+     "kind": "meal",
+     "tag": "swap→伊勢丹美食層"
+    }
+   ],
+   "stops": [
+    {
+     "name": "NASPAニューオータニ 溫泉",
+     "query": "NASPA New Otani, Yuzawa, Niigata",
+     "lat": 36.9348,
+     "lon": 138.7972
+    },
+    {
+     "name": "CoCoLo湯沢／ぽんしゅ館",
+     "query": "Ponshukan CoCoLo Yuzawa, Echigo-Yuzawa Station, Niigata",
+     "mode": "bus",
+     "lat": 36.936,
+     "lon": 138.8093
+    },
+    {
+     "name": "越後湯澤站（發車）",
+     "query": "Echigo-Yuzawa Station 越後湯沢駅, Niigata",
+     "lat": 36.936,
+     "lon": 138.8093
+    },
+    {
+     "name": "東京車站",
+     "query": "Tokyo Station, Japan",
+     "mode": "train",
+     "lat": 35.6812,
+     "lon": 139.7671
+    },
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "mode": "walk",
+     "lat": 35.6769,
+     "lon": 139.7706
+    },
+    {
+     "name": "新宿御苑",
+     "query": "新宿御苑, 東京都",
+     "mode": "transit",
+     "lat": 35.6852,
+     "lon": 139.71
+    },
+    {
+     "name": "都廳展望室",
+     "query": "Tokyo Metropolitan Government Building South Observatory, Shinjuku",
+     "mode": "transit",
+     "lat": 35.6896,
+     "lon": 139.6917
+    },
+    {
+     "name": "回憶橫丁",
+     "query": "Omoide Yokocho, Shinjuku, Tokyo, Japan",
+     "mode": "walk",
+     "lat": 35.6934,
+     "lon": 139.6995
+    }
+   ],
+   "sun": "天亮 05:48 · ☀ 06:13 / 🌇 17:34 · JST · sunrise-sunset.org",
+   "hop_links": [
+    "https://www.google.com/maps/dir/?api=1&origin=36.934800%2C138.797200&destination=36.936000%2C138.809300&travelmode=transit",
+    "https://www.google.com/maps/dir/?api=1&origin=36.936000%2C138.809300&destination=36.936000%2C138.809300&travelmode=walking",
+    "https://www.google.com/maps/dir/?api=1&origin=35.681200%2C139.767100&destination=35.676900%2C139.770600&travelmode=walking",
+    "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.685200%2C139.710000&travelmode=transit",
+    "https://www.google.com/maps/dir/?api=1&origin=35.685200%2C139.710000&destination=35.689600%2C139.691700&travelmode=transit",
+    "https://www.google.com/maps/dir/?api=1&origin=35.689600%2C139.691700&destination=35.693400%2C139.699500&travelmode=walking"
+   ]
+  },
+  {
+   "date": "2027-02-28",
+   "tz": "Asia/Tokyo",
+   "city": "東京",
+   "label": "退房・前往機場（不觀光）",
+   "travel_day": true,
+   "rain_alt": "東京車站構內全室內（一番街／GRANSTA）。出發日不排景點，雨備＝在站內等車。",
+   "late_cut": "任何延誤 → 只留飯店→東京車站→機場，零停留。",
+   "ribbon": "京橋飯店 →步行8′→ 東京站 →N'EX60′→ 成田機場",
+   "walking_km": {
+    "total": 0.9,
+    "how": "京橋飯店→東京車站步行約 0.7×1.3（est）"
+   },
+   "note": "假定上午／下午班機，出發日＝0 觀光。回程起飛時刻未鎖定：倒算公式 T＝起飛 → T−3 h 到國際航廈（羽田國內 T−2 h）→ T−4 h 30 離開飯店。成田：東京站 N'EX 約 60分；羽田：東京站轉單軌或京急，門到門常 30–50分。T 未核前不要寫死 08:00 計程車。",
+   "timeline": [
+    {
+     "t": "T−4h30",
+     "what": "京橋飯店退房",
+     "kind": "free",
+     "tag": "pinned",
+     "note": "國際線 T−3 h 到航廈。例：NRT 15:30 起飛 → 約 11:00 離飯店。"
+    },
+    {
+     "t": "T−4h20",
+     "what": "步行 京橋飯店→東京車站",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.676900%2C139.770600&destination=35.681200%2C139.767100&travelmode=walking"
+    },
+    {
+     "t": "T−3h50",
+     "what": "N'EX 東京站→成田機場 約 60 分",
+     "kind": "hop",
+     "verify": "est",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=35.681200%2C139.767100&destination=35.772000%2C140.392900&travelmode=transit"
+    },
+    {
+     "t": "T−3h00",
+     "what": "成田國際航廈報到",
+     "kind": "free",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "京橋飯店",
+     "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan",
+     "lat": 35.6769,
+     "lon": 139.7706
+    },
+    {
+     "name": "東京車站",
+     "query": "Tokyo Station, Japan",
+     "mode": "walk",
+     "lat": 35.6812,
+     "lon": 139.7671
+    },
+    {
+     "name": "成田機場",
+     "query": "Narita Airport Terminal 2, Japan",
+     "mode": "train",
+     "lat": 35.772,
+     "lon": 140.3929
+    }
+   ],
+   "sun": "天亮 05:44 · ☀ 06:09 / 🌇 17:33 · JST · sunrise-sunset.org"
+  }
+ ],
+ "hotels": [
+  {
+   "base": "東京車站 3 晚（2027-02-21 入住 → 2027-02-24 退房）",
+   "area": "東京車站八重洲／京橋／日本橋",
+   "why": "步行可到東京站八重洲口，上越新幹線直達越後湯澤／GALA 湯澤，滑雪去程不用先拖箱換地鐵；日本橋、京橋、一番街晚餐圈都在步行範圍；2/21 抵達晚只能走飯店周邊，此區剛好符合「無票散步」。中檔、可退款優先。",
+   "options": [
+    {
+     "name": "三井花園飯店京橋 Mitsui Garden Hotel Kyobashi",
+     "band": "約 ¥18,000–25,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17；非 2027-02 實價）",
+     "link": "https://www.booking.com/searchresults.html?ss=Mitsui+Garden+Hotel+Kyobashi+Tokyo&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+    },
+    {
+     "name": "大和 Roynet 東京京橋 PREMIER Daiwa Roynet Hotel Tokyo Kyobashi PREMIER",
+     "band": "約 ¥25,000–27,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17；非 2027-02 實價）",
+     "link": "https://www.booking.com/searchresults.html?ss=Daiwa+Roynet+Hotel+Tokyo+Kyobashi+PREMIER&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+    },
+    {
+     "name": "VIA INN Prime 日本橋人形町",
+     "band": "約 ¥12,000–20,000／晚（聚合站近期均價 as of 2026-09；較京橋再走 10–15 分或一站地鐵，預算備案）",
+     "link": "https://www.booking.com/searchresults.html?ss=VIA+INN+Prime+Nihonbashi+Ningyocho+Tokyo&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+    }
+   ]
+  },
+  {
+   "base": "東京車站 1 晚（2027-02-27 入住 → 2027-02-28 退房）",
+   "area": "東京車站八重洲／京橋／日本橋",
+   "why": "湯澤當日早上新幹線進東京站，同一區可先寄行李再去新宿；第二天從東京站出機場，避免再換一次住宿區。1 晚中檔即可，優先可取消。",
+   "options": [
+    {
+     "name": "三井花園飯店京橋 Mitsui Garden Hotel Kyobashi",
+     "band": "約 ¥18,000–25,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17；週六入週日退可能偏高，T-14 再比）",
+     "link": "https://www.booking.com/searchresults.html?ss=Mitsui+Garden+Hotel+Kyobashi+Tokyo&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+    },
+    {
+     "name": "大和 Roynet 東京京橋 PREMIER Daiwa Roynet Hotel Tokyo Kyobashi PREMIER",
+     "band": "約 ¥25,000–27,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17）",
+     "link": "https://www.booking.com/searchresults.html?ss=Daiwa+Roynet+Hotel+Tokyo+Kyobashi+PREMIER&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+    },
+    {
+     "name": "VIA INN Prime 日本橋人形町",
+     "band": "約 ¥12,000–20,000／晚（聚合站 as of 2026-09；1 晚可接受多走一段）",
+     "link": "https://www.booking.com/searchresults.html?ss=VIA+INN+Prime+Nihonbashi+Ningyocho+Tokyo&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+    }
+   ]
+  },
+  {
+   "base": "湯澤 3 晚（2027-02-24 入住 → 2027-02-27 退房）",
+   "area": "越後湯澤站圈或 NASPA／GALA 接駁沿線",
+   "why": "三日滑雪要每晚能走路或短接駁去溫泉與站內美食街；大件用宅急便，不住需要每天拖箱的山屋。中檔、選可免費取消。2/23 天皇誕生日連假尾，週末房可能偏貴，優先可退方案。",
+   "options": [
+    {
+     "name": "NASPAニューオータニ",
+     "band": "中檔偏上 · 冬季一泊二食 大人¥21,800起（官網 2026-12-24～2027-03-27 方案，as of 2026-10；素泊／含早另有）。含 NASPA Ski Garden 升降機（單板不可）。",
+     "link": "https://www.booking.com/searchresults.html?ss=NASPA+New+Otani+Yuzawa+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+    },
+    {
+     "name": "湯沢東映ホテル",
+     "band": "中檔站前溫泉 · 越後湯澤站徒歩約7分、湯澤高原山麓徒歩0分、露天大岩風呂。房價不編造，以 dated 搜尋為準。",
+     "link": "https://www.booking.com/searchresults.html?ss=Yuzawa+Toei+Hotel+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+    },
+    {
+     "name": "ホテル双葉（越後湯澤溫泉）",
+     "band": "中檔溫泉旅館 · 站接送迎 8:00–21:00、送り 8:00–12:00（官網 as of 2026-10）。高台，非駅直結。房價不編造。",
+     "link": "https://www.booking.com/searchresults.html?ss=Hotel+Futaba+Yuzawa+Niigata&checkin=2027-02-24&checkout=2027-02-27&group_adults=2&no_rooms=1&lang=zh-tw"
+    }
+   ]
+  }
+ ],
+ "budget": [
+  {
+   "cat": "來回機票",
+   "per_person": "TWD 15,000–18,000",
+   "total": "TWD 30,000–36,000",
+   "note": "JAL＋星宇官網月曆 as of 2026-10-17；2/21–28 當日可能更高"
+  },
+  {
+   "cat": "東京住宿 4 晚",
+   "per_person": "TWD 9,000–13,000",
+   "total": "TWD 18,000–26,000",
+   "note": "¥18,000–25,000／晚×4；兩人一室。Ikyu 帶寬 as of 2026-10-17"
+  },
+  {
+   "cat": "湯澤住宿 3 晚",
+   "per_person": "TWD 7,000–14,000",
+   "total": "TWD 14,000–28,000",
+   "note": "站前中檔或 NASPA 一泊二食。含餐則下面餐費可少"
+  },
+  {
+   "cat": "新幹線來回",
+   "per_person": "TWD 3,000",
+   "total": "TWD 6,000",
+   "note": "¥7,330×2 as of 2026-03-16"
+  },
+  {
+   "cat": "GALA 纜車 2.5–3 日",
+   "per_person": "TWD 4,600–4,600",
+   "total": "TWD 9,200",
+   "note": "WEB ¥7,500×3 as of 2026-10-17"
+  },
+  {
+   "cat": "雪具租借",
+   "per_person": "TWD 4,000",
+   "total": "TWD 8,000",
+   "note": "2025-26 季型 ¥6,500／日×3；2026-27 未公布"
+  },
+  {
+   "cat": "餐食（東京為主）",
+   "per_person": "TWD 6,000–8,000",
+   "total": "TWD 12,000–16,000",
+   "note": "湯澤若一泊二食可再少"
+  },
+  {
+   "cat": "地鐵／N'EX／門票",
+   "per_person": "TWD 3,500",
+   "total": "TWD 7,000",
+   "note": "含晴空塔、東博、N'EX"
+  },
+  {
+   "cat": "保險＋eSIM",
+   "per_person": "TWD 1,500–2,500",
+   "total": "TWD 3,000–5,000",
+   "note": "滑雪附加險另計"
+  },
+  {
+   "cat": "緩衝 12%",
+   "per_person": "TWD 6,500",
+   "total": "TWD 13,000",
+   "note": "含卡國外交易費 1.5–3%、日圓波動、假日漲價"
+  }
+ ],
+ "brief": {
+  "visa": "免簽證 90 日觀光（持有效台灣護照且載有身分證字號）· 免費 · 當場入境審查、無預先申請。護照須在停留期間有效（未規定剩餘 6 個月）。備來回機位、住宿、行程、財力備詢。不得有償工作。直飛 TPE–NRT，無第三國入境、無拆票轉機。來源：koryu.or.jp 免簽證頁、BOCA 免簽證表（更新 2026-10-07）· as of 2026-10-17。",
+  "emergency": "1 當地：警察 110 · 急救／消防 119（UK FCDO getting-help · as of 2026-08-28）。\n2 台灣：外交部緊急聯絡中心 0800-085-095（國內）；海外 +886-800-085-095（verify at boca.gov.tw）。\n3 最近館：台北駐日經濟文化代表處，東京都港區白金台 5-20-2，03-3280-7811；急難 080-1009-7179／夜間警衛 03-3280-7917；領務 週一–五 09:00–11:30、13:00–16:00（roc-taiwan.org/jp · as of 2026-10-17）。湯澤同轄區（新潟）。\n4 保險：保單協助電話＋保單號（你買完再填）。先打電話再送醫；要明細收據。\n5 護照遺失：先報案留收據 → 代表處緊急旅行文件（照片＋影本＋報案）→ 再處理出境。\n6 東京 ER：聖路加國際病院 中央區明石町 9-1，03-3541-5151（救命救急中心；as of 2026-10-17）。湯澤：先打 025-780-6543 湯澤町保健醫療中心，或 119；魚沼基幹病院 025-777-3200（南魚沼市浦佐，車程視雪況）。藥局＝薬局／ドラッグストア。",
+  "safety": "警示: 灰色提醒（第一級）· 外交部領事事務局 · as-of 2025-12-30（第二來源：美國 Level 1 Exercise Normal Precautions · as-of 2025-05-14；英國 FCDO 無額外 alert · as-of 2026-08-28）。福島縣「返回困難區域」避免；本行程不經過。\n① 詐騙：酒吧／夜店帳單灌水、飲料下藥刷卡（FCDO：東京娛樂區夜間）。\n② 扒手：電車高峰、淺草仲見世、新宿西口。女乘客注意癡漢；大聲喊、找車掌。\n③ 計程車：用 GO／Uber 或站內計程車排班；不要跟大廳攬客。成田／羽田坐官方排班或 N'EX／單軌。\n④ 天黑後：新宿歌舞伎町、澀谷中心街酒客多；本行程夜路走飯店圈或地鐵門到門。湯澤站前冬天路滑，穿防滑靴。\n⑤ 出事：先報案（報案號是理賠鑰匙）→ 代表處／保險。\n⑥ 法律：偽麻黃鹼感冒藥／部分止痛藥入境違法；肉製品不可帶；現金申報門檻 >¥1,000,000。",
+  "health": "1 疫苗：常規＋麻疹；A 肝多數旅客考慮；B 肝 60 歲以下未接種建議；日本腦炎僅長期／農村／露營才考慮（2 月雪場短住通常不需要）。黃熱病：不建議、入境不要求（CDC 更新 2025-04-23）。門診日期：出發前 4–6 週。本計畫不開處方。\n2 病媒：登革（CDC 列；2 月低）；日本腦炎夏季農村；鉤端螺旋體（洪水／淡水）。雪場主要是凍傷、跌倒、紫外線。\n3 水與食物：自來水可飲（JNTO educational travel · as of 2026-10-17）。CDC 頁未寫死可飲。TravelHealthPro 因血吸蟲提醒勿涉溪湖淡水——不是自來水。神社手水舍不要喝。\n4 狂犬病：日本犬隻病例不常見；勿摸野動物；咬傷先沖 15 分再 ER。\n5 衛生警示：CDC Level 1 麻疹 · 2025-05-28 · https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+  "holidays": "日本：2027-02-23 天皇誕生日（火曜祝日）— 雪場與新幹線擠、部分店休；東博按律例應開（月曜休、普通月曜 2/22 休、祝日火曜開）。來源 date.nager.at 2027/JP。\n台灣：2027-02-28 和平紀念日（日）於 3/1（一）補假，連假 2/27–3/1（人事總處 116 年辦公日曆）。本行程 2/28 回台，不使用 3/1。農曆春節 2/4–10 已過。",
+  "weather": "東京 2/21–28：5 年檔最高中位 11.4°C、最低 2.0°C、降雨日約 20%、最濕 49.7 mm；氣候模式均溫最高 10.4／最低 1.0、日雨 1.9 mm。湯澤（新潟町，非秋田）：5 年檔最高 4.2°C、最低 −3.7°C、降水日約 70%；氣候模式最高 2.2／最低 −5.0、日降水 6.5 mm（冬季多為雪）。氣象廳湯澤平年 2 月最深積雪 202 cm、降雪合計 288 cm（1991–2020）。· 5-yr normals + climate model · Open-Meteo as-of 2026-10-17。",
+  "money": "1 DCC：刷卡選日圓，不要機台自動換成台幣（一次 3–8%）。\n2 卡國外交易費：旅遊卡 0%；一般卡 1.5–3% → 緩衝列已加。\n3 ATM：7-Eleven／郵局較吃國外卡；銀行大廳機、遮 PIN；單次上限現場看、費用 check on arrival。\n4 現金：帶約 TWD 4,000–6,000 等值日圓（小食堂、神社、部分湯澤店）。入境申報門檻 >¥1,000,000。\n5 接受：Visa／Mastercard 廣；UnionPay／Alipay+ 大城市可以、雪場食堂不一定。Suica 可當小額電子錢。",
+  "connectivity": "eSIM 約 TWD 300–500／7 日（Airalo／eSIM 商城；出發前買）。插頭 A／B 型 100 V。數位安全：eSIM 仍要收得到家門號簡訊（銀行 2FA）；Find My＋SIM PIN；護照／保單雲端＋離線；公共 Wi-Fi 不網銀。",
+  "insurance": "要有海外醫療＋醫療運送。滑雪／單板常在除外清單——必須加「特定活動」或條款點名滑雪。國泰特定活動險頁有列滑雪但須洽據點；富邦網路旅平險與快樂旅平卡通路不同。買完核對：目的地日本、等待期、滑雪是否列名、急難電話。雪場事故要留經營者證明。門檻：有地震＋雪季，現在買。",
+  "baggage": "去程大件進東京飯店。2/23 晚宅急便東京→湯澤（翌日達），新幹線只帶過夜包＋雪衣。回程 2/26 晚再寄東京趕不上 2/27 車就隨身。GALA 有置物與宅配櫃檯。N'EX／新幹線不要賭超大置物櫃。",
+  "season": "地震全年（JMA／USGS）· 沿海知高地；湯澤在內陸山區，仍可能停駛新幹線。\n雪季／雪崩：2 月是上越雪國主季，不是尾聲。GALA 計畫滑到 2027-05-05，但弱雪年會提早收（2026 年滑走 4/17 結束）。南區本季關閉。保險現在買；雪場住宿保持可退；T-7 看積雪與風停。來源：gala.co.jp hours-pricing、JMA 平年、SnowJapan 歷年積雪 · as of 2026-10-17。",
+  "lookalikes": "湯澤有秋田湯澤市、山形、神奈川——本行程是新潟縣南魚沼郡湯沢町／越後湯澤。飯店搜尋寫 Echigo-Yuzawa, Niigata。成田 NRT 與羽田 HND 不要混；松山 TSA 是另一座出發機場。"
+ },
+ "unverified": [
+  "2/21 國際航班抵達鐘點未提供，晚上時段可整體後移。",
+  "2/27 上越新幹線抵東京站時刻由湯澤段負責，本城日下午時間會跟著平移。",
+  "2026-27 冬 JR 東日本谷川號東京→ガーラ湯沢直通時刻表（臨時列車 PDF 截至 2026-10-17 未公布）；2/24、2/27 具體發車時刻為 71–90 分季型。",
+  "2026-27 冬 JR 直通ガーラ湯沢時刻表未公布。",
+  "2027-02-21／02-28 實際航班號與回程鐘點未鎖；去程用 2026-10-25 起 JX800 冬型。",
+  "2027-02-21～28 各館當日時刻表尚未公布；以上皆為營業律例 as of 2026-10-17，T-14 再查。",
+  "GALA 2026-27 租借價與貸出時刻（官網 rental 頁仍顯示 2025-26）；現抄 1日¥6,500 為季型。",
+  "GALA 免費接駁與 NASPA 接駁的精確班距（僅有「約10分／約3分」）。",
+  "GALA 未在 hours-pricing 列出夜滑票 — 依 16:30 收纜視為無夜滑，但官網無「不做ナイター」一句原文。",
+  "Google Flights 格點掃描失敗（fast-flights 3.1 無 FlightData）。",
+  "NASPA 室內泳池 2027-02-24–27 當日是否營業（官網分通常日／指定日／特定日，須查行事曆）。",
+  "teamLab Borderless（麻布台）律例 as of 2026-10-17：多為 8:30–21:00、最終入場閉館前 1 h；票在入場日前兩個月 1 日左右開賣，週末／祝日易售罄，現場價＋¥200 且可能已完售。teamLab Planets（豐洲）律例 8:00–22:00、最終入場前 1 h，場內不售票，展覽標到 2027 年底。兩者皆非抽籤，但本短城窗不排（祝日賣壓＋跨城）。",
+  "ぽんしゅ館越後湯澤驛店 2027-02 營業時間（僅有 2026-10–11 海報 9:30–19:00 季型）。",
+  "回程航班起飛時刻、成田或羽田未鎖定；2/28 用 T 公式。",
+  "地鐵／JR 票價為區間 est，刷 IC，未核官網表。",
+  "岩原→越後湯澤免費接駁 2026-27 班表（夜滑官方已核；末班平日 17:30／週末 18:20 為 2025-26 季型）。",
+  "新宿御苑入場費本輪 8 次搜尋未核到官網數字。",
+  "新宿御苑門票金額未核到官網。",
+  "晴空塔 2027-02-22 開園時刻：以 2026-10-19 週一 10:00–22:00 為平日律例，非當日確認。",
+  "東京索拉瑪海城、上野東照宮 2027-02 當日時刻未核。",
+  "湯澤東映・雙葉 2027-02 可退房價（不編造；以 dated Booking／官網結帳為準）。",
+  "飯店 2027-02 實價未鎖；Ikyu／聚合站為 2026-09～10 顯示帶寬。"
+ ]
+}

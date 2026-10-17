@@ -1,0 +1,497 @@
+{
+  "days": [
+    {
+      "date": "2027-02-21",
+      "tz": "Asia/Tokyo",
+      "city": "東京",
+      "label": "抵達・東京車站／日本橋散步（不入場）",
+      "travel_day": true,
+      "rain_alt": "整晚主線已在室內：東京車站一番街＋GRANSTA 八重洲（改札外、免票）。雨大就取消日本橋戶外拍照，晚餐改在一番街東京拉麵街／グルメゾン。營業律例 as of 2026-10-17：一番街拉麵街 10:30–23:00、グルメゾン日祝 11:00–22:00、GRANSTA 八重洲餐廳 11:00–22:00、GRANSTA 東京日祝便當 8:00–21:00／餐廳 10:00–21:00。T-14 再查各店當日。",
+      "late_cut": "抵達晚於 20:30 → 砍日本橋，只留飯店周邊一番街／GRANSTA 一圈＋晚餐。",
+      "ribbon": "京橋飯店 →步行8′→ 一番街 →步行12′→ 日本橋 →步行15′→ 京橋飯店",
+      "walking_km": {
+        "total": 3.2,
+        "how": "飯店↔一番街↔日本橋環線估 2.4×1.3（未經 geocode，est）"
+      },
+      "note": "抵達日零觀光：只排飯店步行圈、不買票。2 月東京早晚偏冷，圍巾帽子。航班時刻未鎖定，時段以入住後晚上為準。",
+      "timeline": [
+        {
+          "t": "17:00-18:00",
+          "what": "京橋／八重洲飯店入住、丟行李、換 IC 卡（Suica／PASMO）",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "實際抵達若更晚，整晚節奏後移；不趕票。中檔飯店 check-in 多為 15:00 起。"
+        },
+        {
+          "t": "18:00-18:10",
+          "what": "步行 京橋飯店→一番街 約 0.5 km · 8分(+緩衝)",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "18:10-19:20",
+          "what": "東京車站一番街／GRANSTA 散步（免票、室內）",
+          "kind": "free",
+          "tag": "opener",
+          "note": "不進任何展望台或付費展。キャラクターストリート 10:00–20:30、おかしランド 9:00–21:00、ギフトパレット日祝 9:00–20:30（營業律例 as of 2026-10-17，官網 tokyoeki-1bangai.co.jp／gransta.jp）。T-14 再查。"
+        },
+        {
+          "t": "19:20-20:30",
+          "what": "晚餐 · 八重洲／一番街（拉麵街或グルメゾン一帶）",
+          "kind": "meal",
+          "tag": "swap→GRANSTA八重洲餐廳",
+          "note": "只指定用餐區，不訂位。日祝グルメゾン 22:00 關、GRANSTA 東京餐廳 21:00 關（as of 2026-10-17）。"
+        },
+        {
+          "t": "20:30-20:45",
+          "what": "步行 一番街→日本橋 約 0.8 km · 12分(+緩衝)",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "20:45-21:10",
+          "what": "日本橋（橋上夜景、不入場）",
+          "kind": "free",
+          "tag": "skippable",
+          "note": "戶外、免費、無關門。雨或太累就砍。"
+        },
+        {
+          "t": "21:10-21:30",
+          "what": "步行 日本橋→京橋飯店 約 1.0 km · 15分(+緩衝)",
+          "kind": "hop",
+          "verify": "est"
+        }
+      ],
+      "stops": [
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan"},
+        {"name": "一番街", "query": "東京駅一番街, 東京都千代田区", "mode": "walk"},
+        {"name": "日本橋", "query": "Nihonbashi Bridge, Chuo-ku, Tokyo, Japan", "mode": "walk"},
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan", "mode": "walk"}
+      ]
+    },
+    {
+      "date": "2027-02-22",
+      "tz": "Asia/Tokyo",
+      "city": "東京",
+      "label": "淺草寺・仲見世・晴空塔（月曜閉館博物館全部避開）",
+      "travel_day": false,
+      "rain_alt": "淺草寺本堂有頂；新仲見世是拱廊。雨大就把戶外拍照縮短，午餐後提早入晴空塔＋東京索拉瑪海城室內（與塔同一棟，免另買塔票也可逛）。不改去上野／西洋美術館：多數月曜休館。",
+      "late_cut": "遲到 >1 h → 先砍新仲見世散步，再把晴空塔改只上天望デッキ（不買回廊）。淺草寺本堂 17:00 閉堂，須 16:00 前離開。",
+      "ribbon": "京橋飯店 →地鐵20–30′→ 淺草寺 →步行8′→ 新仲見世 →地鐵8–12′→ 晴空塔 →地鐵25–35′→ 京橋飯店",
+      "walking_km": {
+        "total": 5.5,
+        "how": "站內步行＋境內約 1.5 + 新仲見世 1.0 + 塔內約 0.6 + 乘車段×1.3 估（est，未經 geocode）"
+      },
+      "note": "滑雪行程的休息城日：不排東京國立博物館、西洋美術館等月曜閉館館。交通算帳：銀座線＋都營淺草線＋返程地鐵／半藏門線約 3–4 段，刷 IC；本日有 JR 需求低，不買東京地鐵 24h 券。",
+      "timeline": [
+        {
+          "t": "08:30-08:45",
+          "what": "京橋飯店出發（備圍巾；2 月早晨偏冷）",
+          "kind": "free",
+          "tag": "pinned"
+        },
+        {
+          "t": "08:45-09:15",
+          "what": "地鐵 銀座線(往淺草方向) 約9站/18–25分 ¥180–240 · 京橋飯店→淺草寺 · 出口7雷門側",
+          "kind": "hop",
+          "verify": "est",
+          "note": "京橋站步行接入。全程門到門含出入口 25–35分 +10分緩衝。票價未核官網，刷 IC。"
+        },
+        {
+          "t": "09:15-10:45",
+          "what": "淺草寺（雷門・仲見世参道・本堂）",
+          "kind": "anchor",
+          "price": "免費",
+          "tag": "opener",
+          "note": "營業律例 as of 2026-10-17（senso-ji.jp）：本堂 10–3月 6:30–17:00、4–9月 6:00–17:00；境內可走。不收費。頭一小時人較少。寺內勿大聲；本堂可脫帽。2027-02 當日時刻 T-14 再查。"
+        },
+        {
+          "t": "10:45-10:55",
+          "what": "步行 淺草寺→新仲見世 約 0.4 km · 8分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "10:55-12:10",
+          "what": "新仲見世／淺草商店街散步（市場街，非預約餐廳）",
+          "kind": "anchor",
+          "price": "免費（購物另計）",
+          "tag": "skippable",
+          "note": "拱廊為主，雨備好用。這是本日「市場」塊，不是上野阿美橫丁（跨區）。"
+        },
+        {
+          "t": "12:10-13:25",
+          "what": "午餐 · 淺草（天婦羅／鰻魚／ホッピー通り一帶）",
+          "kind": "meal",
+          "tag": "swap→索拉瑪海城餐廳",
+          "note": "只指定用餐區。指名店只當備註，不訂位。"
+        },
+        {
+          "t": "13:25-13:40",
+          "what": "地鐵 都營淺草線(往押上方向) 1站/約8–12分 · 新仲見世→晴空塔 · 押上站",
+          "kind": "hop",
+          "verify": "est",
+          "note": "門到門含步行。也可徒步約 20–25分（約 1.2–1.5 km）；>1.6 km 才必須標 walk，本日採地鐵。"
+        },
+        {
+          "t": "13:40-14:45",
+          "what": "東京晴空塔展望台",
+          "kind": "anchor",
+          "price": "天望デッキ大人 ¥1,800～／デッキ＋回廊 ¥3,000～（官網 as of 2026-10-17；窗口＋¥500）",
+          "tag": "pinned",
+          "note": "營業律例 as of 2026-10-17：平日例 10:00–22:00、最終入場 21:00（2026-10-19 週一官網日曆）；週末例 9:00 開。2027-02-22 當日未公布，T-14 查 en.tokyo-skytree.jp/open-hours/。網上預約，勿現場當第一方案。展望 45–60分＋排隊。"
+        },
+        {
+          "t": "14:45-16:00",
+          "what": "東京索拉瑪海城室內逛（可選）",
+          "kind": "free",
+          "tag": "skippable",
+          "note": "與晴空塔同一棟，不另建 stop。累了可坐、買伴手禮。時刻本輪未核，當購物設施 T-14 再查。"
+        },
+        {
+          "t": "16:00-16:35",
+          "what": "地鐵 半藏門線(往澀谷方向) 至大手町／東京 約20–30分 · 晴空塔→京橋飯店",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "18:00-19:30",
+          "what": "晚餐 · 日本橋／京橋／八重洲一帶（回飯店圈）",
+          "kind": "meal",
+          "tag": "swap→一番街拉麵街",
+          "note": "本日第四塊是晚餐區不是第四個景點。"
+        }
+      ],
+      "stops": [
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan"},
+        {"name": "淺草寺", "query": "浅草寺, 東京都台東区浅草", "mode": "transit"},
+        {"name": "新仲見世", "query": "新仲見世通, 浅草, 東京", "mode": "walk"},
+        {"name": "晴空塔", "query": "Tokyo Skytree, Oshiage, Tokyo, Japan", "mode": "transit"},
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan", "mode": "transit"}
+      ]
+    },
+    {
+      "date": "2027-02-23",
+      "tz": "Asia/Tokyo",
+      "city": "東京",
+      "label": "上野經典・東京國立博物館（天皇誕生日・開館律例）",
+      "travel_day": false,
+      "rain_alt": "主線東博已是室內。雨大把上野公園改成館內加時（東洋館／法隆寺寶物館同一園區），阿美橫丁騎樓仍可走。不改去 teamLab：假日易售罄、且在麻布台／豐洲，和上野不同簇。",
+      "late_cut": "遲到 >1 h → 砍上野公園散步，博物館仍留；再晚則阿美橫丁改成路過買食。東博最終入場 16:30（17:00 閉館律例）。",
+      "ribbon": "京橋飯店 →JR 20–30′→ 東京國立博物館 →步行8′→ 上野公園 →步行10′→ 阿美橫丁 →JR 15–20′→ 京橋飯店",
+      "walking_km": {
+        "total": 5.8,
+        "how": "館內約 1.5 + 公園 1.5 + 阿美橫丁 1.0 + 站步行×1.3（est）"
+      },
+      "note": "天皇誕生日（祝日）人潮大，開館即入。東博休館律例 as of 2026-10-17（tnm.jp）：月曜日休館（祝日月曜則開、改翌平日休）。2027-02-22 是普通月曜→休；2027-02-23 是火曜祝日→應開。官網已列 2026 年度例外（含 2027-03-29 月曜開館等），未把 2/23 列為休館。當日時刻 T-14 再查。不排吉卜力（需抽籤／售罄窗口）。",
+      "timeline": [
+        {
+          "t": "08:45-09:15",
+          "what": "步行至東京站＋JR 山手線(往池袋方向) 2站/6–8分 全程約20–30分 · 京橋飯店→東京國立博物館 · 上野公園口",
+          "kind": "hop",
+          "verify": "est",
+          "note": "祝日開館排隊，09:00 到門口；普通場地 15分裕量，祝日取上限。"
+        },
+        {
+          "t": "09:15-09:30",
+          "what": "東博門口排隊入場",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "開館 9:30。祝日不要改下午入場。"
+        },
+        {
+          "t": "09:30-11:45",
+          "what": "東京國立博物館（東博コレクション／本館）",
+          "kind": "anchor",
+          "price": "一般 ¥1,000（平常展 as of 2026-10-17；特別展另票）",
+          "tag": "opener",
+          "note": "營業律例 as of 2026-10-17：9:30–17:00，最終入場閉館前 30分；金土延至 20:00。本日火曜祝日走平日白天檔，不是金土夜開。旗艦館可吃 3–4 h，本日只留 2 h 多（滑雪後休息節奏）；想看完就用 late_cut 砍公園。票價會在年度切換，T-14 連費也要再查。"
+        },
+        {
+          "t": "11:45-11:55",
+          "what": "步行 東京國立博物館→上野公園 約 0.4 km · 8分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "11:55-12:45",
+          "what": "上野公園／不忍池散步",
+          "kind": "anchor",
+          "price": "免費",
+          "tag": "swap→東博館內加時",
+          "note": "公園塊、輕量。2 月樹木光禿、風大則縮短。不排上野動物園（另票、戶外、祝日更擠）。"
+        },
+        {
+          "t": "12:45-13:15",
+          "what": "上野東照宮或清水觀音堂（可選，仍在園區內）",
+          "kind": "free",
+          "tag": "skippable",
+          "note": "同一公園簇，不要先去阿美橫丁再折返。社寺 30分。時刻本輪未核到 2027-02 當日；不去也不傷主線。T-14 查開閉。"
+        },
+        {
+          "t": "13:15-13:30",
+          "what": "步行 上野公園→阿美橫丁 約 0.7 km · 10分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "13:30-15:00",
+          "what": "午餐＋阿美橫丁市場散步",
+          "kind": "meal",
+          "tag": "swap→上野駅構內",
+          "note": "市場 60–90分含吃。週日店休較多，本日火曜祝日多數開，但個別店 T-14 無法保證。食物＝這條街，不訂位。"
+        },
+        {
+          "t": "15:00-15:25",
+          "what": "JR 山手線(往東京方向) 2站/6–8分 全程約15–20分 · 阿美橫丁→京橋飯店",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "18:00-19:30",
+          "what": "晚餐 · 日本橋／京橋一帶",
+          "kind": "meal",
+          "tag": "swap→GRANSTA八重洲"
+        }
+      ],
+      "stops": [
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan"},
+        {"name": "東京國立博物館", "query": "東京国立博物館, 上野公園, 東京", "mode": "transit"},
+        {"name": "上野公園", "query": "Ueno Park, Taito-ku, Tokyo, Japan", "mode": "walk"},
+        {"name": "阿美橫丁", "query": "Ameyoko, Ueno, Tokyo, Japan", "mode": "walk"},
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan", "mode": "transit"}
+      ]
+    },
+    {
+      "date": "2027-02-27",
+      "tz": "Asia/Tokyo",
+      "city": "東京",
+      "label": "湯澤返程・新宿一簇（半日、不跨城）",
+      "travel_day": true,
+      "rain_alt": "砍新宿御苑（戶外、10/1–3/14 16:00 最後入園）。改都廳展望室（室內、免費；營業律例 as of 2026-10-17：9:30–22:00、最終入場約 21:30）＋伊勢丹／LUMINE 室內。南展望室每月第1、3週二休、北展望室第2、4週一休——2/27 週六不中。T-14 查都廳當月開室曆。不改去 SHIBUYA SKY（另一簇＋時段票易售罄）。",
+      "late_cut": "上越新幹線晚於 13:30 抵東京站 → 砍新宿御苑（冬季最後入園 16:00），行李進飯店後直奔都廳。再晚只留回憶橫丁晚餐區。",
+      "ribbon": "東京車站 →步行8′→ 京橋飯店(行李) →地鐵25–35′→ 新宿御苑 →地鐵20–30′→ 都廳展望室 →步行12′→ 回憶橫丁",
+      "walking_km": {
+        "total": 4.8,
+        "how": "御苑園內約 2.0 + 都廳館內 0.4 + 回憶橫丁 0.5 + 站步行×1.3（est）"
+      },
+      "note": "移動日：先解決行李再逛。上越新幹線抵東京時刻由湯澤段寫入，此處只排下午新宿一簇。移動日錨點 ≤2（御苑＋都廳）。不排 SHIBUYA SKY、不排 teamLab、不排吉卜力。",
+      "timeline": [
+        {
+          "t": "10:30-11:20",
+          "what": "上越新幹線 越後湯澤→東京（時刻由湯澤段填）",
+          "kind": "hop",
+          "verify": "est",
+          "map": false,
+          "note": "⚠️ 抵達鐘點未核；湯澤站不在本日 stops。大件可前一晚宅急便（翌日達），身上只留隔夜包。東京站大型置物櫃旺季午前會滿，備案是飯店先寄放。"
+        },
+        {
+          "t": "11:20-11:30",
+          "what": "步行 東京車站→京橋飯店 約 0.5 km · 8–12分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "11:30-12:00",
+          "what": "京橋飯店寄行李／若房間好了就入住",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "check-in 常 15:00；一定先放下行李再出門。移動日不拖箱逛。"
+        },
+        {
+          "t": "12:00-12:50",
+          "what": "午餐 · 京橋／八重洲（出發明食）",
+          "kind": "meal",
+          "tag": "swap→新宿站構內",
+          "note": "想趕御苑可改成車站便當，把午餐移到 12:50 之後。"
+        },
+        {
+          "t": "12:50-13:25",
+          "what": "步行至東京站＋地鐵 丸之內線(往荻窪方向) 至新宿御苑前 全程約25–35分 · 京橋飯店→新宿御苑",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "13:25-15:00",
+          "what": "新宿御苑",
+          "kind": "anchor",
+          "price": "入場費 ⚠️ 本輪未核到官網數字（T-14 查 policies.env.go.jp 新宿御苑）",
+          "tag": "opener",
+          "note": "營業律例 as of 2026-10-17：10/1–3/14 開園 9:00–16:30、最後入園 16:00；月曜休（祝日月曜則開、改翌平日休）。2027-02-27 週六應開。花園／公園 75–90分。週六人多，仍比假日東博鬆。"
+        },
+        {
+          "t": "15:00-15:30",
+          "what": "地鐵 丸之內線至新宿＋步行 全程約20–30分 · 新宿御苑→都廳展望室",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "15:30-16:30",
+          "what": "東京都廳第一本廳舍展望室",
+          "kind": "anchor",
+          "price": "免費",
+          "tag": "skippable",
+          "note": "營業律例 as of 2026-10-17（GO TOKYO）：9:30–22:00、最終入場約閉室前 30分。免費、室內，風大／雨天展望仍可能臨時關（X @tocho_tenbou）。45–60分。北／南輪流休，週六通常開一側。"
+        },
+        {
+          "t": "16:30-16:45",
+          "what": "步行 都廳展望室→回憶橫丁 約 0.8 km · 12分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "17:30-19:00",
+          "what": "晚餐 · 回憶橫丁／新宿西口巷弄（用餐區）",
+          "kind": "meal",
+          "tag": "swap→伊勢丹美食層",
+          "note": "窄巷煙氣、現金店多。這是食物區不是第四景點。可選（非錨點）。"
+        },
+        {
+          "t": "19:00-19:30",
+          "what": "JR 中央線快速(往東京方向) 約12–15分＋步行 · 回憶橫丁→京橋飯店",
+          "kind": "hop",
+          "verify": "est"
+        }
+      ],
+      "stops": [
+        {"name": "東京車站", "query": "Tokyo Station, Japan", "mode": "train"},
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan", "mode": "walk"},
+        {"name": "新宿御苑", "query": "新宿御苑, 東京都", "mode": "transit"},
+        {"name": "都廳展望室", "query": "Tokyo Metropolitan Government Building South Observatory, Shinjuku", "mode": "transit"},
+        {"name": "回憶橫丁", "query": "Omoide Yokocho, Shinjuku, Tokyo, Japan", "mode": "walk"},
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan", "mode": "transit"}
+      ]
+    },
+    {
+      "date": "2027-02-28",
+      "tz": "Asia/Tokyo",
+      "city": "東京",
+      "label": "退房・前往機場（不觀光）",
+      "travel_day": true,
+      "rain_alt": "東京車站構內全室內（一番街／GRANSTA）。出發日不排景點，雨備＝在站內等車。",
+      "late_cut": "任何延誤 → 只留飯店→東京車站→機場，零停留。",
+      "ribbon": "京橋飯店 →步行8′→ 東京車站 →機場鐵道（N'EX／單軌／京急，視機場）",
+      "walking_km": {
+        "total": 0.9,
+        "how": "京橋飯店→東京車站步行約 0.7×1.3（est）"
+      },
+      "note": "假定上午／下午班機，出發日＝0 觀光。回程起飛時刻未鎖定：倒算公式 T＝起飛 → T−3 h 到國際航廈（羽田國內 T−2 h）→ T−4 h 30 離開飯店。成田：東京站 N'EX 約 60分；羽田：東京站轉單軌或京急，門到門常 30–50分。T 未核前不要寫死 08:00 計程車。",
+      "timeline": [
+        {
+          "t": "T−4h30",
+          "what": "京橋飯店退房、確認護照／IC／車票",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "例：T≈12:30 → 08:00 離開飯店。實際 T 填進 legs 後再改鐘點。"
+        },
+        {
+          "t": "T−4h20",
+          "what": "步行 京橋飯店→東京車站 約 0.5–0.7 km · 8–12分",
+          "kind": "hop",
+          "verify": "est"
+        },
+        {
+          "t": "T−4h00",
+          "what": "東京車站買／劃機場電車（N'EX 成田，或轉乘羽田）",
+          "kind": "free",
+          "tag": "pinned",
+          "note": "地圖只釘飯店＋東京站。大件行李不要賭大型置物櫃。"
+        },
+        {
+          "t": "T−3h00",
+          "what": "抵達機場航廈（國際 T−3 h）",
+          "kind": "hop",
+          "verify": "est",
+          "map": false,
+          "note": "⚠️ 回程起飛時刻未確認。NRT vs HND 未選。此列不進 stops。"
+        }
+      ],
+      "stops": [
+        {"name": "京橋飯店", "query": "Mitsui Garden Hotel Kyobashi, Tokyo, Japan"},
+        {"name": "東京車站", "query": "Tokyo Station, Japan", "mode": "walk"}
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "base": "東京車站 3 晚（2027-02-21 入住 → 2027-02-24 退房）",
+      "area": "東京車站八重洲／京橋／日本橋",
+      "why": "步行可到東京站八重洲口，上越新幹線直達越後湯澤／GALA 湯澤，滑雪去程不用先拖箱換地鐵；日本橋、京橋、一番街晚餐圈都在步行範圍；2/21 抵達晚只能走飯店周邊，此區剛好符合「無票散步」。中檔、可退款優先。",
+      "options": [
+        {
+          "name": "三井花園飯店京橋 Mitsui Garden Hotel Kyobashi",
+          "band": "約 ¥18,000–25,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17；非 2027-02 實價）",
+          "link": "https://www.booking.com/searchresults.html?ss=Mitsui+Garden+Hotel+Kyobashi+Tokyo&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+        },
+        {
+          "name": "大和 Roynet 東京京橋 PREMIER Daiwa Roynet Hotel Tokyo Kyobashi PREMIER",
+          "band": "約 ¥25,000–27,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17；非 2027-02 實價）",
+          "link": "https://www.booking.com/searchresults.html?ss=Daiwa+Roynet+Hotel+Tokyo+Kyobashi+PREMIER&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+        },
+        {
+          "name": "VIA INN Prime 日本橋人形町",
+          "band": "約 ¥12,000–20,000／晚（聚合站近期均價 as of 2026-09；較京橋再走 10–15 分或一站地鐵，預算備案）",
+          "link": "https://www.booking.com/searchresults.html?ss=VIA+INN+Prime+Nihonbashi+Ningyocho+Tokyo&checkin=2027-02-21&checkout=2027-02-24&group_adults=2&no_rooms=1&order=review_score_and_price"
+        }
+      ]
+    },
+    {
+      "base": "東京車站 1 晚（2027-02-27 入住 → 2027-02-28 退房）",
+      "area": "東京車站八重洲／京橋／日本橋",
+      "why": "湯澤當日早上新幹線進東京站，同一區可先寄行李再去新宿；第二天從東京站出機場，避免再換一次住宿區。1 晚中檔即可，優先可取消。",
+      "options": [
+        {
+          "name": "三井花園飯店京橋 Mitsui Garden Hotel Kyobashi",
+          "band": "約 ¥18,000–25,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17；週六入週日退可能偏高，T-14 再比）",
+          "link": "https://www.booking.com/searchresults.html?ss=Mitsui+Garden+Hotel+Kyobashi+Tokyo&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+        },
+        {
+          "name": "大和 Roynet 東京京橋 PREMIER Daiwa Roynet Hotel Tokyo Kyobashi PREMIER",
+          "band": "約 ¥25,000–27,000／晚（雙人一室含稅，Ikyu 顯示價 as of 2026-10-17）",
+          "link": "https://www.booking.com/searchresults.html?ss=Daiwa+Roynet+Hotel+Tokyo+Kyobashi+PREMIER&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+        },
+        {
+          "name": "VIA INN Prime 日本橋人形町",
+          "band": "約 ¥12,000–20,000／晚（聚合站 as of 2026-09；1 晚可接受多走一段）",
+          "link": "https://www.booking.com/searchresults.html?ss=VIA+INN+Prime+Nihonbashi+Ningyocho+Tokyo&checkin=2027-02-27&checkout=2027-02-28&group_adults=2&no_rooms=1&order=review_score_and_price"
+        }
+      ]
+    }
+  ],
+  "checklist_items": [
+    {
+      "item": "東京晴空塔網上入場券（2027-02-22，建議天望デッキ或デッキ＋回廊）",
+      "deadline": "出發前數日（平日通常尚有；不要把窗口當第一方案，窗口＋¥500）",
+      "price": "大人 ¥1,800～／¥3,000～ as of 2026-10-17 官網；當日價以預約站為準",
+      "link": "https://www.tokyo-skytree.jp/ticket/",
+      "note": "非抽籤。2027-02-22 當日開園時刻未公布；平日律例 10:00–22:00、最終入場 21:00（2026-10-19 官網）。T-14 連時刻與票價再查。"
+    },
+    {
+      "item": "（僅當改把 2/27 換成澀谷時才買）SHIBUYA SKY 時段票",
+      "deadline": "入場日前 14 日 00:00 JST 開賣；夕陽檔極易售罄。本行程未採用。",
+      "price": "大人日間約 ¥3,000、15:00 後約 ¥3,700（GO TOKYO as of 2026-10-17）",
+      "link": "https://www.shibuya-scramble-square.com/sky/ticket/",
+      "note": "開放 10:00–22:30、最終入場 21:20（律例）。網上售罄則窗口同售罄。本計畫 2/27 留在新宿一簇，不跨去澀谷。"
+    },
+    {
+      "item": "東京國立博物館平常展：祝日現場購票即可；若當檔特別展想看再另買指定票",
+      "deadline": "T-14 查 tnm.jp 是否有特別展＋是否需提前",
+      "price": "平常展一般 ¥1,000 as of 2026-10-17",
+      "link": "https://www.tnm.jp/modules/r_free_page/index.php?id=113",
+      "note": "不要預設特別展。祝日人潮大，09:00 到門口。不需要抽籤。"
+    }
+  ],
+  "unverified": [
+    "2027-02-21～28 各館當日時刻表尚未公布；以上皆為營業律例 as of 2026-10-17，T-14 再查。",
+    "新宿御苑入場費本輪 8 次搜尋未核到官網數字。",
+    "晴空塔 2027-02-22 開園時刻：以 2026-10-19 週一 10:00–22:00 為平日律例，非當日確認。",
+    "回程航班起飛時刻、成田或羽田未鎖定；2/28 用 T 公式。",
+    "2/27 上越新幹線抵東京站時刻由湯澤段負責，本城日下午時間會跟著平移。",
+    "地鐵／JR 票價為區間 est，刷 IC，未核官網表。",
+    "teamLab Borderless（麻布台）律例 as of 2026-10-17：多為 8:30–21:00、最終入場閉館前 1 h；票在入場日前兩個月 1 日左右開賣，週末／祝日易售罄，現場價＋¥200 且可能已完售。teamLab Planets（豐洲）律例 8:00–22:00、最終入場前 1 h，場內不售票，展覽標到 2027 年底。兩者皆非抽籤，但本短城窗不排（祝日賣壓＋跨城）。",
+    "東京索拉瑪海城、上野東照宮 2027-02 當日時刻未核。",
+    "飯店 2027-02 實價未鎖；Ikyu／聚合站為 2026-09～10 顯示帶寬。",
+    "2/21 國際航班抵達鐘點未提供，晚上時段可整體後移。"
+  ],
+  "searches_used": 8
+}
